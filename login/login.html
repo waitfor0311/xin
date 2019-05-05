@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="./lib/jquery-1.12.4.js"></script>
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./style.css">
+    <script type="text/javascript" src="./style.js"></script>
+    <title>哔哩哔哩弹幕视频网 - ( ゜- ゜)つロ 乾杯~ - bilibili</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <!-- 顶部导航留白 -->
+    <div class="topnav"></div>
+    <!-- <div id="mpanel"></div> -->
+    <div class="login-top">
+        <img src="./images/login.top.png" alt="">
+    </div>
+    <div class="top-title">
+        <h2>登录</h2>
+    </div>
+    <div class="main">
+        <div class="left">
+            <div class="ewm">
+                <img src="./images/login.ewm.png" id="ewm">
+                <img src="./images/login.app.png" id="app">
+            </div>
+            <div class="bottom">
+                <p class="ewm-text">请扫描二维码登录</p>
+                <p>请使用 <a href="#">哔哩哔哩客户端</a></p>
+                <p>扫码登录</p>
+                <p>或扫码下载APP</p>
+            </div>
+        </div>
+        <div class="line"></div>
+        <div class="right">
+            <input type="text" value="" placeholder="你的手机号/邮箱" id="login-username" maxlength="50" autocomplete="off"
+                class="">
+            <div id="check-username" class="check-msg"></div>
+            <input type="password" placeholder="密码" id="login-passwd" class="">
+            <div id="check-password" class="check-msg"></div>
+            <div id="slideBar"></div>
+            <div class="remember">
+                <input type="checkbox"> 记住我
+                <span>不是自己的电脑上不要勾选此项</span>
+                <a href="javascript:">无法验证?</a>
+                <a href="javascript:">忘记密码?</a>
+            </div>
+            <div class="btn-box">
+                <a href="javascript:" class="btn-login">登录</a>
+                <a href="javascript:" class="btn-reg">注册</a>
+            </div>
+            <div class="sns">
+                <img src="./images/icon-weibo.png" alt="">
+                <a href="javascript:">微博账号登录</a>
+                <img src="./images/icon-qq.png" alt="">
+                <a href="javascript:">QQ账号登录</a>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    // 鼠标移入app下载淡入
+    $('.ewm').mouseenter(function () {
+        $('#ewm').stop().fadeOut(0).next().stop().fadeIn();
+    });
+    // 鼠标移出二维码淡入
+    $('.ewm').mouseleave(function () {
+        $('#app').stop().fadeOut(0).prev().stop().fadeIn();
+    });
+    // 滑动拼图验证
+    var dataList = ["0", "1"];
+    var options = {
+        dataList: dataList,
+        success: function () {
+            console.log("show");
+        },
+        fail: function () {
+            console.log("fail");
+        }
+    };
+    SliderBar("slideBar", options);
+
+    $('.scroll-bar').mouseover(function () {
+        $('.slide-img-block').stop().fadeIn();
+    });
+    $('.scroll-bar').mouseleave(function () {
+        $('.slide-img-block').stop().fadeOut();
+    });
+
+
+    // 登录按钮点击事件
+    $('.btn-login').click(function () {
+        var username = $('#login-username').val();
+        var password = $('#login-passwd').val();
+        // 判断是否输入用户名
+        if (username == '') {
+            $('#check-username').text('请输入注册时用的邮箱或者手机号呀');
+            $('#login-username').css('border', '1px solid #f66495');
+        } else {
+            $('#check-username').text('');
+            $('#login-username').css('border', '');
+
+        };
+        // 判断是否输入密码
+        if (password == '') {
+            $('#check-password').text('喵，你没输入密码么？');
+            $('#login-passwd').css('border', '1px solid #f66495');
+        } else {
+            $('#check-password').text('');
+            $('#login-passwd').css('border', '');
+
+        };
+    });
+</script>
+
+</html>
