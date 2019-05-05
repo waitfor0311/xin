@@ -1,0 +1,554 @@
+/* 鬼畜分类 */
+.guichu-categories {
+    height: 28px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+    li {
+        float: left;
+        margin-right: 40px;
+        height: 28px;
+        font-size: 14px;
+        color: #6d757a;
+        line-height: 28px;
+        display: block;
+        position: relative;
+        cursor: pointer;
+    }
+
+    li:hover {
+        color: #00a1d6;
+    }
+
+    .blue {
+        color: #00a1d6;
+    }
+}
+
+/* 推荐 */
+//  轮播 
+.nominate {
+    height: 220px;
+    margin-bottom: 30px;
+
+    .carousel {
+        width: 620px;
+
+        .visible-area {
+            position: relative;
+            width: 620px;
+            height: 220px;
+            overflow: hidden;
+            border-radius: 5px;
+            z-index: 99;
+
+            .slider-control {
+                display: none;
+                position: absolute;
+                height: 30px;
+                width: 20px;
+                background: #991299;
+                top: 95px;
+                cursor: pointer;
+            }
+
+            .slider-control-prev {
+                left: 0;
+                background: url(../img/icons.png) -535px -1686px no-repeat;
+            }
+
+            .slider-control-next {
+                right: 0;
+                background: url(../img/icons.png) -535px -1623px no-repeat;
+            }
+
+            .lunbo-shadow {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+            }
+
+            .imgs {
+                position: absolute;
+                // left: -1860px;
+                width: 3720px;
+
+                li {
+                    position: relative;
+                    float: left;
+
+                    p {
+                        position: absolute;
+                        bottom: 7px;
+                        left: 10px;
+                        z-index: 9;
+                        font-size: 14px;
+                        color: #fff;
+                    }
+                }
+            }
+
+            .trig {
+                position: absolute;
+                right: 10px;
+                bottom: 7px;
+                width: 150px;
+                height: 21px;
+                z-index: 999;
+
+                li {
+                    float: left;
+                    height: 18px;
+                    width: 18px;
+                    margin-left: 15px;
+                    background: url(../img/icons.png) -855px -790px no-repeat;
+                    cursor: pointer;
+                }
+
+                .first {
+                    margin-left: 0px;
+                }
+
+                .on {
+                    background: url(../img/icons.png) -855px -727px no-repeat;
+                }
+            }
+        }
+    }
+}
+
+// 六小块
+.groom {
+    width: 540px;
+    height: 220px;
+
+    .groom-module {
+        position: relative;
+        width: 160px;
+        height: 100px;
+        margin: 0 0 20px 20px;
+        cursor: pointer;
+        overflow: hidden;
+        border-radius: 3px;
+
+        .card-mark {
+            position: absolute;
+            left: 0;
+            top: 68px;
+            width: 150px;
+            font-size: 12px;
+            height: 20px;
+            line-height: 20px;
+            padding: 10px 5px;
+            overflow: hidden;
+            color: #fff;
+            background: linear-gradient(transparent, rgba(0, 0, 0, .1) 20%, rgba(0, 0, 0, .2) 35%, rgba(0, 0, 0, .6) 65%, rgba(0, 0, 0, .9));
+
+            .author,
+            .play {
+                display: none;
+            }
+
+            .title,
+            .author,
+            .play {
+                position: absolute;
+                top: 10px;
+
+            }
+
+            .author {
+                display: none;
+                top: 60px;
+                color: #99a2aa;
+            }
+
+            .play {
+                display: none;
+                top: 80px;
+                color: #99a2aa;
+            }
+        }
+
+        .card-mark-over {
+            position: absolute;
+            height: 100px;
+            width: 160px;
+            top: 0;
+            left: 0;
+            padding: 10px 5px 0;
+            background: rgba(0, 0, 0, .7);
+        }
+
+        .later-watch {
+            display: none;
+            position: absolute;
+            right: 5px;
+            bottom: 10px;
+            z-index: 9;
+        }
+    }
+}
+
+// 大家都在看 ,近期热门
+.energy {
+    height: 212px;
+
+    .everyone-watching {
+        width: 900px;
+        height: 212px;
+        // background: #994499;
+
+        .headline {
+            padding-bottom: 20px;
+
+            span {
+                font-size: 24px;
+            }
+        }
+
+        .storey {
+
+            .spread-module {
+                position: relative;
+                float: left;
+                height: 148px;
+                width: 160px;
+                margin: 0 20px 20px 0;
+                cursor: pointer;
+
+                .later-watch {
+                    display: block;
+                    position: absolute;
+                    right: 5px;
+                    bottom: 60px;
+                    opacity: 0;
+                    transition: opacity .3s;
+                    z-index: 999;
+                }
+
+                .spread-module-main-img {
+                    border-radius: 3px;
+                }
+
+                .mask-video {
+                    opacity: 0;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100px;
+                    background: rgba(0, 0, 0, .2);
+                    transition: opacity .3s;
+                    z-index: 99;
+                }
+
+                .danmu {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 100%;
+                    height: 100px;
+
+                    .danmu-con {
+                        position: relative;
+                        width: 100%;
+                        height: 100%;
+
+                        p {
+                            display: block;
+                            position: absolute;
+                            background: #993399;
+                            border: 1px solid #000;
+                            top: 10px;
+                            // left:200px;
+                            width: 150px;
+                            line-height: 1;
+                            color: skyblue;
+                            // height: 12px;
+                            z-index: 99;
+                            // transition: linear 3s all;
+                        }
+
+                        .danmu-move {}
+                    }
+
+                }
+
+                .t {
+                    padding-top: 8px;
+                    line-height: 20px;
+                    transition: all .3s linear;
+                }
+
+            }
+
+            .spread-module:hover .later-watch,
+            .spread-module:hover .mask-video {
+                opacity: 1;
+            }
+
+            .spread-module:hover .t {
+                color: #00a1d6;
+            }
+
+        }
+    }
+
+    .recent-hot {
+        width: 260px;
+        height: 209px;
+
+        // background: #448911;
+        .headline {
+            padding: 0 0 20px;
+            height: 24px;
+
+            span {
+                font-size: 18px;
+                float: left;
+            }
+        }
+
+        .hot-box {
+            ul {
+                li {
+                    margin-bottom: 25px;
+                    cursor: pointer;
+
+                    img {
+                        float: left;
+                        border-radius: 3px;
+                        vertical-align: top;
+                    }
+
+                    span {
+                        padding: 2px 3px;
+                        background: #ff8eb3;
+                        border-radius: 3px;
+                        float: left;
+                        color: #fff;
+                        margin-right: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//横幅广告
+.gg {
+    margin-top: 30px;
+
+    .main-gg {
+        img {
+            width: 100%;
+        }
+    }
+}
+
+//鬼畜调教
+.guichu-guide {
+    .l-con {
+        width: 900px;
+        // background: #993399;
+        .title {
+            padding: 20px 0;
+
+            .main-t {
+                font-size: 24px;
+                margin-right: 20px;
+            }
+
+            span {
+                margin-right: 10px;
+                cursor: pointer;
+            }
+
+            span:hover {
+                color: #00a1d6;
+            }
+        }
+
+        .video-box {
+            .video-module {
+                position: relative;
+                width: 160px;
+                height: 148px;
+                margin: 0 20px 20px 0;
+                float: left;
+                overflow: hidden;
+                cursor: pointer;
+
+                .pic {
+                    position: relative;
+                    margin-bottom: 8px;
+                    border-radius: 3px;
+
+                    .main-pic img {
+                        border-radius: 3px;
+                    }
+
+                    .mask {
+                        position: absolute;
+                        display: none;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100px;
+                        background: rgba(0, 0, 0, .3)
+                    }
+
+                    .dur {
+                        position: absolute;
+                        display: none;
+                        bottom: 6px;
+                        left: 6px;
+                        color: #fff;
+                        font-family: '微软雅黑';
+                    }
+
+                    .watch-later {
+                        position: absolute;
+                        display: none;
+                        right: 6px;
+                        bottom: 4px;
+                    }
+
+                    .crown {
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        width: 40px;
+                        height: 24px;
+                        background: url(../img/icons.png) -849px -148px no-repeat;
+                    }
+
+                }
+
+                .t {
+                    line-height: 20px;
+                    height: 40px;
+                }
+
+                .num {
+                    width: 100%;
+                    position: absolute;
+                    bottom: 0;
+                    background: #fff;
+                    line-height: 20px;
+                    height: 20px;
+                    color: #99a2aa;
+
+                    // background: #992399;
+                    // padding-top: 5px;
+                    // box-sizing: border-box;
+                    span {
+                        display: inline-block;
+                        width: 75px;
+                        height: 14px;
+                        overflow: hidden;
+                        vertical-align: bottom;
+                        line-height: 14px;
+                    }
+
+                    .icon {
+                        display: inline-block;
+                        vertical-align: top;
+                        margin-right: 5px;
+                        width: 12px;
+                        height: 12px;
+                        background: url(../img/icons.png);
+                    }
+
+                    .play {
+                        i {
+                            background-position: -282px -90px;
+                        }
+                    }
+
+                    .danmu-num {
+                        i {
+                            background-position: -282px -218px;
+                        }
+                    }
+                }
+
+            }
+
+
+        }
+    }
+
+    .r-con {
+        height: 531px;
+        width: 260px;
+        // background: #ccc;
+
+        .title {
+            padding: 25px 0;
+
+            // background: #00a1d6;
+            h3 {
+                float: left;
+                font-size: 18px;
+                font-weight: 400;
+                margin-right: 15px;
+            }
+
+            span {
+                display: inline-block;
+                margin: 4px 10px 0 0;
+            }
+
+        }
+
+        .ranking {
+            li {
+                margin-bottom: 20px;
+                cursor: pointer;
+                .r-num {
+                    display: inline-block;
+                    padding: 2px 5px;
+                    background: #f25d8e;
+                    border-radius: 4px;
+                    color: #fff;
+                    font-weight: bolder;
+                    margin-right: 5px;
+                }
+                .grey {
+                    background: #b8c0cc;
+                }
+                .preview {
+                    vertical-align: top;
+                }
+
+                .r-detail {
+                    width: 150px;
+                    height: 50px;
+
+                    .r-point {
+                        margin-top: 5px;
+                        height: 12px;
+                        color: #99a2aa;
+                    }
+                }
+            }
+        }
+        .see-more {
+            padding-top: 10px;
+            a {
+                display: block;
+                background-color: #e5e9ef;
+                height: 24px;
+                line-height: 24px;
+                text-align: center;
+                border-radius: 3px;
+
+                .more {
+
+                }
+            }
+        }
+    }
+}
