@@ -8,6 +8,8 @@
     <script src="./lib/jquery-1.12.4.js"></script>
     <link rel="stylesheet" href="./css/login.css">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/bilibili-header.css">
+    <link rel="stylesheet" href="./css/init.css">
     <script type="text/javascript" src="./style.js"></script>
     <title>哔哩哔哩弹幕视频网 - ( ゜- ゜)つロ 乾杯~ - bilibili</title>
     <style>
@@ -17,7 +19,109 @@
 
 <body>
     <!-- 顶部导航留白 -->
-    <div class="topnav"></div>
+    <div class="topnav">
+        <div class="full-width">
+            <div class="main-menu">
+                <div class="wrap">
+                    <div class="left">
+                        <ul>
+                            <li class="fl nav-item main-site" title="主站">
+                                <a href="#">
+                                    <img src="./img/bilibili-logo.jpg" alt="">
+
+
+                                    主站
+                                </a>
+                            </li>
+                            <li class="fl nav-item" title="来探索bilibili音乐的世界吧~"><a href="#">音频</a></li>
+                            <li class="fl nav-item">
+                                <a href="#">游戏中心</a>
+                                <div class="i-frame" id="game-center">
+                                    <img src="./img/gamecenter-con.jpg" alt="">
+                                </div>
+                            </li>
+                            <li class="fl nav-item"><a href="#">直播</a>
+                                <div class="i-frame">
+                                    <img src="./img/live.jpg" alt="">
+                                </div>
+                            </li>
+                            <li class="fl nav-item"><a href="#" title="会员购">会员购</a></li>
+                            <li class="fl nav-item"><a href="#" title="漫画">漫画</a></li>
+                            <li class="fl nav-item"><a href="#">BML</a></li>
+                            <li class="fl nav-item">
+                                <a href="#">
+                                    <span class="iconfont  icon-shouji1
+                                        "></span>
+                                    下载APP</a>
+                                <div class="i-frame app-orcode-box" id="download-orcode">
+
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="contribute fr">
+                        <a href="#" class="b-link">投稿</a>
+                        <div class="i-frame">
+                            <img src="./img/contribute.png" alt="">
+                        </div>
+                    </div>
+                    <div class="right fr">
+                        <ul>
+                            <li class="portrait nav-item">
+                                <div class="i-frame personal-info">
+                                    <img src="./img/personal-info.png" alt="">
+                                </div>
+                                <a href="#">
+                                    <img src="./img/noface.gif" class="noface">
+                                </a>
+
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="#">大会员</a>
+                                <div class="i-frame member">
+                                    <img src="./img/member.jpg" alt="">
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">消息</a>
+                                <div class="message-num">
+                                    48
+                                </div>
+                                <div class="i-frame message">
+                                    <img src="./img/message.png" alt="">
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">动态</a>
+                                <div class="i-frame dynamic">
+                                    <img src="./img/dynamic.png" alt="">
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">稍后再看</a>
+                                <div class="i-frame later">
+                                    <img src="./img/later.png" alt="">
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">收藏</a>
+                                <div class="i-frame collect">
+                                    <img src="./img/collect.png" alt="">
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">历史</a>
+                                <div class="i-frame history">
+                                    <img src="./img/history.png" alt="">
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- <div id="mpanel"></div> -->
     <div class="login-top">
         <img src="./images/login.top.png" alt="">
@@ -63,6 +167,10 @@
                 <a href="javascript:">QQ账号登录</a>
             </div>
         </div>
+    </div>
+
+    <div class="dibu">
+        <img src="./images/dibu.png" alt="">
     </div>
 </body>
 <script>
@@ -119,5 +227,4 @@
         };
     });
 </script>
-
 </html>
