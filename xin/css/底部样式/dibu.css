@@ -1,0 +1,139 @@
+.di-bei {
+  margin-top: 300px;
+  background-color: #f6f9fa;
+}
+.di-bei .di {
+  width: 1162px;
+  padding-top: 40px;
+  margin: 0 auto;
+}
+.di-bei .di .guan,
+.di-bei .di .men {
+  float: left;
+  height: 112px;
+  border-right: 1px solid #99a2aa;
+}
+.di-bei .di .guan a,
+.di-bei .di .men a {
+  font-size: 14px;
+  color: #222222;
+}
+.di-bei .di .guan a:hover,
+.di-bei .di .men a:hover {
+  color: #00a1d6;
+}
+.di-bei .di .guan ul,
+.di-bei .di .men ul {
+  float: left;
+}
+.di-bei .di .guan ul li,
+.di-bei .di .men ul li {
+  padding-top: 8px;
+}
+.di-bei .di .guan {
+  width: 402px;
+}
+.di-bei .di .guan h5 {
+  color: #99a2aa;
+}
+.di-bei .di .guan li {
+  padding-right: 40px;
+}
+.di-bei .di .men {
+  width: 440px;
+}
+.di-bei .di .men h3 {
+  padding-left: 30px;
+  color: #99a2aa;
+}
+.di-bei .di .men li {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.di-bei .di .wei-x {
+  float: left;
+  margin-left: 20px;
+  margin-bottom: 40px;
+}
+.di-bei .di .wei-x .yinChang {
+  display: none;
+}
+.di-bei .di .wei-x .active {
+  display: block;
+}
+.di-bei .di .wei-x .q1 div {
+  background: url(../../img/主页底部/icons.png) no-repeat -1025px -195px;
+}
+.di-bei .di .wei-x .q1 span {
+  top: -110px;
+  left: -15px;
+}
+.di-bei .di .wei-x .q2 div {
+  background: url(../../img/主页底部/icons.png) no-repeat -1025px -324px;
+}
+.di-bei .di .wei-x .q2 span {
+  top: -110px;
+  left: -20px;
+}
+.di-bei .di .wei-x .q3 div {
+  background: url(../../img/主页底部/icons.png) no-repeat -1025px -67px;
+}
+.di-bei .di .wei-x .q3 span {
+  top: -150px;
+  left: -150px;
+}
+.di-bei .di .wei-x .q1,
+.di-bei .di .wei-x .q2,
+.di-bei .di .wei-x .q3 {
+  position: relative;
+  height: 112px;
+  float: left;
+  margin-left: 20px;
+}
+.di-bei .di .wei-x .q1 span,
+.di-bei .di .wei-x .q2 span,
+.di-bei .di .wei-x .q3 span {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+}
+.di-bei .di .wei-x .q1 div,
+.di-bei .di .wei-x .q2 div,
+.di-bei .di .wei-x .q3 div {
+  width: 58px;
+  height: 58px;
+  border-radius: 50px;
+  margin: 0 auto;
+}
+.di-bei .di .zui-hou div {
+  float: left;
+}
+.di-bei .di .zui-hou .di-xz {
+  position: relative;
+}
+.di-bei .di .zui-hou .di-xz span {
+  position: absolute;
+  bottom: 0px;
+}
+.di-bei .di .zui-hou .di-xk {
+  font-size: 12px;
+  padding: 0 20px;
+}
+.di-bei .di .zui-hou .di-xk p {
+  margin: 5px 0;
+  color: #99a2aa;
+}
+.di-bei .di .zui-hou .di-xk p a {
+  color: #99a2aa;
+}
+.di-bei .di .zui-hou .di-xk p span {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+}
+.di-bei .di .zui-hou .di-xk p .shanghai {
+  background: url(../../img/主页底部/icons.png) no-repeat -1367px -88px;
+}
+.di-bei .di .zui-hou .di-xk p .hul {
+  background: url(../../img/主页底部/icons.png) no-repeat -1433px -88px;
+}

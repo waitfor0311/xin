@@ -1,0 +1,83 @@
+
+.slider {
+  max-width: 2000px;
+  min-width: 1000px;
+  height: 700px;
+  /* margin: 100px auto; */
+  position: relative;
+}
+
+.slider li {
+  position: absolute;
+  display: none;
+}
+
+.slider li:first-child {
+  display: block;
+}
+
+
+.arrow {
+  display: none;
+}
+
+.slider:hover .arrow {
+  display: block;
+  user-select: none;
+}
+
+.arrow-left,
+.arrow-right {
+  font-family: "SimSun", "宋体";
+  width: 30px;
+  height: 60px;
+  background-color: rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 50%;
+  margin-top: -30px;
+  cursor: pointer;
+  text-align: center;
+  line-height: 60px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.arrow-left:hover,
+.arrow-right:hover {
+  background-color: rgba(0, 0, 0, .5);
+}
+
+.arrow-left {
+  left: 0;
+}
+
+.arrow-right {
+  right: 0;
+}
+
+/* 小点按钮样式 */
+.controls {
+  position: absolute;
+  bottom: 100px;
+  left: 30%;
+  transform: translateX(-50%);
+}
+
+.controls a {
+  float: left;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+
+.controls a:first-child {
+  margin-left: 0;
+}
+
+.controls a.active {
+  border-color: #fff;
+  background: #fff;
+}

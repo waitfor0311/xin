@@ -1,0 +1,213 @@
+.zj {
+  width: 100%;
+  height: 110px;
+  background: url(../../img/游戏中心img/mainmenu-bg.jpg) no-repeat;
+}
+.zj div {
+  margin: 0 auto;
+  width: 1000px;
+  position: relative;
+}
+.zj div ul {
+  width: 1000px;
+  position: absolute;
+  top: -30px;
+}
+.zj div ul li {
+  height: 110px;
+  width: 33.333%;
+  float: left;
+  position: relative;
+  background: url(../../img/游戏中心img/mainmenu-a-180523.jpg) no-repeat;
+}
+.zj div ul li a {
+  display: block;
+  position: absolute;
+}
+.zj div ul .l1 a {
+  height: 50px;
+  width: 112px;
+  top: 25%;
+  left: 110px;
+  background: url(../../img/游戏中心img/mainmenu-li.png) no-repeat -47px -32px;
+}
+.zj div ul .l2 a {
+  height: 40px;
+  width: 142px;
+  top: 30%;
+  left: 110px;
+  background: url(../../img/游戏中心img/mainmenu-li.png) no-repeat -229px -32px;
+}
+.zj div ul .l3 a {
+  height: 34px;
+  width: 130px;
+  top: 33%;
+  left: 110px;
+  background: url(../../img/游戏中心img/mainmenu-li.png) no-repeat -643px -32px;
+}
+.x-lun {
+  width: 1000px;
+  margin: 0 auto;
+  height: 345px;
+}
+.x-lun .left {
+  width: 700px;
+  float: left;
+}
+.x-lun .left li {
+  display: none;
+}
+.x-lun .left .active {
+  display: block;
+}
+.x-lun .you {
+  width: 300px;
+  float: left;
+  height: 345px;
+}
+.x-lun .you li {
+  margin: 0 auto;
+  width: 240px;
+  padding: 30px;
+  height: 315px;
+  position: relative;
+}
+.x-lun .you li h3 {
+  border-bottom: 2px solid #2cbdf0;
+  padding-bottom: 20px;
+}
+.x-lun .you li p {
+  padding-top: 20px;
+}
+.x-lun .you li a {
+  position: absolute;
+  right: 30px;
+  bottom: 60px;
+  display: block;
+  width: 120px;
+  height: 40px;
+  line-height: 40px;
+  border: 2px solid #666;
+  text-align: center;
+  border-radius: 35px;
+  color: #666;
+}
+.x-lun .you li a:hover {
+  color: #2cbdf0;
+  border: 2px solid #2cbdf0;
+}
+.yx {
+  margin-top: 20px;
+  height: 750px;
+  border: 1px solid #D7DDDD;
+}
+.yx a {
+  font-size: 13px;
+  color: #666;
+}
+.yx h3 {
+  font-weight: 400;
+  padding: 3px;
+  background: #D7DDDD;
+}
+.yx a:hover {
+  color: #2cbdf0;
+}
+.yx .zuo {
+  width: 796px;
+  height: 750px;
+  float: left;
+  border-right: #D7DDDD solid 1px;
+}
+.yx .zuo ul {
+  float: left;
+  padding-right: 80px;
+}
+.yx .zuo ul .tou {
+  font-size: 18px;
+  color: orange;
+}
+.yx .zuo ul li {
+  padding: 2px;
+  padding-left: 5px;
+}
+.yx .yy {
+  width: 150px;
+  float: left;
+}
+.yx .yy li {
+  padding-top: 3px;
+  padding-left: 5px;
+}
+.yx .ban {
+  float: left;
+  width: 50px;
+  height: 750px;
+  background: #2cbdf0;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+}
+.yx .ban p {
+  margin-top: 300px;
+}
+.gy {
+  margin-top: 100px;
+}
+.gy li {
+  float: left;
+  text-align: center;
+}
+.gy li a {
+  display: block;
+  width: 150px;
+  height: 90px;
+  line-height: 90px;
+  background: #EBF0F0;
+  border-radius: 15px;
+  margin-right: 10px;
+  font-size: 20px;
+  color: #000;
+}
+.gy li a:hover {
+  color: #fff;
+  background: #2cbdf0;
+}
+.dib {
+  height: 170px;
+  width: 900px;
+  margin: 0 auto;
+}
+.dib .log {
+  margin-top: 50px;
+  float: left;
+}
+.dib .log .log1 {
+  width: 110px;
+  height: 50px;
+  padding-right: 20px;
+  border-right: #2cbdf0 1px solid;
+}
+.dib .log .log2 {
+  width: 60px;
+  padding-left: 20px;
+}
+.dib .log div {
+  float: left;
+}
+.dib .log div img {
+  width: 100%;
+}
+.dib .xie {
+  margin-top: 50px;
+  float: left;
+  padding-left: 20px;
+  font-size: 12px;
+  color: #666;
+}
+.dib .xie div span a {
+  color: #2cbdf0;
+}
+.dib .xie .jc a {
+  color: #666;
+}
