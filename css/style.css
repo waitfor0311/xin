@@ -1,0 +1,331 @@
+.top {
+  background-color: #fff;
+}
+.top ul {
+  height: 60px;
+  line-height: 60px;
+}
+.top ul li {
+  float: left;
+}
+.top ul .logo {
+  width: 135px;
+  padding-right: 70px;
+}
+.top ul .logo img {
+  width: 100%;
+}
+.top ul .home {
+  padding-right: 260px;
+}
+.top ul .home div {
+  width: 25px;
+  height: 25px;
+  background: url(../img/jlt.png) -85px -211px;
+  position: absolute;
+  top: 18px;
+}
+.top ul .home p {
+  font-size: 14px;
+  margin-left: 30px;
+}
+.top ul .txt {
+  position: relative;
+  padding-right: 40px;
+}
+.top ul .txt input {
+  width: 380px;
+  height: 36px;
+  border-radius: 30px;
+  padding-left: 20px;
+  background-color: #ddd;
+  border: 0px;
+}
+.top ul .txt div {
+  width: 22px;
+  height: 22px;
+  background: url(../img/jlt.png) -788px -727px;
+  position: absolute;
+  top: 20px;
+  left: 360px;
+}
+.top ul .logon {
+  font-size: 14px;
+  padding-right: 45px;
+}
+.top ul .list div {
+  width: 22px;
+  height: 22px;
+  background: url(../img/jlt.png) -534px -917px;
+  top: 20px;
+  position: absolute;
+}
+.top ul .list a {
+  padding-left: 25px;
+  font-size: 14px;
+}
+.swiper-container {
+  width: 100%;
+}
+.swiper-container img {
+  width: 100%;
+}
+.nav {
+  background-color: #fff;
+}
+.nav ul {
+  height: 40px;
+  line-height: 40px;
+}
+.nav ul li {
+  float: left;
+  padding-right: 65px;
+}
+.nav ul .all {
+  padding-left: 65px;
+  color: #d95eaa;
+}
+.nav .city li:nth-child(2) {
+  padding-right: 90px;
+}
+.nav .city li:last-child {
+  float: right;
+  padding-right: 0;
+  position: relative;
+}
+.nav .city li:last-child .box {
+  width: 350px;
+  height: 160px;
+  position: absolute;
+  left: -290px;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  display: none;
+  z-index: 99;
+}
+.nav .city li:last-child .box .tab-name {
+  height: 40px;
+  border-bottom: 1px solid #ccc;
+}
+.nav .city li:last-child .box .tab-name li {
+  float: left;
+  padding-right: 20px;
+}
+.nav .city li:last-child .box .tab-card {
+  overflow-y: scroll;
+  height: 100px;
+  margin-top: 10px;
+  display: none;
+}
+.nav .city li:last-child .box .tab-card li {
+  float: left;
+  padding-right: 15px;
+  line-height: 30px;
+}
+.nav .city li:last-child .box .active {
+  display: inline-block;
+  height: 39px;
+  border-bottom: 3px solid #d95eaa;
+}
+.nav .city li:last-child .box .active2 {
+  display: block;
+}
+.nav .category li:last-child {
+  position: relative;
+  float: right;
+  padding-right: 0;
+}
+.nav .category li:last-child .box2 {
+  width: 350px;
+  height: 90px;
+  position: absolute;
+  left: -290px;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  display: none;
+}
+.nav .category li:last-child .box2 ul li {
+  float: left;
+  padding-right: 20px;
+}
+.banner .w {
+  padding-bottom: 100px;
+  border-bottom: 1px dashed #ccc;
+}
+.banner .w .item {
+  width: 560px;
+  height: 237px;
+  background-color: #fff;
+  border-radius: 10px;
+  margin-top: 60px;
+  float: left;
+}
+.banner .w .item a {
+  display: inline-block;
+  position: relative;
+}
+.banner .w .item a img {
+  width: 180px;
+  position: absolute;
+  top: -20px;
+  margin-left: 20px;
+  border-radius: 3px;
+}
+.banner .w .item a div {
+  display: inline-block;
+  width: 280px;
+  margin-left: 20px;
+  margin-left: 240px;
+}
+.banner .w .item a div h2 {
+  padding-top: 30px;
+  color: #000;
+  padding-bottom: 20px;
+}
+.banner .w .item a div p {
+  font-size: 14px;
+  color: #989898;
+  line-height: 30px;
+}
+.banner .w .item a div p:nth-child(3) {
+  margin-bottom: 30px;
+}
+.banner .w .item a div .big {
+  font-size: 22px;
+  color: #d05e8c;
+}
+.banner .w .item a div .line {
+  padding: 0 10px;
+}
+.banner .w .item:nth-child(even) {
+  margin-left: 40px;
+}
+.footer {
+  height: 150px;
+  padding-top: 20px;
+}
+.footer a:hover {
+  color: skyblue;
+}
+.footer dl {
+  float: left;
+}
+.footer dl dd {
+  line-height: 35px;
+  font-size: 14px;
+  padding-right: 60px;
+}
+.footer h4 {
+  font-size: 16px;
+  color: #9ba0a8;
+}
+.footer .footer-left {
+  border-right: 1px solid #e5e8ee;
+}
+.footer .footer-center {
+  padding-left: 60px;
+  border-right: 1px solid #e5e8ee;
+}
+.footer .footer-right {
+  padding-top: 20px;
+}
+.footer .footer-right div {
+  float: left;
+}
+.footer .footer-right .phone {
+  margin-left: 60px;
+  position: relative;
+}
+.footer .footer-right .phone .yuan {
+  width: 58px;
+  height: 58px;
+  background: url(../img/jlt.png) -1091px -195px;
+  margin-bottom: 10px;
+}
+.footer .footer-right .phone .fang {
+  position: absolute;
+  top: -130px;
+  left: -30px;
+  border: 12px solid #fff;
+  display: none;
+}
+.footer .footer-right .weibo {
+  margin: 0 20px;
+  position: relative;
+}
+.footer .footer-right .weibo .yuan {
+  width: 58px;
+  height: 58px;
+  background: url(../img/jlt.png) -1091px -323px;
+  margin-bottom: 10px;
+}
+.footer .footer-right .weibo .fang {
+  position: absolute;
+  top: -130px;
+  left: -30px;
+  border: 12px solid #fff;
+  display: none;
+}
+.footer .footer-right .weixin {
+  position: relative;
+}
+.footer .footer-right .weixin .yuan {
+  width: 58px;
+  height: 58px;
+  background: url(../img/jlt.png) -1091px -66px;
+  margin-bottom: 10px;
+}
+.footer .footer-right .weixin .fang {
+  position: absolute;
+  top: -153px;
+  left: -150px;
+  border: 12px solid #fff;
+  display: none;
+}
+.parter .pic {
+  width: 100px;
+  height: 80px;
+  overflow: hidden;
+}
+.parter .pic img {
+  width: 100px;
+}
+.parter .txt {
+  padding-top: 10px;
+  padding-left: 20px;
+}
+.parter .txt p {
+  line-height: 25px;
+}
+.parter .txt p span {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background: url(../img/212.png);
+  background-size: 15px 15px;
+}
+.toTop {
+  display: none;
+  position: fixed;
+  right: 60px;
+  bottom: 100px;
+}
+.toTop a {
+  display: inline-block;
+  width: 78px;
+  height: 78px;
+  background-color: #fff;
+  box-shadow: 0 2px 22px 0 #d6bad8;
+  border-radius: 12px;
+  text-align: center;
+}
+.toTop a img {
+  width: 50%;
+  padding-top: 10px;
+}
