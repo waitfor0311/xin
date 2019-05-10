@@ -1,0 +1,431 @@
+/* 鬼畜分类 */
+.guichu-categories {
+  height: 28px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.guichu-categories li {
+  float: left;
+  margin-right: 40px;
+  height: 28px;
+  font-size: 14px;
+  color: #6d757a;
+  line-height: 28px;
+  display: block;
+  position: relative;
+  cursor: pointer;
+}
+.guichu-categories li:hover {
+  color: #00a1d6;
+}
+.guichu-categories .blue {
+  color: #00a1d6;
+}
+/* 推荐 */
+.nominate {
+  height: 220px;
+  margin-bottom: 30px;
+}
+.nominate .carousel {
+  width: 620px;
+}
+.nominate .carousel .visible-area {
+  position: relative;
+  width: 620px;
+  height: 220px;
+  overflow: hidden;
+  border-radius: 5px;
+  z-index: 99;
+}
+.nominate .carousel .visible-area .slider-control {
+  display: none;
+  position: absolute;
+  height: 30px;
+  width: 20px;
+  background: #991299;
+  top: 95px;
+  cursor: pointer;
+}
+.nominate .carousel .visible-area .slider-control-prev {
+  left: 0;
+  background: url(../img/icons.png) -535px -1686px no-repeat;
+}
+.nominate .carousel .visible-area .slider-control-next {
+  right: 0;
+  background: url(../img/icons.png) -535px -1623px no-repeat;
+}
+.nominate .carousel .visible-area .lunbo-shadow {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.nominate .carousel .visible-area .imgs {
+  position: absolute;
+  width: 3720px;
+}
+.nominate .carousel .visible-area .imgs li {
+  position: relative;
+  float: left;
+}
+.nominate .carousel .visible-area .imgs li p {
+  position: absolute;
+  bottom: 7px;
+  left: 10px;
+  z-index: 9;
+  font-size: 14px;
+  color: #fff;
+}
+.nominate .carousel .visible-area .trig {
+  position: absolute;
+  right: 10px;
+  bottom: 7px;
+  width: 150px;
+  height: 21px;
+  z-index: 999;
+}
+.nominate .carousel .visible-area .trig li {
+  float: left;
+  height: 18px;
+  width: 18px;
+  margin-left: 15px;
+  background: url(../img/icons.png) -855px -790px no-repeat;
+  cursor: pointer;
+}
+.nominate .carousel .visible-area .trig .first {
+  margin-left: 0px;
+}
+.nominate .carousel .visible-area .trig .on {
+  background: url(../img/icons.png) -855px -727px no-repeat;
+}
+.groom {
+  width: 540px;
+  height: 220px;
+}
+.groom .groom-module {
+  position: relative;
+  width: 160px;
+  height: 100px;
+  margin: 0 0 20px 20px;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 3px;
+}
+.groom .groom-module .card-mark {
+  position: absolute;
+  left: 0;
+  top: 68px;
+  width: 150px;
+  font-size: 12px;
+  height: 20px;
+  line-height: 20px;
+  padding: 10px 5px;
+  overflow: hidden;
+  color: #fff;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0.2) 35%, rgba(0, 0, 0, 0.6) 65%, rgba(0, 0, 0, 0.9));
+}
+.groom .groom-module .card-mark .author,
+.groom .groom-module .card-mark .play {
+  display: none;
+}
+.groom .groom-module .card-mark .title,
+.groom .groom-module .card-mark .author,
+.groom .groom-module .card-mark .play {
+  position: absolute;
+  top: 10px;
+}
+.groom .groom-module .card-mark .author {
+  display: none;
+  top: 60px;
+  color: #99a2aa;
+}
+.groom .groom-module .card-mark .play {
+  display: none;
+  top: 80px;
+  color: #99a2aa;
+}
+.groom .groom-module .card-mark-over {
+  position: absolute;
+  height: 100px;
+  width: 160px;
+  top: 0;
+  left: 0;
+  padding: 10px 5px 0;
+  background: rgba(0, 0, 0, 0.7);
+}
+.groom .groom-module .later-watch {
+  display: none;
+  position: absolute;
+  right: 5px;
+  bottom: 10px;
+  z-index: 9;
+}
+.energy {
+  height: 212px;
+}
+.energy .everyone-watching {
+  width: 900px;
+  height: 212px;
+}
+.energy .everyone-watching .headline {
+  padding-bottom: 20px;
+}
+.energy .everyone-watching .headline span {
+  font-size: 24px;
+}
+.energy .everyone-watching .storey .spread-module {
+  position: relative;
+  float: left;
+  height: 148px;
+  width: 160px;
+  margin: 0 20px 20px 0;
+  cursor: pointer;
+}
+.energy .everyone-watching .storey .spread-module .later-watch {
+  display: block;
+  position: absolute;
+  right: 5px;
+  bottom: 60px;
+  opacity: 0;
+  transition: opacity .3s;
+  z-index: 999;
+}
+.energy .everyone-watching .storey .spread-module .spread-module-main-img {
+  border-radius: 3px;
+}
+.energy .everyone-watching .storey .spread-module .mask-video {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: rgba(0, 0, 0, 0.2);
+  transition: opacity .3s;
+  z-index: 99;
+}
+.energy .everyone-watching .storey .spread-module .danmu {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100px;
+}
+.energy .everyone-watching .storey .spread-module .danmu .danmu-con {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.energy .everyone-watching .storey .spread-module .danmu .danmu-con p {
+  display: block;
+  position: absolute;
+  background: #993399;
+  border: 1px solid #000;
+  top: 10px;
+  width: 150px;
+  line-height: 1;
+  color: skyblue;
+  z-index: 99;
+}
+.energy .everyone-watching .storey .spread-module .t {
+  padding-top: 8px;
+  line-height: 20px;
+  transition: all .3s linear;
+}
+.energy .everyone-watching .storey .spread-module:hover .later-watch,
+.energy .everyone-watching .storey .spread-module:hover .mask-video {
+  opacity: 1;
+}
+.energy .everyone-watching .storey .spread-module:hover .t {
+  color: #00a1d6;
+}
+.energy .recent-hot {
+  width: 260px;
+  height: 209px;
+}
+.energy .recent-hot .headline {
+  padding: 0 0 20px;
+  height: 24px;
+}
+.energy .recent-hot .headline span {
+  font-size: 18px;
+  float: left;
+}
+.energy .recent-hot .hot-box ul li {
+  margin-bottom: 25px;
+  cursor: pointer;
+}
+.energy .recent-hot .hot-box ul li img {
+  float: left;
+  border-radius: 3px;
+  vertical-align: top;
+}
+.energy .recent-hot .hot-box ul li span {
+  padding: 2px 3px;
+  background: #ff8eb3;
+  border-radius: 3px;
+  float: left;
+  color: #fff;
+  margin-right: 5px;
+}
+.gg {
+  margin-top: 30px;
+}
+.gg .main-gg img {
+  width: 100%;
+}
+.guichu-guide .l-con {
+  width: 900px;
+}
+.guichu-guide .l-con .title {
+  padding: 20px 0;
+}
+.guichu-guide .l-con .title .main-t {
+  font-size: 24px;
+  margin-right: 20px;
+}
+.guichu-guide .l-con .title span {
+  margin-right: 10px;
+  cursor: pointer;
+}
+.guichu-guide .l-con .title span:hover {
+  color: #00a1d6;
+}
+.guichu-guide .l-con .video-box .video-module {
+  position: relative;
+  width: 160px;
+  height: 148px;
+  margin: 0 20px 20px 0;
+  float: left;
+  overflow: hidden;
+  cursor: pointer;
+}
+.guichu-guide .l-con .video-box .video-module .pic {
+  position: relative;
+  margin-bottom: 8px;
+  border-radius: 3px;
+}
+.guichu-guide .l-con .video-box .video-module .pic .main-pic img {
+  border-radius: 3px;
+}
+.guichu-guide .l-con .video-box .video-module .pic .mask {
+  position: absolute;
+  display: none;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: rgba(0, 0, 0, 0.3);
+}
+.guichu-guide .l-con .video-box .video-module .pic .dur {
+  position: absolute;
+  display: none;
+  bottom: 6px;
+  left: 6px;
+  color: #fff;
+  font-family: '微软雅黑';
+}
+.guichu-guide .l-con .video-box .video-module .pic .watch-later {
+  position: absolute;
+  display: none;
+  right: 6px;
+  bottom: 4px;
+}
+.guichu-guide .l-con .video-box .video-module .pic .crown {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 40px;
+  height: 24px;
+  background: url(../img/icons.png) -849px -148px no-repeat;
+}
+.guichu-guide .l-con .video-box .video-module .t {
+  line-height: 20px;
+  height: 40px;
+}
+.guichu-guide .l-con .video-box .video-module .num {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background: #fff;
+  line-height: 20px;
+  height: 20px;
+  color: #99a2aa;
+}
+.guichu-guide .l-con .video-box .video-module .num span {
+  display: inline-block;
+  width: 75px;
+  height: 14px;
+  overflow: hidden;
+  vertical-align: bottom;
+  line-height: 14px;
+}
+.guichu-guide .l-con .video-box .video-module .num .icon {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 5px;
+  width: 12px;
+  height: 12px;
+  background: url(../img/icons.png);
+}
+.guichu-guide .l-con .video-box .video-module .num .play i {
+  background-position: -282px -90px;
+}
+.guichu-guide .l-con .video-box .video-module .num .danmu-num i {
+  background-position: -282px -218px;
+}
+.guichu-guide .r-con {
+  height: 531px;
+  width: 260px;
+}
+.guichu-guide .r-con .title {
+  padding: 25px 0;
+}
+.guichu-guide .r-con .title h3 {
+  float: left;
+  font-size: 18px;
+  font-weight: 400;
+  margin-right: 15px;
+}
+.guichu-guide .r-con .title span {
+  display: inline-block;
+  margin: 4px 10px 0 0;
+}
+.guichu-guide .r-con .ranking li {
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.guichu-guide .r-con .ranking li .r-num {
+  display: inline-block;
+  padding: 2px 5px;
+  background: #f25d8e;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: bolder;
+  margin-right: 5px;
+}
+.guichu-guide .r-con .ranking li .grey {
+  background: #b8c0cc;
+}
+.guichu-guide .r-con .ranking li .preview {
+  vertical-align: top;
+}
+.guichu-guide .r-con .ranking li .r-detail {
+  width: 150px;
+  height: 50px;
+}
+.guichu-guide .r-con .ranking li .r-detail .r-point {
+  margin-top: 5px;
+  height: 12px;
+  color: #99a2aa;
+}
+.guichu-guide .r-con .see-more {
+  padding-top: 10px;
+}
+.guichu-guide .r-con .see-more a {
+  display: block;
+  background-color: #e5e9ef;
+  height: 24px;
+  line-height: 24px;
+  text-align: center;
+  border-radius: 3px;
+}

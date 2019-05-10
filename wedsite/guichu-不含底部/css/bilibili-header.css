@@ -1,0 +1,391 @@
+/* 顶部半透明区域开始 */
+.full-width {
+    height: 170px;
+    background-image: url(../img/top-bg.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+}
+
+.main-menu {
+    height: 42px;
+    line-height: 42px;
+
+}
+
+.main-menu a {
+    color: #222;
+    text-decoration: none;
+}
+
+.main-menu .icon-Z {
+    line-height: 1;
+    font-size: 26px;
+    font-weight: 700;
+    color: #00a1d6;
+    vertical-align: middle;
+}
+
+.main-menu .icon-Z::before {
+    line-height: 1;
+}
+
+.main-menu .icon-shouji1 {
+    color: #00a1d6;
+    font-size: 14px;
+}
+
+.main-menu .main-site img {
+    width: 18px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.nav-item {
+    position: relative;   
+    float: left;
+    font-size: 12px;
+    cursor: pointer;
+}
+.nav-item a {
+    display: inline-block;
+    padding: 0 7px;
+}
+.nav-item a:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.i-frame {
+    position: absolute;
+    left: 0;
+    top: 55px;
+    display: block;
+    z-index: 0;
+    opacity: 0;
+    transition: all 0.3s linear;
+    box-shadow: 0 0 3px #ccc;
+    cursor: pointer;
+}
+
+.animate {
+    display: block;
+    z-index: 999;
+    top: 40px;
+    opacity: 1;
+}
+
+.nav-item .i-frame img {
+    border-radius: 5px;
+}
+.nav-item #download-orcode {
+    left: -20px;
+    width: 259px;
+    height: 174px;
+    background: url(../img/orcode-frame.png);
+    box-shadow: none;
+}
+.app-orcode-box:after {
+    background: url(../img/app-orcode.png);
+    content: "";
+    position: absolute;
+    width: 97px;
+    height: 97px;
+    left: 82px;
+    top: 30px;
+}
+.contribute {
+    position: relative;
+    width: 68px;
+    height: 42px;
+    font-size: 14px;
+}
+.contribute .i-frame {
+    left: -270px;
+}
+.right .portrait {
+    margin-right: 15px;
+}
+.right .portrait a {
+    display: block;
+    position: relative;
+    height: 42px;
+}
+.right .portrait .noface {
+    position: absolute;
+    width: 32px;
+    border-radius: 16px;
+    vertical-align: middle;
+    top: 5px;
+    left: -9px;
+    transition: all 0.2s linear;
+    z-index: 9999;
+}
+.right .portrait:hover .noface {
+    transform: scale(2);
+    top: 20px;
+    z-index: 999;
+}
+.member {
+    left: -107px;
+}
+.dynamic {
+    left: calc(50% - 170px) !important;
+}
+.message-num {
+    position: absolute;
+    top: 0px;
+    right: -3px;
+    height: 14px;
+    width: 20px;
+    background: #f25d8f;
+    border-radius: 7px;
+    color: #fff;
+    line-height: 14px;
+    padding-left:3px ;
+    box-sizing: border-box;
+}
+.personal-info {
+    left: -120px;
+}
+.message {
+    left: calc(50% - 55px) !important;
+}
+.later {
+    left: -126px;
+}
+.collect {
+    left: -147px;
+}
+.history {
+    left: -180px;
+}
+.main-menu .b-link {
+    display: block;
+    height: 46px;
+    width: 100%;
+    background: #f45a8d;
+    text-align: center;
+    line-height: 42px;
+    color: #fff;
+    border-radius: 0 0 6px 6px;
+    text-decoration: none;
+}
+
+/* 顶部半透明区域完成 */
+/* 顶部搜索框部分开始 */
+.lower-con {
+    position: relative;
+}
+
+.search {
+    position: absolute;
+    top: 115px;
+    right: 0;
+    width: 340px;
+    height: 32px;
+    background: rgba(100, 100, 100, 0.5);
+    border-radius: 5px;
+    padding: 2px;
+
+}
+
+.search .ranking {
+    width: 69px;
+    height: 32px;
+    text-align: center;
+    line-height: 34px;
+    color: #e718c5;
+    margin-right: 3px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 5px;
+    font-size: 12px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.search .ranking:hover {
+    background: #fff;
+}
+
+.search .ranking .histogram {
+    display: inline-block;
+    vertical-align: middle;
+    height: 20px;
+    width: 20px;
+    background: url(../img/icons.png) -664px -662px no-repeat;
+}
+
+.search .search-keyword {
+    height: 32px;
+    width: 200px;
+    padding: 0 12px;
+    outline: none;
+    border: 0;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 5px 0 0 5px;
+}
+
+.search .search-submit {
+    width: 44px;
+    height: 32px;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.9);
+    border: 0;
+    border-radius: 0 5px 5px 0;
+}
+
+.search .search-submit span {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    background: url(../img/icons.png) -662px -727px no-repeat;
+}
+.search .bg-white {
+    background: #fff;
+}
+/* 顶部搜索框部分完成 */
+/* primary-menu 部分开始 */
+.primary-menu {
+    height: 50px;
+    padding-top: 8px;
+    border-bottom: 1px solid #e5e9ef;
+}
+
+.primary-menu li {
+    position: relative;
+    width: 48px;
+    height: 51px;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 6px;
+    float: left;
+    margin-right: 8px;
+    cursor: pointer;
+}
+.primary-menu .home {
+    text-align: left;
+    padding-top: 3px;
+    width: 24px;
+}
+
+.primary-menu .home .home-icon {
+    width: 22px;
+    height: 19px;
+    background: url(../img/icons.png) -660px -1174px no-repeat;
+}
+
+.primary-menu li .nav-num span {
+    display: inline-block;
+    background: #ffafc9;
+    padding: 1px 3px;
+    border-radius: 2px;
+    color: #fff;
+    transform: scale(.85);
+    font-family: '微软雅黑';
+    height: 12px;
+    line-height: 14px;
+    max-width: 28px;
+}
+
+.primary-menu li .nav-name {
+    margin-top: 2px;
+}
+
+.primary-menu li .sub-nav {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 44px;
+    background: #fff;
+    text-align: left;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px #aaa;
+    z-index: 999;
+
+}
+
+.primary-menu li .sub-nav li {
+    position: relative;
+    padding: 5px 15px 5px 15px;
+    box-sizing: border-box;
+    width: 120px;
+    height: 30px;
+    cursor: pointer;
+    margin: 0;
+    text-align: left;
+    
+}
+
+.primary-menu li .sub-nav li:hover {
+    background: #eee;
+}
+
+.sub-nav .left-arrow {
+    display: inline-block;
+    position: absolute;
+    left: 10px;
+    width: 5px;
+    height: 10px;
+    background: url(../img/icons2.png) 0px -1625px no-repeat;
+    margin-top: 5px;
+    vertical-align: top;
+    margin-right: 5px;
+}
+.sub-nav .right-arrow {
+    display: inline-block;
+    position: absolute;
+    left: 110px;
+    width: 5px;
+    height: 10px;
+    background: url(../img/icons2.png) 0px -1587px no-repeat;
+    margin-top: 4px;
+    vertical-align: top;
+    margin-right: 5px;
+    opacity: 0;
+}
+.sub-nav i {
+    position: absolute;
+    display: inline-block;
+    left: 28px;
+}
+.primary-menu .side-nav {
+    padding-top: 1px;
+}
+
+.primary-menu li .s-icon {
+    display: block;
+
+    width: 18px;
+    height: 18px;
+    margin: 3px auto 2px;
+}
+
+.zhuanlan {
+    background: url(../img/icons.png) -87px -1814px no-repeat;
+}
+
+.square {
+    background: url(../img/icons.png) -87px -2006px no-repeat;
+}
+
+.live {
+    background: url(../img/icons.png) -87px -1878px no-repeat;
+}
+
+.blackhouse {
+    background: url(../img/icons.png) -87px -1942px no-repeat;
+}
+
+.primary-menu .nav-gif {
+    padding-top: 6px;
+    margin: 0;
+    width: 62px;
+    height: 40px;
+
+}
+
+.primary-menu .nav-gif img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+/* primary-menu 部分结束 */
