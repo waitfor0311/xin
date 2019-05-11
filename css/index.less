@@ -1,0 +1,1287 @@
+.w {
+    width: 1170px;
+    margin: 0 auto;
+
+    //动画交互
+    .donghua-body-box {
+        position: relative;
+        cursor: pointer;
+
+        >p {
+            margin: 0;
+            font-size: 12px;
+            line-height: 20px;
+            //文本两行显示
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+            word-break: break-all;
+            overflow: hidden;
+        }
+
+        .bg {
+            position: absolute;
+            top: 0;
+            background-color: rgba(0, 0, 0, .3);
+
+            p {
+                height: 22px;
+                width: 100%;
+                position: relative;
+                top: 65px;
+
+                span {
+                    position: absolute;
+                    color: #fff;
+                    font-size: 12px;
+                    line-height: 12px;
+                    bottom: 0;
+                    left: 5px;
+                }
+
+                i {
+                    position: absolute;
+                    right: 5px;
+                    width: 22px;
+                    height: 22px;
+                    background: url(../images/icons.png) no-repeat -1366px -880px;
+                }
+            }
+        }
+
+    }
+
+    //视频区域右侧专栏交互事件
+    .donghua-body-right {
+        // position: relative;
+        // >:first-child {
+        //     i {
+        //         position: absolute;
+        //         right: 5px;
+        //         width: 22px;
+        //         height: 22px;
+        //         background: url(../images/icons.png) no-repeat -1366px -880px;
+        //     }
+        // }
+    }
+
+    //特别推荐
+    .tebietuijian-bottom-left-box {
+
+        i {
+            position: absolute;
+            right: 5px;
+            width: 22px;
+            height: 22px;
+            background: url(../images/icons.png) no-repeat -1366px -880px;
+        }
+    }
+
+    //推广动画交互
+    .generalize-bottom-left-test {
+        position: relative;
+        cursor: pointer;
+
+        .bg {
+            position: absolute;
+            top: 0;
+            background-color: rgba(0, 0, 0, .3);
+
+            p {
+                width: 100%;
+                position: relative;
+
+                span {
+                    position: absolute;
+                    color: #fff;
+                    font-size: 12px;
+                    line-height: 12px;
+                    bottom: 0;
+                    left: 5px;
+                }
+
+                i {
+                    position: absolute;
+                    right: 5px;
+                    width: 22px;
+                    height: 22px;
+                    background: url(../images/icons.png) no-repeat -1366px -880px;
+                }
+            }
+        }
+
+    }
+
+    // top动画交互
+    .swiper-right .swiper-right-box .item .active {
+        position: absolute !important;
+        border-radius: 5px;
+        width: 100% !important;
+        line-height: 1;
+        background-color: rgba(0, 0, 0, .5);
+        padding: 15px 5px 10px;
+        cursor: pointer;
+
+        .title {
+            position: absolute;
+            font-size: 12px;
+            top: 15px;
+            color: #fff;
+            margin-bottom: 5px;
+        }
+
+        div {
+            width: 100%;
+            font-size: 12px;
+            color: #99a2aa;
+            position: absolute;
+            top: 55px;
+
+            b {
+                display: block;
+                font-weight: 400;
+            }
+
+            b:first-child {
+                height: 20px;
+            }
+
+            b:last-child {
+                line-height: 1;
+            }
+
+            i {
+                position: absolute;
+                right: 10px;
+                bottom: -4px;
+                width: 22px;
+                height: 22px;
+                background: url(../images/icons.png) no-repeat -1366px -880px;
+            }
+        }
+    }
+
+
+    img {
+        width: 100%;
+    }
+
+    // 轮播图S
+    .swiper {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+
+        .swiper-left {
+            width: 48%;
+            height: 220px;
+            margin-right: 30px;
+
+            img {
+                width: 100%;
+                border-radius: 5px;
+            }
+        }
+
+        .swiper-right {
+            width: 48%;
+            height: 240px;
+            display: flex;
+
+            .swiper-right-box {
+                display: flex;
+                flex-direction: column;
+                line-height: 107px;
+
+                .swiper-right-top {
+                    display: flex;
+                    justify-content: space-between;
+                    line-height: 135px;
+
+                    .item {
+                        width: 32%;
+                        height: 46%;
+                        position: relative;
+
+                        img {
+                            border-radius: 5px;
+                        }
+
+                        span {
+                            width: 100%;
+                            height: 30px;
+                            line-height: 30px;
+                            color: #ffffff;
+                            text-align: center;
+                            font-size: 10px;
+                            position: absolute;
+                            top: 88px;
+                            background: rgba(0, 0, 0, 0.5);
+                        }
+                    }
+                }
+
+                .swiper-right-bottom {
+                    display: flex;
+                    justify-content: space-between;
+
+                    .item {
+                        width: 32%;
+                        height: 46%;
+                        position: relative;
+
+                        img {
+                            border-radius: 5px;
+                        }
+
+                        span {
+                            width: 100%;
+                            height: 30px;
+                            line-height: 30px;
+                            color: #ffffff;
+                            text-align: center;
+                            font-size: 10px;
+                            position: absolute;
+                            top: 73px;
+                            background: rgba(0, 0, 0, 0.5);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // 轮播图E
+    // 推广S
+    .generalize {
+        margin-top: 20px;
+
+        .generalize-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            margin-bottom: 10px;
+
+            .generalize-top-left {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                    width: 60px;
+                }
+
+                span {
+                    font-size: 30px;
+                }
+            }
+
+            .generalize-top-right {
+                padding: 15px 10px;
+                background-color: #ccc;
+                border-radius: 10px;
+                font-size: 13px;
+                line-height: 5px;
+            }
+        }
+
+        .generalize-bottom {
+            display: flex;
+            justify-content: space-between;
+
+            .generalize-bottom-left {
+                display: flex;
+                justify-content: space-between;
+                width: 73%;
+
+                .generalize-bottom-left-test {
+                    width: 23%;
+                    display: flex;
+                    flex-direction: column;
+
+                    span {
+                        margin: 4px;
+                        font-size: 12px;
+                    }
+                }
+            }
+
+            .generalize-bottom-right {
+                width: 24%;
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    // 推广E
+    // 测试S
+    .demo {
+        width: 100%;
+    }
+
+    // 测试E
+    // 正在直播S
+    .zhibo {
+        display: flex;
+        flex-direction: column;
+
+        .zhibo-title {
+            display: flex;
+            justify-content: space-between;
+            line-height: 100px;
+
+            .zhibo-title-left {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 855px;
+
+                .zhibo-title-left-zhibo {
+                    width: 30%;
+                    display: flex;
+                    align-items: center;
+
+                    img {
+                        width: 60px;
+                        height: 60px;
+                    }
+
+                    span {
+                        font-size: 30px;
+                    }
+                }
+
+                .zhibo-title-left-zaixian {
+                    span {
+                        color: skyblue;
+                    }
+                }
+
+                .zhibo-title-left-zhexie {
+                    span {
+                        color: skyblue;
+                    }
+                }
+
+                .zhibo-title-left-gengduo {
+                    border: 1px solid #ccc;
+                    padding: 5px 10px;
+                    border-radius: 5px;
+                    font-size: 10px;
+                    line-height: 15px;
+                    color: #ccc;
+                }
+            }
+
+            .zhibo-title-right {
+                width: 270px;
+            }
+        }
+
+        .zhibo-body {
+            display: flex;
+            justify-content: space-between;
+            margin-top: -20px;
+            margin-bottom: 10px;
+
+            .zhibo-body-left {
+                width: 855px;
+                height: 240px;
+                display: flex;
+                justify-content: flex-start;
+
+                .swiper-right-box {
+                    display: flex;
+                    flex-direction: column;
+                    width: 855px;
+
+                    .swiper-right-top {
+                        display: flex;
+                        justify-content: space-between;
+
+                        div {
+                            width: 200px;
+                            // height: 46%;
+                            position: relative;
+
+                            img {
+                                border-radius: 5px;
+                            }
+
+                            span {
+                                width: 100%;
+                                height: 30px;
+                                line-height: 30px;
+                                color: #ffffff;
+                                text-align: center;
+                                font-size: 10px;
+                                position: absolute;
+                                top: 85px;
+                                background: rgba(0, 0, 0, 0.5);
+                            }
+                        }
+                    }
+
+                    .swiper-right-bottom {
+                        display: flex;
+                        justify-content: space-between;
+                        margin-top: 10px;
+
+                        div {
+                            width: 200px;
+                            height: 10px;
+                            position: relative;
+
+                            img {
+                                border-radius: 5px;
+                            }
+
+                            span {
+                                width: 100%;
+                                height: 30px;
+                                line-height: 30px;
+                                color: #ffffff;
+                                text-align: center;
+                                font-size: 10px;
+                                position: absolute;
+                                top: 85px;
+                                background: rgba(0, 0, 0, 0.5);
+                            }
+                        }
+                    }
+                }
+            }
+
+            .zhibo-body-right {
+                display: flex;
+                width: 270px;
+                flex-direction: column;
+
+                .zhibo-body-right-ren {
+                    display: flex;
+                    margin-top: 10px;
+                    justify-content: space-between;
+
+                    .zhibo-body-right-ren-paiming {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin: 3px;
+                        height: 25px;
+                        border-radius: 3px;
+                        padding: 7px;
+                        background-color: #F25D8E;
+                    }
+
+                    .zhibo-body-right-ren-touxiang {
+                        width: 30px;
+                        height: 30px;
+                        margin: 3px;
+
+                        img {
+                            border-radius: 50%;
+                        }
+                    }
+
+                    .zhibo-body-right-ren-mingzi {
+                        display: flex;
+                        flex-direction: column;
+                        margin: 3px;
+
+                        span:first-child {
+                            font-size: 12px;
+                        }
+
+                        span:last-child {
+                            font-size: 10px;
+                            color: #ccc;
+                        }
+                    }
+
+                    .zhibo-body-right-ren-renshu {
+                        margin: 3px;
+
+                        span {
+                            color: #99A2AA;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // 正在直播E
+    // ******************* 第二天 *************************
+    // 动画S
+    .donghua {
+
+        // 标题部分
+        .donghua-top {
+            display: flex;
+            justify-content: space-between;
+            height: 60px;
+
+            .donghua-top-left {
+                width: 855px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                .donghua-top-left-title {
+                    img {
+                        width: 60px;
+                        height: 60px;
+                    }
+
+                    span {
+                        margin: 0 10px;
+                    }
+
+                    .donghua-top-left-title {
+                        line-height: 60px;
+                        font-size: 30px;
+                    }
+                }
+
+                .donghua-title-left-gengduo {
+                    border: 1px solid #ccc;
+                    padding: 5px 10px;
+                    border-radius: 5px;
+                    font-size: 10px;
+                    line-height: 15px;
+                    color: #ccc;
+                }
+            }
+
+            // 动画-标题-右-左边
+            .donghua-top-right {
+                width: 270px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                // 排行
+                .donghua-top-right-left {
+                    display: flex;
+                    align-items: center;
+
+                    div {
+                        font-size: 20px;
+                    }
+
+                    span {
+                        margin: 0 10px;
+                    }
+                }
+
+                // 三日
+                .donghua-top-right-right {
+                    div {
+                        text-align: center;
+                        border: 1px solid #ccc;
+                        width: 60px;
+                        height: 20px;
+                        border-radius: 5px;
+                        font-size: 10px;
+                        line-height: 20px;
+
+                        span {
+                            padding: 0px 5px;
+                            color: #ccc;
+                        }
+                    }
+                }
+            }
+        }
+
+        // 主体部分
+        .donghua-body {
+            display: flex;
+            justify-content: space-between;
+
+            // 主体-左 
+            .donghua-body-left {
+                width: 855px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+
+                // 一个视频盒子
+                .donghua-body-box {
+                    position: relative;
+                    width: 200px;
+                    height: 150px;
+                    margin-bottom: 10px;
+                    text-align: center;
+                    display: flex;
+                    flex-direction: column;
+                    font-size: 10px;
+
+                    img {
+                        padding-bottom: 5px;
+                        height: 100px;
+                        width: 200px;
+                    }
+
+                    // 播放量和评论量
+                    .donghua-body-box-text {
+                        overflow: hidden;
+                        height: 20px;
+                        width: 100%;
+                        position: absolute;
+                        bottom: 13px;
+                        z-index: 999;
+                        background-color: #fff;
+                        display: flex;
+                        justify-content: space-between;
+                        padding: 0 2px;
+
+                        span {
+                            line-height: 20px;
+                        }
+                    }
+
+                    .down {
+                        overflow: hidden;
+                        height: 20px;
+                        width: 100%;
+                        position: absolute;
+                        bottom: 13px;
+                        z-index: 999;
+                        background-color: #fff;
+                        display: flex;
+                        justify-content: space-between;
+                        padding: 0 2px;
+                        animation: down 0.3s linear forwards;
+
+                        span {
+                            line-height: 20px;
+                        }
+                    }
+
+                    .up {
+                        overflow: hidden;
+                        height: 0;
+                        width: 100%;
+                        position: absolute;
+                        bottom: 13px;
+                        z-index: 999;
+                        background-color: #fff;
+                        display: flex;
+                        justify-content: space-between;
+                        padding: 0 2px;
+                        animation: up 0.3s linear forwards;
+
+                        span {
+                            line-height: 20px;
+                        }
+                    }
+
+                    @keyframes down {
+                        form {}
+
+                        to {
+                            position: absolute;
+                            bottom: 13px;
+                            height: 0;
+                            line-height: 0;
+
+                        }
+                    }
+
+                    @keyframes up {
+                        form {}
+
+                        to {
+                            overflow: hidden;
+                            height: 20px;
+                            width: 100%;
+                            position: absolute;
+                            bottom: 13px;
+                            z-index: 999;
+                            background-color: #fff;
+                            display: flex;
+                            justify-content: space-between;
+                            padding: 0 2px;
+
+                        }
+                    }
+                }
+            }
+        }
+
+        // 动画-主体-右边
+        .donghua-body-right {
+            width: 270px;
+
+            //第一个
+            >:first-child {
+                
+                .donghua-body-right-quanbu-jianjie-title {
+                    
+                    //文本两行显示
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 2;
+                    word-break: break-all;
+                    overflow: hidden;
+                    
+                }
+
+                i {
+                    position: absolute;
+                    width: 22px;
+                    height: 22px;
+                    background: url(../images/icons.png) no-repeat -1366px -880px;
+                }
+            }
+            //不包括第一个
+            >.donghua-body-right-quanbu:not(:first-child) {
+
+                .donghua-body-right-quanbu-jianjie-title {
+                    white-space: nowrap;
+                    width: 20em;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+            }
+
+            .donghua-body-right-quanbu {
+                position: relative;
+                display: flex;
+                margin: 10px 0px;
+                cursor: pointer;
+
+                // .donghua-body-right-quanbu-jianjie-title {
+                //     white-space: nowrap;
+                //     width: 20em;
+                //     overflow: hidden;
+                //     text-overflow: ellipsis;
+                // }
+
+                // 弹出盒子
+                .active {
+                    position: absolute;
+                    width: 300px;
+                    height: 180px;
+                    padding: 0 10px;
+                    box-shadow: 0px 0px 2px 1px  rgb(153, 162, 170);
+                    background-color: #fff;
+                    display: block;
+                    color: rgb(153, 162, 170);
+                    border-radius: 5px;
+                    font-size: 10px;   
+
+                    >p:last-child {
+                        line-height: 30px;
+                        :not(:first-child) {
+                            margin-left: 15px;
+                            margin-right: 4px;
+                        }
+                    }
+                    .content {
+                        display: flex;
+                        padding: 10px 0;
+
+                        img {
+                            flex:1;
+                        }
+                        span {
+                            flex:2;
+                            display: -webkit-box;
+                            -webkit-box-orient: vertical;
+                            -webkit-line-clamp: 4;
+                            word-break: break-all;
+                            overflow: hidden;
+                        }
+                    }
+                    
+                    .hr {
+                        display: block;
+                        height: 0;
+                        border-bottom: 1px solid rgb(153, 162, 170);
+                    }
+                    h6 {
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
+                }
+
+                .donghua-body-right-quanbu-paiming {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin: 3px;
+                    height: 25px;
+                    border-radius: 3px;
+                    padding: 7px;
+                    background-color: #F25D8E;
+                }
+
+                img {
+                    width: 80px;
+                    height: 50px;
+                    border-radius: 10px;
+                    margin: 3px;
+                }
+
+                .donghua-body-right-quanbu-jianjie {
+                    display: flex;
+                    flex-direction: column;
+                    font-size: 12px;
+
+                    .donghua-body-right-quanbu-jianjie-pingfen {
+                        color: #ccc;
+                        margin: 3px;
+                    }
+                }
+            }
+
+            .donghua-body-right-quanbu-gengduo {
+                width: 270px;
+                height: 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #99A2AA;
+                border-radius: 10px;
+                cursor: pointer;
+
+                span {
+                    margin: 0 10px;
+                }
+            }
+        }
+    }
+
+    // 动画E
+    // 番剧S
+    .fanju {
+        .fanju-top {
+            display: flex;
+            justify-content: space-between;
+            height: 60px;
+
+            .fanju-top-left {
+                width: 855px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                .fanju-top-left-fanju {
+                    display: flex;
+                    align-items: center;
+
+                    img {
+                        width: 60px;
+                        height: 60px;
+                    }
+
+                    span {
+                        font-size: 30px;
+                        margin: 0 10px;
+                    }
+                }
+
+                .fanju-top-left-riqi {
+                    display: flex;
+                    justify-content: space-around;
+                    width: 420px;
+                    font-size: 20px;
+                    border-bottom: 1px solid #ccc;
+
+                    span {
+                        cursor: pointer;
+                    }
+                }
+
+                .fanju-top-left-gengduo {
+                    border: 1px solid #F25D8E;
+                    padding: 5px 10px;
+                    border-radius: 5px;
+                    font-size: 10px;
+                    line-height: 15px;
+                    color: #F25D8E;
+                }
+            }
+
+            // 动画-标题-右-左边
+            .fanju-top-right {
+                width: 270px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                // 排行
+                .fanju-top-right-left {
+                    display: flex;
+                    align-items: center;
+                    font-size: 20px;
+                }
+
+                // 三日
+                .fanju-top-right-right {
+                    div {
+                        text-align: center;
+                        border: 1px solid #ccc;
+                        width: 60px;
+                        height: 20px;
+                        border-radius: 5px;
+                        font-size: 10px;
+                        line-height: 20px;
+
+                        span {
+                            padding: 0px 5px;
+                            color: #ccc;
+                        }
+                    }
+                }
+            }
+        }
+
+        .fanju-bottom {
+            display: flex;
+
+            .fanju-bottom-left {
+                width: 855px;
+                height: 450px;
+                overflow: auto;
+                display: flex;
+                flex-wrap: wrap;
+                margin-right: 40px;
+                // justify-content: space-between;
+
+                .fanju-bottom-left-box {
+                    display: flex;
+                    width: 200px;
+                    height: 80px;
+                    margin: 20px 0;
+
+                    img {
+                        width: 80px;
+                        border-radius: 5px;
+                    }
+
+                    div {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        margin-left: 10px;
+
+                        span {
+                            display: block;
+                            width: 45px;
+                            background-color: #F25D8E;
+                            border-radius: 7px;
+                        }
+                    }
+                }
+            }
+
+            .fanju-body-right {
+                width: 270px;
+
+                // 全部
+                .fanju-body-right-quanbu {
+                    display: flex;
+                    margin: 10px 0px;
+                    cursor: pointer;
+
+                    .fanju-body-right-quanbu-paiming {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin: 3px;
+                        height: 25px;
+                        border-radius: 3px;
+                        padding: 7px;
+                        background-color: #F25D8E;
+                    }
+
+                    img {
+                        width: 80px;
+                        height: 50px;
+                        border-radius: 10px;
+                        margin: 3px;
+                    }
+
+                    .fanju-body-right-quanbu-jianjie {
+                        display: flex;
+                        flex-direction: column;
+                        font-size: 12px;
+
+                        .fanju-body-right-quanbu-jianjie-pingfen {
+                            color: #ccc;
+                            margin: 3px;
+                        }
+                    }
+                }
+
+                .fanju-body-right-quanbu-gengduo {
+                    width: 270px;
+                    height: 40px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: #99A2AA;
+                    border-radius: 10px;
+                    cursor: pointer;
+
+                    span {
+                        margin: 0 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    // 番剧E
+    //******************** 第三天 ********************
+
+    // 国创S
+    .guochuang-body-right {
+        width: 270px;
+        height: 320px;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .guochuang-body-right-quanbu-jianjie {
+        display: flex;
+        align-items: center;
+        font-size: 13px;
+
+        span {
+            color: #ccc;
+            font-size: 12px;
+        }
+    }
+
+    .guochuang-bottom-right {
+        margin-top: 30px;
+
+        img {
+            border-radius: 10px;
+        }
+    }
+
+    // 国创E
+    // 原创S
+    #yuanchuang-top-left-title {
+        margin-left: 0px;
+        font-size: 20px;
+    }
+
+    // 原创E
+
+    //******************** 第四天 ********************
+
+    // 专栏S
+    .zhuanlan-top-left {
+        display: flex;
+        width: 855px;
+        align-items: center;
+        justify-content: space-between;
+
+        .zhuanlan-top-left-title {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            img {
+                width: 60px;
+                height: 60px;
+            }
+
+            span {
+                font-size: 30px;
+            }
+        }
+
+        .zhuanlan-title-left-button {
+            display: flex;
+
+            div {
+                padding: 3px 15px;
+                border: 1px solid #ccc;
+                border-radius: 10px;
+                margin: 0 10px;
+                font-size: 13px;
+            }
+        }
+    }
+
+    .zhuanlan-bottom-left {
+        display: flex;
+        width: 855px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .zhuanlan-bottom-left-box {
+            width: 300px;
+            display: flex;
+
+            img {
+                width: 120px;
+                border-radius: 10px;
+                height: 80px;
+            }
+
+            .zhuanlan-bottom-left-box-right {
+                margin: 10px;
+                font-size: 11px;
+
+                .zhuanlan-bottom-left-box-right-bofang {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: 10px;
+                    color: #ccc;
+                }
+            }
+        }
+    }
+
+    // 专栏E
+
+    // 特别推荐S
+    .tebietuijian-bottom {
+        display: flex;
+        
+        justify-content: space-between;
+
+        .tebietuijian-bottom-left {
+            width: 855px;
+            height: 180px;
+            display: flex;
+            justify-content: space-between;
+
+            .tebietuijian-bottom-left-box {
+                width: 200px;
+                font-size: 14px;
+                position: relative;
+
+                .donghua-bottom-left-box-touxiang {
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    position: absolute;
+                    top: 90px;
+                    left: 10px;
+                    border: 2px solid #fff;
+                    overflow: hidden;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+
+                img {
+                    width: 100%;
+                    border-radius: 10px;
+                }
+
+                .donghua-bottom-left-box-text {
+
+                    // margin-top: 10px;
+                    .donghua-bottom-left-box-text-name {
+                        margin-left: 50px;
+                    }
+
+                    .donghua-bottom-left-box-text-tuijain {
+                        color: #ccc;
+                        font-size: 10px;
+                    }
+
+                    p {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+
+        .tebietuijian-body-right {
+            width: 270px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                border-radius: 5px;
+            }
+        }
+    }
+
+    // 特别推荐E
+}
+
+// 楼梯S
+.louti {
+    width: 50px;
+    background-color: #F6F9FA;
+    position: fixed;
+    border: 1px solid #ccc;
+    top: 232px;
+    left: 1350px;
+    border-radius: 5px;
+
+    .active {
+        background-color: #00A1D6;
+        color: #fff;
+    }
+    li {
+        cursor: pointer;
+        height: 27px;
+        text-align: center;
+        line-height: 27px;
+        font-size: 12px;
+    }
+
+    li:hover {
+        background-color: #00A1D6;
+        color: #fff;
+    }
+
+    li:last-child {
+        display: flex;
+        flex-direction: column;
+        height: 50px;
+
+        span:first-child {
+            font-size: 20px;
+            color: #99A2AA;
+        }
+
+        span:last-child {
+            font-size: 10px;
+        }
+    }
+}
+
+// 楼梯E
+
+// 向上箭头S
+.xiangshang {
+    position: fixed;
+    bottom: -100%;
+    left: 1350px;
+    background: #F6F9FA;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    span {
+        color: #99A2AA;
+        font-size: 20px;
+    }
+}
+
+// 向上箭头E

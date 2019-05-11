@@ -1,12 +1,5191 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+	<meta charset="utf-8">
+	<title>哔哩哔哩 (゜-゜)つロ 干杯~-bilibili</title>
+	<link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./bootstrap/css/bootstrap-theme.css">
+	<link rel="stylesheet" href="./css/base.css" />
+	<link rel="stylesheet" href="./css/index.css">
+	<link rel="stylesheet" href="dist/css/swiper.min.css">
+	<link rel="stylesheet" href="./css/zhuye/bilibili-header.css">
+	<link rel="stylesheet" href="./css/zhuye/dibu.css">
+	<link rel="stylesheet" href="./css/zhuye/guichu.css">
+	<link rel="icon" href="./favicon.ico">
+	<link rel="stylesheet" href="./fonts/iconfont.css">
+	<script>
+		window.onload = function(){
+			console.log("%c%s","color: red;",[
+    "                   _ooOoo_",
+    "                  o8888888o",
+    "                  88\" . \"88",
+    "                  (| -_- |)",
+    "                  O\\  =  /O",
+    "               ____/`---'\\____",
+    "             .'  \\\\|     |//  `.",
+    "            /  \\\\|||  :  |||//  \\",
+    "           /  _||||| -:- |||||-  \\",
+    "           |   | \\\\\\  -  /// |   |",
+    "           | \\_|  ''\\---/''  |   |",
+    "           \\  .-\\__  `-`  ___/-. /",
+    "         ___`. .'  /--.--\\  `. . __",
+    "      .\"\" '<  `.___\\_<|>_/___.'  >'\"\".",
+    "     | | :  `- \\`.;`\\ _ /`;.`/ - ` : | |",
+    "     \\  \\ `-.   \\_ __\\ /__ _/   .-` /  /",
+    "======`-.____`-.___\\_____/___.-`____.-'======",
+    "                   `=---='",
+    "^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+    "         佛祖保佑       永无BUG"
+].join('\n'));
+			// console.log(,"警告");
+		}
+	</script>
+	<script src="dist/js/swiper.min.js"></script>
 </head>
+
 <body>
-   <p>redtrfcyuvghbi</p> 
+	<!-- 头部S -->
+	<div class="header">
+		<div class="full-width">
+			<div class="main-menu">
+				<div class="wrap">
+					<div class="left">
+						<ul>
+							<li class="fl nav-item main-site" title="主站">
+								<a href="#">
+									<img src="./images/zhuye-tw/bilibili-logo.jpg" alt="">
+
+
+									主站
+								</a>
+							</li>
+							<li class="fl nav-item" title="来探索bilibili音乐的世界吧~"><a href="#">音频</a></li>
+							<li class="fl nav-item">
+								<a href="#">游戏中心</a>
+								<div class="i-frame" id="game-center">
+									<img src="./images/zhuye-tw/gamecenter-con.jpg" alt="">
+								</div>
+							</li>
+							<li class="fl nav-item"><a href="#">直播</a>
+								<div class="i-frame">
+									<img src="./images/zhuye-tw/live.jpg" alt="">
+								</div>
+							</li>
+							<li class="fl nav-item"><a href="#" title="会员购">会员购</a></li>
+							<li class="fl nav-item"><a href="#" title="漫画">漫画</a></li>
+							<li class="fl nav-item"><a href="#">BML</a></li>
+							<li class="fl nav-item">
+								<a href="#">
+									<span class="iconfont  icon-shouji1
+									"></span>
+									下载APP</a>
+								<div class="i-frame app-orcode-box" id="download-orcode">
+
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="contribute fr">
+						<a href="#" class="b-link">投稿</a>
+						<div class="i-frame">
+							<img src="./images/zhuye-tw/contribute.png" alt="">
+						</div>
+					</div>
+					<div class="right fr">
+						<ul>
+							<li class="portrait nav-item">
+								<div class="i-frame personal-info">
+									<img src="./images/zhuye-tw/personal-info.png" alt="">
+								</div>
+								<a href="#">
+									<img src="./images/zhuye-tw/noface.gif" class="noface">
+								</a>
+
+							</li>
+
+							<li class="nav-item">
+								<a href="#">大会员</a>
+								<div class="i-frame member">
+									<img src="./images/zhuye-tw/member.jpg" alt="">
+								</div>
+							</li>
+							<li class="nav-item">
+								<a href="#">消息</a>
+								<div class="message-num">
+									48
+								</div>
+								<div class="i-frame message">
+									<img src="./images/zhuye-tw/message.png" alt="">
+								</div>
+							</li>
+							<li class="nav-item">
+								<a href="#">动态</a>
+								<div class="i-frame dynamic">
+									<img src="./images/zhuye-tw/dynamic.png" alt="">
+								</div>
+							</li>
+							<li class="nav-item">
+								<a href="#">稍后再看</a>
+								<div class="i-frame later">
+									<img src="./images/zhuye-tw/later.png" alt="">
+								</div>
+							</li>
+							<li class="nav-item">
+								<a href="#">收藏</a>
+								<div class="i-frame collect">
+									<img src="./images/zhuye-tw/collect.png" alt="">
+								</div>
+							</li>
+							<li class="nav-item">
+								<a href="#">历史</a>
+								<div class="i-frame history">
+									<img src="./images/zhuye-tw/history.png" alt="">
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="lower-con wrap">
+						<div class="search fr">
+							<div class="ranking fl">
+								<span class="histogram"></span>
+								<span>排行榜</span>
+							</div>
+
+							<input type="text" class="search-keyword fl" placeholder="大碗宽面，真香！">
+							<button class="search-submit fl" type="submit">
+								<span></span>
+							</button>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="wrap">
+			<div class="primary-menu">
+				<ul class="nav-menu">
+					<li class="home">
+						<a href="#">
+							<div class="home-icon">
+
+							</div>
+							<div class="nav-name">
+								首页
+							</div>
+						</a>
+					</li>
+					<li class="channel">
+						<a href="#">
+							<div class="nav-num">
+								<span>20</span>
+							</div>
+							<div class="nav-name">
+								动画
+							</div>
+						</a>
+						<ul class="sub-nav">
+							<li> <span class="left-arrow"></span>
+								<i> MAD·AMV</i>
+								<span class="right-arrow"></span>
+							</li>
+							<li> <span class="left-arrow"></span>
+								<i>MMD·3D</i>
+								<span class="right-arrow"></span>
+							</li>
+							<li> <span class="left-arrow"></span>
+								<i>短片·手书</i>
+								<span class="right-arrow"></span>
+							</li>
+							<li> <span class="left-arrow"></span>
+								<i>综合</i>
+								<span class="right-arrow"></span>
+							</li>
+						</ul>
+					</li>
+					<li class="channel">
+						<a href="#">
+							<div class="nav-num">
+								<span>89</span>
+							</div>
+							<div class="nav-name">
+								番剧
+							</div>
+						</a>
+						<ul class="sub-nav">
+							<li> <span class="left-arrow"></span>
+								<i>连载动画</i>
+
+								<span class="right-arrow"></span></li>
+							<li> <span class="left-arrow"></span>
+								<i>完结动画</i>
+
+								<span class="right-arrow"></span></li>
+							<li> <span class="left-arrow"></span>
+								<i>咨询</i>
+
+								<span class="right-arrow"></span></li>
+							<li> <span class="left-arrow"></span>
+								<i>新番时间表</i>
+
+								<span class="right-arrow"></span></li>
+							<li> <span class="left-arrow"></span>
+								<i>官方延伸</i>
+
+								<span class="right-arrow"></span></li>
+						</ul>
+					</li>
+					<li class="channel">
+						<a href="#">
+							<div class="nav-num">
+								<span>855</span>
+							</div>
+							<div class="nav-name">
+								国创
+							</div>
+						</a>
+						<ul class="sub-nav">
+							<li> <span class="left-arrow"></span>
+								<i>国产动画</i>
+								<span class="right-arrow"></span>
+							</li>
+							<li> <span class="left-arrow"></span>
+								<i>咨询</i>
+								<span class="right-arrow"></span>
+							</li>
+							<li> <span class="left-arrow"></span>
+								<i>新番时间表</i>
+								<span class="right-arrow"></span>
+							</li>
+							<li> <span class="left-arrow"></span>
+								<i>布袋戏</i>
+								<span class="right-arrow"></span>
+							</li>
+						</ul>
+					</li>
+					<li class="channel">
+						<a href="#">
+							<div class="nav-num">
+								<span>433</span>
+							</div>
+							<div class="nav-name">
+								音乐
+							</div>
+						</a>
+						<ul class="sub-nav">
+							<li> <span class="left-arrow"></span>
+								<i>原创</i>
+								<span class="right-arrow"></span>
+							</li>
+							<li> <span class="left-arrow"></span>
+								<i> 翻唱</i>
+								<span class="right-arrow"></span>
+							</li>
+							<li> <span class="left-arrow"></span>
+								<i>VOCALOID</i>
+								<span class="right-arrow"></span>
+							</li>
+							<li> <span class="left-arrow"></span>
+								<i>演奏</i>
+								<span class="right-arrow"></span>
+							</li>
+							<li> <span class="left-arrow"></span>
+								<i>MV</i>
+								<span class="right-arrow"></span>
+							</li>
+							<li> <span class="left-arrow"></span>
+								<i>音乐现场</i>
+								<span class="right-arrow"></span>
+							</li>
+						</ul>
+					</li>
+					<li class="channel">
+						<a href="#">
+							<div class="nav-num">
+								<span>621</span>
+							</div>
+							<div class="nav-name">
+								舞蹈
+							</div>
+						</a>
+						<ul class="sub-nav">
+							<li> <span class="left-arrow"></span>
+								<i>宅舞</i>
+								<span class="right-arrow"></span>
+							</li>
+							<li> <span class="left-arrow"></span>
+								<i>三次元舞蹈</i>
+								<span class="right-arrow"></span>
+							</li>
+							<li> <span class="left-arrow"></span>
+								<i>舞蹈教程</i>
+								<span class="right-arrow"></span>
+							</li>
+						</ul>
+					</li>
+					<li class="channel">
+						<a href="#">
+							<div class="nav-num">
+								<span>999+</span>
+							</div>
+							<div class="nav-name">
+								游戏
+							</div>
+						</a>
+						<ul class="sub-nav">
+							<li> <span class="left-arrow"></span>
+								<i>单机游戏</i>
+								<span class="right-arrow"></span>
+							</li>
+							<li> <span class="left-arrow"></span>
+								<i>网络游戏</i>
+								<span class="right-arrow"></span>
+							</li>
+							<li> <span class="left-arrow"></span>
+								<i>手机游戏</i>
+								<span class="right-arrow"></span>
+							</li>
+							<li> <span class="left-arrow"></span>
+								<i>电子竞技</i>
+								<span class="right-arrow"></span>
+							</li>
+							<li> <span class="left-arrow"></span>
+								<i> 音游</i>
+								<span class="right-arrow"></span>
+							</li>
+						</ul>
+					</li>
+					<li class="channel">
+						<a href="#">
+							<div class="nav-num">
+								<span>483</span>
+							</div>
+							<div class="nav-name">
+								科技
+							</div>
+						</a>
+						<ul class="sub-nav">
+							<li> <span class="left-arrow"></span>
+								<i>趣味科普人文</i>
+								<span class="right-arrow"></span>
+							</li>
+							<li> <span class="left-arrow"></span>
+								<i>野生技术协会</i>
+								<span class="right-arrow"></span>
+							</li>
+							<li> <span class="left-arrow"></span>
+								<i>汽车</i>
+								<span class="right-arrow"></span>
+							</li>
+							<li> <span class="left-arrow"></span>
+								<i>星海</i>
+								<span class="right-arrow"></span>
+							</li>
+							<li> <span class="left-arrow"></span>
+								<i>机械</i>
+								<span class="right-arrow"></span>
+
+
+							</li>
+						</ul>
+					</li>
+					<li class="channel">
+						<a href="#">
+							<div class="nav-num">
+								<span>664</span>
+							</div>
+							<div class="nav-name">
+								数码
+							</div>
+						</a>
+						<ul class="sub-nav">
+							<li> <span class="left-arrow"></span>
+								<i>手机平板</i>
+								<span class="right-arrow"></span>
+							</li>
+							<li> <span class="left-arrow"></span>
+								<i>电脑装机</i>
+								<span class="right-arrow"></span>
+							</li>
+							<li> <span class="left-arrow"></span>
+								<i>摄影摄像</i>
+								<span class="right-arrow"></span>
+							</li>
+							<li> <span class="left-arrow"></span>
+								<i>影音智能</i>
+								<span class="right-arrow"></span>
+							</li>
+						</ul>
+					</li>
+					<li class="channel">
+						<a href="#">
+							<div class="nav-num">
+								<span>999+</span>
+							</div>
+							<div class="nav-name">
+								生活
+							</div>
+						</a>
+						<ul class="sub-nav">
+							<li> <span class="left-arrow"></span>
+								<i>搞笑</i>
+								<span class="right-arrow"></span>
+							</li>
+							<li> <span class="left-arrow"></span>
+								<i>日常</i>
+								<span class="right-arrow"></span>
+							</li>
+							<li> <span class="left-arrow"></span>
+								<i>手工</i>
+								<span class="right-arrow"></span>
+							</li>
+							<li> <span class="left-arrow"></span>
+								<i>绘画</i>
+								<span class="right-arrow"></span>
+							</li>
+							<li> <span class="left-arrow"></span>
+								<i>美食圈</i>
+								<span class="right-arrow"></span>
+							</li>
+							<li> <span class="left-arrow"></span>
+								<i>其他</i>
+								<span class="right-arrow"></span>
+							</li>
+						</ul>
+					</li>
+					<li class="channel">
+						<a href="#">
+							<div class="nav-num">
+								<span>94</span>
+							</div>
+							<div class="nav-name">
+								鬼畜
+							</div>
+						</a>
+						<ul class="sub-nav">
+							<li>
+								<span class="left-arrow"></span>
+								<i>鬼畜调教</i>
+								<span class="right-arrow"></span>
+							</li>
+							<li>
+								<span class="left-arrow"></span>
+								<i>音MAD</i>
+								<span class="right-arrow"></span>
+							</li>
+							<li>
+								<span class="left-arrow"></span>
+								<i>人力V</i>
+								<span class="right-arrow"></span>
+							</li>
+							<li>
+								<span class="left-arrow"></span>
+								<i>鬼畜教程</i>
+								<span class="right-arrow"></span>
+							</li>
+						</ul>
+					</li>
+					<li class="channel">
+						<a href="#">
+							<div class="nav-num">
+								<span>144</span>
+							</div>
+							<div class="nav-name">
+								时尚
+							</div>
+						</a>
+						<ul class="sub-nav">
+							<li>
+								<span class="left-arrow"></span>
+								<i>美妆</i>
+								<span class="right-arrow"></span>
+							</li>
+							<li>
+								<span class="left-arrow"></span>
+								<i>服饰</i>
+								<span class="right-arrow"></span>
+							</li>
+							<li>
+								<span class="left-arrow"></span>
+								<i>健身</i>
+								<span class="right-arrow"></span>
+							</li>
+							<li>
+								<span class="left-arrow"></span>
+								<i>T台</i>
+								<span class="right-arrow"></span>
+							</li>
+							<li>
+								<span class="left-arrow"></span>
+								<i>风向标</i>
+								<span class="right-arrow"></span>
+							</li>
+						</ul>
+					</li>
+					<li class="channel">
+						<a href="#">
+							<div class="nav-num">
+								<span>116</span>
+							</div>
+							<div class="nav-name">
+								广告
+							</div>
+						</a>
+					</li>
+					<li class="channel">
+						<a href="#">
+							<div class="nav-num">
+								<span>253</span>
+							</div>
+							<div class="nav-name">
+								娱乐
+							</div>
+						</a>
+						<ul class="sub-nav">
+							<li>
+								<span class="left-arrow"></span>
+								<i>综艺</i>
+								<span class="right-arrow"></span>
+							</li>
+							<li>
+								<span class="left-arrow"></span>
+								<i>明星</i>
+								<span class="right-arrow"></span>
+							</li>
+						</ul>
+					</li>
+					<li class="channel">
+						<a href="#">
+							<div class="nav-num">
+								<span>15</span>
+							</div>
+							<div class="nav-name">
+								影视
+							</div>
+						</a>
+						<ul class="sub-nav">
+							<li>
+								<span class="left-arrow"></span>
+								<i>影视杂谈</i>
+								<span class="right-arrow"></span>
+							</li>
+							<li>
+								<span class="left-arrow"></span>
+								<i>影视剪辑</i>
+								<span class="right-arrow"></span>
+							</li>
+							<li>
+								<span class="left-arrow"></span>
+								<i>短片</i>
+								<span class="right-arrow"></span>
+							</li>
+							<li>
+								<span class="left-arrow"></span>
+								<i>特摄</i>
+								<span class="right-arrow"></span>
+							</li>
+							<li>
+								<span class="left-arrow"></span>
+								<i>预告·咨询</i>
+								<span class="right-arrow"></span>
+							</li>
+						</ul>
+					</li>
+					<li class="channel">
+
+						<a href="#">
+							<div class="nav-num">
+								<span>25</span>
+							</div>
+							<div class="nav-name">
+								放映厅
+							</div>
+						</a>
+						<ul class="sub-nav">
+							<li>
+								<span class="left-arrow"></span>
+								<i>记录片</i>
+								<span class="right-arrow"></span>
+							</li>
+							<li><span class="left-arrow"></span>
+								<i>电影</i>
+								<span class="right-arrow"></span>
+							</li>
+							<li>
+								<span class="left-arrow"></span>
+								<i>电视剧</i>
+								<span class="right-arrow"></span>
+							</li>
+						</ul>
+					</li>
+					<li class="side-nav">
+						<i class="zhuanlan s-icon"></i>
+						<span>专栏</span>
+					</li>
+					<li class="side-nav">
+						<i class="square s-icon"></i>
+						<span>广场</span>
+					</li>
+					<li class="side-nav">
+						<i class="live s-icon"></i>
+						<span>直播</span>
+					</li>
+					<li class="side-nav">
+						<i class="blackhouse s-icon"></i>
+						<span>小黑屋</span>
+					</li>
+					<li class="nav-gif">
+						<img src="./images/zhuye-tw/hunger.gif" alt="">
+					</li>
+				</ul>
+			</div>
+
+		</div>
+	</div>
+	<!-- 头部E -->
+	<div class="wrap">
+		<!-- 轮播图S -->
+		<div class="main-con">
+			<div class="nominate">
+				<div class="carousel fl">
+					<div class="visible-area">
+						<ul class="imgs">
+							<li>
+								<a href="#">
+									<img src="./images/zhuye-tw/lunbo (1).webp" alt="">
+									<p>你偷看我！</p>
+
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="./images/zhuye-tw/lunbo (2).webp" alt="">
+									<p>浪子与女侠，侠盗与捕快</p>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="./images/zhuye-tw/lunbo (3).webp" alt="">
+									<p>四月猛男必看！</p>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="./images/zhuye-tw/lunbo (4).webp" alt="">
+									<p>你看这个面筋它又长又宽</p>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="./images/zhuye-tw/lunbo (5).webp" alt="">
+									<p>致敬</p>
+								</a>
+							</li>
+							<!-- 为了实现无缝滚动，复制一份第一个放到最后 -->
+							<li>
+								<a href="#">
+									<img src="./images/zhuye-tw/lunbo (1).webp" alt="">
+									<p>你偷看我！</p>
+
+								</a>
+							</li>
+						</ul>
+						<img src="./images/zhuye-tw/lunbo-shadow.png" class="lunbo-shadow">
+						<ul class="trig">
+							<li class="on first"></li>
+							<li class=""></li>
+							<li class=""></li>
+							<li class=""></li>
+							<li class=""></li>
+						</ul>
+						<div class="slider-control slider-control-prev"></div>
+						<div class="slider-control slider-control-next"></div>
+					</div>
+				</div>
+				<div class="groom fr">
+					<div class="groom-module fl">
+						<img src="./images/zhuye-tw/watch-later.png" class="later-watch">
+						<img src="./images/zhuye-tw/nominate-laolei.webp" alt="" class="lazy-img">
+						<div class="card-mark">
+							<p class="title">【LexBurner】老蕾很忙</p>
+							<p class="author">up主：冰攻厂BeSo</p>
+							<p class="play">播放：46.7万</p>
+						</div>
+
+					</div>
+					<div class="groom-module fl">
+						<img src="./images/zhuye-tw/watch-later.png" class="later-watch">
+						<img src="./images/zhuye-tw/nominate-wosuanle.webp" alt="" class="lazy-img">
+						<div class="card-mark">
+							<p class="title">【DNF】我酸了</p>
+							<p class="author">up主：小巨人猪大星</p>
+							<p class="play">播放：19.6万</p>
+						</div>
+
+					</div>
+					<div class="groom-module fl">
+						<img src="./images/zhuye-tw/watch-later.png" class="later-watch">
+						<img src="./images/zhuye-tw/nominate-wajuejifuxi.webp" alt="" class="lazy-img">
+						<div class="card-mark">
+							<p class="title">【宁王X阿水】挖掘机副系点什么？？？！！！</p>
+							<p class="author">up主：那年的黄昏</p>
+							<p class="play">播放：22.3万</p>
+						</div>
+
+					</div>
+					<div class="groom-module fl">
+						<img src="./images/zhuye-tw/watch-later.png" class="later-watch">
+						<img src="./images/zhuye-tw/nominate-yiwantexiao.webp" alt="" class="lazy-img">
+						<div class="card-mark">
+							<p class="title">［亿万级特效］猫和老鼠鬼畜配音之打♂吔风波</p>
+							<p class="author">up主：6老铁2333</p>
+							<p class="play">播放：28.0万</p>
+						</div>
+
+					</div>
+					<div class="groom-module fl">
+						<img src="./images/zhuye-tw/watch-later.png" class="later-watch">
+						<img src="./images/zhuye-tw/nominate-bingmingweiji.webp" alt="" class="lazy-img">
+						<div class="card-mark">
+							<p class="title"> 【菜虚鲲】 病名为鸡</p>
+							<p class="author"> up主：马上就Skr了</p>
+							<p class="play"> 播放：3.3万</p>
+						</div>
+
+					</div>
+					<div class="groom-module fl">
+						<img src="./images/zhuye-tw/watch-later.png" class="later-watch">
+						<img src="./images/zhuye-tw/nominate-lvse.webp" alt="" class="lazy-img">
+						<div class="card-mark">
+							<p class="title">超虐慎入【绿色】出师未捷·····已履约定</p>
+							<p class="author">up主：苍燃老贼</p>
+							<p class="play">播放：6306 </p>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 轮播图E -->
+	</div>
+
+	<div class="w">
+
+
+		<!-- 推广S -->
+		<div class="generalize">
+			<div class="generalize-top">
+				<div class="generalize-top-left">
+					<img src="./images/logo.png" alt="" srcset="">
+					<span>推广</span>
+				</div>
+				<div class="generalize-top-right">
+					<span><a>在线人数：3675388</a></span>
+					|
+					<span><a>最新投稿：1456</a></span>
+				</div>
+			</div>
+			<div class="generalize-bottom">
+				<div class="generalize-bottom-left">
+					<div class="generalize-bottom-left-test">
+						<img src="./images/generalize.jpg" alt="">
+						<span>GAMEBOY30周年，任天堂表示这个领域一个能打的都没有</span>
+					</div>
+					<div class="generalize-bottom-left-test">
+						<img src="./images/generalize.jpg" alt="">
+						<span>GAMEBOY30周年，任天堂表示这个领域一个能打的都没有</span>
+					</div>
+					<div class="generalize-bottom-left-test">
+						<img src="./images/generalize.jpg" alt="">
+						<span>GAMEBOY30周年，任天堂表示这个领域一个能打的都没有</span>
+					</div>
+					<div class="generalize-bottom-left-test">
+						<img src="./images/generalize.jpg" alt="">
+						<span>GAMEBOY30周年，任天堂表示这个领域一个能打的都没有</span>
+					</div>
+				</div>
+				<div class="generalize-bottom-right">
+					<img src="./images/generalize-right.jpg" alt="" srcset="">
+				</div>
+			</div>
+		</div>
+		<!-- 推广E -->
+		<!-- 测试S -->
+		<div class="demo">
+			<img src="./images/demo.jpg" alt="" srcset="">
+		</div>
+		<!-- 测试E -->
+
+		<!-- 正在直播S -->
+		<div class="zhibo lt">
+			<div class="zhibo-title">
+				<div class="zhibo-title-left">
+					<div class="zhibo-title-left-zhibo">
+						<img src="./images/logo.png" alt="" srcset="">
+						<span>正在直播</span>
+					</div>
+					<div class="zhibo-title-left-zaixian">
+						<div>
+							当前共有<span>6504</span>在线直播
+						</div>
+					</div>
+					<div class="zhibo-title-left-zhexie">
+						<span class="glyphicon glyphicon-heart"></span>
+						233秒居然能做这些
+					</div>
+					<div class="zhibo-title-left-gengduo">
+						更多<span class="glyphicon glyphicon-chevron-right"></span>
+					</div>
+				</div>
+				<div class="zhibo-title-right">
+					<span>直播排行</span>
+					<span>关注的主播</span>
+					<span>为你推荐</span>
+				</div>
+			</div>
+			<div class="zhibo-body">
+				<div class="zhibo-body-left">
+					<div class="swiper-right-box">
+						<div class="swiper-right-top">
+							<div>
+								<img src="./images/nav_right.jpg" alt="" srcset="">
+								<span>失去并不代表失败</span>
+							</div>
+							<div>
+								<img src="./images/nav_right.jpg" alt="" srcset="">
+								<span>失去并不代表失败</span>
+							</div>
+							<div>
+								<img src="./images/nav_right.jpg" alt="" srcset="">
+								<span>失去并不代表失败</span>
+							</div>
+							<div>
+								<img src="./images/nav_right.jpg" alt="" srcset="">
+								<span>失去并不代表失败</span>
+							</div>
+						</div>
+						<div class="swiper-right-bottom">
+							<div>
+								<img src="./images/nav_right.jpg" alt="" srcset="">
+								<span>失去并不代表失败</span>
+							</div>
+							<div>
+								<img src="./images/nav_right.jpg" alt="" srcset="">
+								<span>失去并不代表失败</span>
+							</div>
+							<div>
+								<img src="./images/nav_right.jpg" alt="" srcset="">
+								<span>失去并不代表失败</span>
+							</div>
+							<div>
+								<img src="./images/nav_right.jpg" alt="" srcset="">
+								<span>失去并不代表失败</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="zhibo-body-right">
+					<div class="zhibo-body-right-ren">
+						<div class="zhibo-body-right-ren-paiming">
+							1
+						</div>
+						<div class="zhibo-body-right-ren-touxiang">
+							<img src="./images/touxiang.jpg" alt="" srcset="">
+						</div>
+						<div class="zhibo-body-right-ren-mingzi">
+							<span>梦醒三生梦</span>
+							<span>王者荣耀带你看懂二狗</span>
+						</div>
+						<div class="zhibo-body-right-ren-renshu">
+							<span class="glyphicon glyphicon-subtitles"></span>
+							<span>22.2万</span>
+						</div>
+					</div>
+					<div class="zhibo-body-right-ren">
+						<div class="zhibo-body-right-ren-paiming">
+							1
+						</div>
+						<div class="zhibo-body-right-ren-touxiang">
+							<img src="./images/touxiang.jpg" alt="" srcset="">
+						</div>
+						<div class="zhibo-body-right-ren-mingzi">
+							<span>梦醒三生梦</span>
+							<span>王者荣耀带你看懂二狗</span>
+						</div>
+						<div class="zhibo-body-right-ren-renshu">
+							<span class="glyphicon glyphicon-subtitles"></span>
+							<span>22.2万</span>
+						</div>
+					</div>
+					<div class="zhibo-body-right-ren">
+						<div class="zhibo-body-right-ren-paiming">
+							1
+						</div>
+						<div class="zhibo-body-right-ren-touxiang">
+							<img src="./images/touxiang.jpg" alt="" srcset="">
+						</div>
+						<div class="zhibo-body-right-ren-mingzi">
+							<span>梦醒三生梦</span>
+							<span>王者荣耀带你看懂二狗</span>
+						</div>
+						<div class="zhibo-body-right-ren-renshu">
+							<span class="glyphicon glyphicon-subtitles"></span>
+							<span>22.2万</span>
+						</div>
+					</div>
+					<div class="zhibo-body-right-ren">
+						<div class="zhibo-body-right-ren-paiming">
+							1
+						</div>
+						<div class="zhibo-body-right-ren-touxiang">
+							<img src="./images/touxiang.jpg" alt="" srcset="">
+						</div>
+						<div class="zhibo-body-right-ren-mingzi">
+							<span>梦醒三生梦</span>
+							<span>王者荣耀带你看懂二狗</span>
+						</div>
+						<div class="zhibo-body-right-ren-renshu">
+							<span class="glyphicon glyphicon-subtitles"></span>
+							<span>22.2万</span>
+						</div>
+					</div>
+					<div class="zhibo-body-right-ren">
+						<div class="zhibo-body-right-ren-paiming">
+							1
+						</div>
+						<div class="zhibo-body-right-ren-touxiang">
+							<img src="./images/touxiang.jpg" alt="" srcset="">
+						</div>
+						<div class="zhibo-body-right-ren-mingzi">
+							<span>梦醒三生梦</span>
+							<span>王者荣耀带你看懂二狗</span>
+						</div>
+						<div class="zhibo-body-right-ren-renshu">
+							<span class="glyphicon glyphicon-subtitles"></span>
+							<span>22.2万</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 正在直播E -->
+		<!-- ************************ 第二天 ************************ -->
+		<!-- 动画S -->
+		<div class="dh">
+			<div class="donghua lt">
+				<!-- 标题 -->
+				<div class="donghua-top">
+					<!-- 标题-左 -->
+					<div class="donghua-top-left">
+						<div class="donghua-top-left-title">
+							<img src="./images/logo.png" alt="">
+							<span class="donghua-top-left-title">动画</span>
+							<span>有新动态</span>
+							<span>最新投稿</span>
+						</div>
+						<div class="donghua-title-left-gengduo">
+							更多<span class="glyphicon glyphicon-chevron-right"></span>
+						</div>
+					</div>
+					<!-- 标题-右 -->
+					<div class="donghua-top-right">
+						<!-- 排行 -->
+						<div class="donghua-top-right-left">
+							<div>排行</div>
+							<span>全部</span>
+							<span>原创</span>
+						</div>
+						<!-- 三日 -->
+						<div class="donghua-top-right-right">
+							<div>三日<span class="glyphicon glyphicon-chevron-down"></span></div>
+							<!-- <select name="" id="">
+							<option value=""></option>
+						</select> -->
+						</div>
+					</div>
+				</div>
+				<!-- 主体 -->
+				<div class="donghua-body">
+					<!-- 主体-左 -->
+					<div class="donghua-body-left">
+						<!-- 一个视频盒子 -->
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【PR】Premiere Pro CC 2019全套入门教程</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>《哆啦A梦》中大雄最牛的一集，打倒了所有小伙伴，成功吃鸡</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【PR】Premiere Pro CC 2019全套入门教程</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【PR】Premiere Pro CC 2019全套入门教程</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【米津玄师】三首打动人心的神曲：lemon、打上花火、ピースサイン</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【PR】Premiere Pro CC 2019全套入门教程</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【米津玄师】三首打动人心的神曲：lemon、打上花火、ピースサイン</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【牙叔最最最全合集】关于皇后乐队的演唱会，纪录片，致敬特辑等。</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+					</div>
+					<!-- 主体-右 -->
+					<div class="donghua-body-right">
+						<!-- 一部动漫 -->
+						<div class="donghua-body-right-quanbu">
+							<!-- 排名 -->
+							<div class="donghua-body-right-quanbu-paiming">1</div>
+							<!-- 图片 -->
+							<img src="./images/touxiang.jpg" alt="">
+							<!-- 简介 -->
+							<div class="donghua-body-right-quanbu-jianjie">
+								<!-- 标题 -->
+								<span class="donghua-body-right-quanbu-jianjie-title">
+									《博人传2 火影忍者新时代》十尾恶化与九尾背水一战 十尾分裂者巢穴
+								</span>
+								<!-- 综合评分 -->
+								<span class="donghua-body-right-quanbu-jianjie-pingfen">
+									综合评分：70.7万
+								</span>
+							</div>
+						</div>
+						<!-- 一部动漫 -->
+						<div class="donghua-body-right-quanbu">
+							<!-- 排名 -->
+							<div class="donghua-body-right-quanbu-paiming">1</div>
+							<!-- 图片 -->
+							<!-- <img src="./images/touxiang.jpg" alt=""> -->
+							<!-- 简介 -->
+							<div class="donghua-body-right-quanbu-jianjie">
+								<!-- 标题 -->
+								<span class="donghua-body-right-quanbu-jianjie-title">
+									《博人传2 火影忍者新时代》十尾恶化与九尾背水一战 十尾分裂者巢穴
+								</span>
+								<!-- 综合评分 -->
+								<!-- <span class="donghua-body-right-quanbu-jianjie-pingfen">
+								综合评分：70.7万
+							</span> -->
+							</div>
+						</div>
+						<!-- 一部动漫 -->
+						<div class="donghua-body-right-quanbu">
+							<!-- 排名 -->
+							<div class="donghua-body-right-quanbu-paiming">1</div>
+							<!-- 图片 -->
+							<!-- <img src="./images/touxiang.jpg" alt=""> -->
+							<!-- 简介 -->
+							<div class="donghua-body-right-quanbu-jianjie">
+								<!-- 标题 -->
+								<span class="donghua-body-right-quanbu-jianjie-title">
+									《博人传2 火影忍者新时代》十尾恶化与九尾背水一战 十尾分裂者巢穴
+								</span>
+								<!-- 综合评分 -->
+								<!-- <span class="donghua-body-right-quanbu-jianjie-pingfen">
+								综合评分：70.7万
+							</span> -->
+							</div>
+						</div>
+						<!-- 一部动漫 -->
+						<div class="donghua-body-right-quanbu">
+							<!-- 排名 -->
+							<div class="donghua-body-right-quanbu-paiming">1</div>
+							<!-- 图片 -->
+							<!-- <img src="./images/touxiang.jpg" alt=""> -->
+							<!-- 简介 -->
+							<div class="donghua-body-right-quanbu-jianjie">
+								<!-- 标题 -->
+								<span class="donghua-body-right-quanbu-jianjie-title">
+									《博人传2 火影忍者新时代》十尾恶化与九尾背水一战 十尾分裂者巢穴
+								</span>
+								<!-- 综合评分 -->
+								<!-- <span class="donghua-body-right-quanbu-jianjie-pingfen">
+								综合评分：70.7万
+							</span> -->
+							</div>
+						</div>
+						<!-- 一部动漫 -->
+						<div class="donghua-body-right-quanbu">
+							<!-- 排名 -->
+							<div class="donghua-body-right-quanbu-paiming">1</div>
+							<!-- 图片 -->
+							<!-- <img src="./images/touxiang.jpg" alt=""> -->
+							<!-- 简介 -->
+							<div class="donghua-body-right-quanbu-jianjie">
+								<!-- 标题 -->
+								<span class="donghua-body-right-quanbu-jianjie-title">
+									《博人传2 火影忍者新时代》十尾恶化与九尾背水一战 十尾分裂者巢穴
+								</span>
+								<!-- 综合评分 -->
+								<!-- <span class="donghua-body-right-quanbu-jianjie-pingfen">
+									综合评分：70.7万
+								</span> -->
+							</div>
+						</div>
+						<!-- 查看更多 -->
+						<div class="donghua-body-right-quanbu-gengduo">
+							查看更多<span class="glyphicon glyphicon-chevron-right"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 动画E -->
+		<!-- 开始测试S -->
+		<div class="demo">
+			<img src="./images/demo.jpg" alt="" srcset="">
+		</div>
+		<!-- 开始测试E -->
+		<!-- 番剧S -->
+		<div class="fj">
+			<div class="fanju lt">
+				<div class="fanju-top">
+					<div class="fanju-top-left">
+						<div class="fanju-top-left-fanju">
+							<img src="./images/logo.png" alt="" srcset="">
+							<span>番剧</span>
+						</div>
+						<div class="fanju-top-left-riqi">
+							<span class="active">最新</span>
+							<span>一</span>
+							<span>二</span>
+							<span>三</span>
+							<span>四</span>
+							<span>五</span>
+							<span>六</span>
+							<span>日</span>
+						</div>
+						<div class="fanju-top-left-gengduo">
+							新番时间表<span class="glyphicon glyphicon-chevron-right"></span>
+						</div>
+					</div>
+					<!-- 新番-上-右边 -->
+					<div class="fanju-top-right">
+						<!-- 排行 -->
+						<div class="fanju-top-right-left">
+							排行
+						</div>
+						<!-- 三日 -->
+						<div class="fanju-top-right-right">
+							<div>三日<span class="glyphicon glyphicon-chevron-down"></span></div>
+							<!-- <select name="" id="">
+								<option value=""></option>
+							</select> -->
+						</div>
+					</div>
+				</div>
+				<div class="fanju-bottom">
+					<div class="fanju-bottom-left">
+						<div class="fanju-bottom-left-box">
+							<img src="./images/momxt.webp" alt="">
+							<div>
+								魔偶马戏团<span>第27话</span>
+							</div>
+						</div>
+						<div class="fanju-bottom-left-box">
+							<img src="./images/momxt.webp" alt="">
+							<div>
+								魔偶马戏团<span>第27话</span>
+							</div>
+						</div>
+						<div class="fanju-bottom-left-box">
+							<img src="./images/momxt.webp" alt="">
+							<div>
+								魔偶马戏团<span>第27话</span>
+							</div>
+						</div>
+						<div class="fanju-bottom-left-box">
+							<img src="./images/momxt.webp" alt="">
+							<div>
+								魔偶马戏团<span>第27话</span>
+							</div>
+						</div>
+						<div class="fanju-bottom-left-box">
+							<img src="./images/momxt.webp" alt="">
+							<div>
+								魔偶马戏团<span>第27话</span>
+							</div>
+						</div>
+						<div class="fanju-bottom-left-box">
+							<img src="./images/momxt.webp" alt="">
+							<div>
+								魔偶马戏团<span>第27话</span>
+							</div>
+						</div>
+						<div class="fanju-bottom-left-box">
+							<img src="./images/momxt.webp" alt="">
+							<div>
+								魔偶马戏团<span>第27话</span>
+							</div>
+						</div>
+						<div class="fanju-bottom-left-box">
+							<img src="./images/momxt.webp" alt="">
+							<div>
+								魔偶马戏团<span>第27话</span>
+							</div>
+						</div>
+						<div class="fanju-bottom-left-box">
+							<img src="./images/momxt.webp" alt="">
+							<div>
+								魔偶马戏团<span>第27话</span>
+							</div>
+						</div>
+						<div class="fanju-bottom-left-box">
+							<img src="./images/momxt.webp" alt="">
+							<div>
+								魔偶马戏团<span>第27话</span>
+							</div>
+						</div>
+						<div class="fanju-bottom-left-box">
+							<img src="./images/momxt.webp" alt="">
+							<div>
+								魔偶马戏团<span>第27话</span>
+							</div>
+						</div>
+						<div class="fanju-bottom-left-box">
+							<img src="./images/momxt.webp" alt="">
+							<div>
+								魔偶马戏团<span>第27话</span>
+							</div>
+						</div>
+						<div class="fanju-bottom-left-box">
+							<img src="./images/momxt.webp" alt="">
+							<div>
+								魔偶马戏团<span>第27话</span>
+							</div>
+						</div>
+						<div class="fanju-bottom-left-box">
+							<img src="./images/momxt.webp" alt="">
+							<div>
+								魔偶马戏团<span>第27话</span>
+							</div>
+						</div>
+						<div class="fanju-bottom-left-box">
+							<img src="./images/momxt.webp" alt="">
+							<div>
+								魔偶马戏团<span>第27话</span>
+							</div>
+						</div>
+					</div>
+					<div class="fanju-body-right">
+						<!-- 一部番剧 -->
+						<div class="fanju-body-right-quanbu">
+							<!-- 排名 -->
+							<div class="fanju-body-right-quanbu-paiming">1</div>
+							<!-- 图片 -->
+							<!-- <img src="./images/touxiang.jpg" alt=""> -->
+							<!-- 简介 -->
+							<div class="fanju-body-right-quanbu-jianjie">
+								<!-- 标题 -->
+								<span class="fanju-body-right-quanbu-jianjie-title">
+									《博人传2 火影忍者新时代》十尾恶化与九尾背水一战 十尾分裂者巢穴
+								</span>
+								<!-- 综合评分 -->
+								<span class="fanju-body-right-quanbu-jianjie-pingfen">
+									综合评分：70.7万
+								</span>
+							</div>
+						</div>
+						<!-- 一部番剧 -->
+						<div class="fanju-body-right-quanbu">
+							<!-- 排名 -->
+							<div class="fanju-body-right-quanbu-paiming">1</div>
+							<!-- 图片 -->
+							<!-- <img src="./images/touxiang.jpg" alt=""> -->
+							<!-- 简介 -->
+							<div class="fanju-body-right-quanbu-jianjie">
+								<!-- 标题 -->
+								<span class="fanju-body-right-quanbu-jianjie-title">
+									《博人传2 火影忍者新时代》十尾恶化与九尾背水一战 十尾分裂者巢穴
+								</span>
+								<!-- 综合评分 -->
+								<span class="fanju-body-right-quanbu-jianjie-pingfen">
+									综合评分：70.7万
+								</span>
+							</div>
+						</div>
+						<!-- 一部番剧 -->
+						<div class="fanju-body-right-quanbu">
+							<!-- 排名 -->
+							<div class="fanju-body-right-quanbu-paiming">1</div>
+							<!-- 图片 -->
+							<!-- <img src="./images/touxiang.jpg" alt=""> -->
+							<!-- 简介 -->
+							<div class="fanju-body-right-quanbu-jianjie">
+								<!-- 标题 -->
+								<span class="fanju-body-right-quanbu-jianjie-title">
+									《博人传2 火影忍者新时代》十尾恶化与九尾背水一战 十尾分裂者巢穴
+								</span>
+								<!-- 综合评分 -->
+								<span class="fanju-body-right-quanbu-jianjie-pingfen">
+									综合评分：70.7万
+								</span>
+							</div>
+						</div>
+						<!-- 一部番剧 -->
+						<div class="fanju-body-right-quanbu">
+							<!-- 排名 -->
+							<div class="fanju-body-right-quanbu-paiming">1</div>
+							<!-- 图片 -->
+							<!-- <img src="./images/touxiang.jpg" alt=""> -->
+							<!-- 简介 -->
+							<div class="fanju-body-right-quanbu-jianjie">
+								<!-- 标题 -->
+								<span class="fanju-body-right-quanbu-jianjie-title">
+									《博人传2 火影忍者新时代》十尾恶化与九尾背水一战 十尾分裂者巢穴
+								</span>
+								<!-- 综合评分 -->
+								<span class="fanju-body-right-quanbu-jianjie-pingfen">
+									综合评分：70.7万
+								</span>
+							</div>
+						</div>
+						<!-- 一部番剧 -->
+						<div class="fanju-body-right-quanbu">
+							<!-- 排名 -->
+							<div class="fanju-body-right-quanbu-paiming">1</div>
+							<!-- 图片 -->
+							<!-- <img src="./images/touxiang.jpg" alt=""> -->
+							<!-- 简介 -->
+							<div class="fanju-body-right-quanbu-jianjie">
+								<!-- 标题 -->
+								<span class="fanju-body-right-quanbu-jianjie-title">
+									《博人传2 火影忍者新时代》十尾恶化与九尾背水一战 十尾分裂者巢穴
+								</span>
+								<!-- 综合评分 -->
+								<span class="fanju-body-right-quanbu-jianjie-pingfen">
+									综合评分：70.7万
+								</span>
+							</div>
+						</div>
+						<!-- 一部番剧 -->
+						<div class="fanju-body-right-quanbu">
+							<!-- 排名 -->
+							<div class="fanju-body-right-quanbu-paiming">1</div>
+							<!-- 图片 -->
+							<!-- <img src="./images/touxiang.jpg" alt=""> -->
+							<!-- 简介 -->
+							<div class="fanju-body-right-quanbu-jianjie">
+								<!-- 标题 -->
+								<span class="fanju-body-right-quanbu-jianjie-title">
+									《博人传2 火影忍者新时代》十尾恶化与九尾背水一战 十尾分裂者巢穴
+								</span>
+								<!-- 综合评分 -->
+								<span class="fanju-body-right-quanbu-jianjie-pingfen">
+									综合评分：70.7万
+								</span>
+							</div>
+						</div>
+
+						<!-- 查看更多 -->
+						<div class="fanju-body-right-quanbu-gengduo">
+							查看更多<span class="glyphicon glyphicon-chevron-right"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 番剧E -->
+
+		<!-- ******************** 第三天 ******************** -->
+
+		<!-- 番剧动态S -->
+		<div class="fanju_dt">
+			<div class="donghua">
+				<!-- 标题 -->
+				<div class="donghua-top">
+					<!-- 标题-左 -->
+					<div class="donghua-top-left">
+						<div class="donghua-top-left-title">
+							<img src="./images/logo.png" alt="">
+							<span class="donghua-top-left-title">番剧动态</span>
+							<span>有新动态</span>
+							<span>最新投稿</span>
+						</div>
+						<div class="donghua-title-left-gengduo">
+							更多<span class="glyphicon glyphicon-chevron-right"></span>
+						</div>
+					</div>
+					<!-- 标题-右 -->
+					<div class="donghua-top-right">
+						<!-- 排行 -->
+						<div class="donghua-top-right-left">
+							<div>特别推荐</div>
+						</div>
+						<!-- 三日 -->
+						<div class="donghua-top-right-right">
+							<div>三日<span class="glyphicon glyphicon-chevron-down"></span></div>
+							<!-- <select name="" id="">
+							<option value=""></option>
+						</select> -->
+						</div>
+					</div>
+				</div>
+				<!-- 主体 -->
+				<div class="donghua-body">
+					<!-- 主体-左 -->
+					<div class="donghua-body-left">
+						<!-- 一个视频盒子 -->
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【炉石传说】这麻将术肯定要削的！异灵术国服狂野渡劫局！</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【炉石传说】这麻将术肯定要削的！异灵术国服狂野渡劫局！</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【炉石传说】这麻将术肯定要削的！异灵术国服狂野渡劫局！</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【PR】Premiere Pro CC 2019全套入门教程</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>历史课本中从未提及的超恐怖文明：苏美尔文明是否是人类文明之源！</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>历史课本中从未提及的超恐怖文明：苏美尔文明是否是人类文明之源！</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>历史课本中从未提及的超恐怖文明：苏美尔文明是否是人类文明之源！</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>历史课本中从未提及的超恐怖文明：苏美尔文明是否是人类文明之源！</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+					</div>
+					<!-- 主体-右 -->
+					<div class="guochuang-body-right">
+						<img src="./images/tuijian.jpg" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 番剧动态E -->
+
+		<!-- 国创S -->
+		<div class="guochuang lt">
+			<div class="fanju">
+				<div class="fanju-top">
+					<div class="fanju-top-left">
+						<div class="fanju-top-left-fanju">
+							<img src="./images/logo.png" alt="" srcset="">
+							<span>国创</span>
+						</div>
+						<div class="fanju-top-left-riqi">
+							<span class="active">最新</span>
+							<span>一</span>
+							<span>二</span>
+							<span>三</span>
+							<span>四</span>
+							<span>五</span>
+							<span>六</span>
+							<span>日</span>
+						</div>
+						<div class="fanju-top-left-gengduo">
+							新番时间表<span class="glyphicon glyphicon-chevron-right"></span>
+						</div>
+					</div>
+					<!-- 新番-上-右边 -->
+					<div class="fanju-top-right">
+						<!-- 排行 -->
+						<div class="fanju-top-right-left">
+							排行
+						</div>
+						<!-- 三日 -->
+						<div class="fanju-top-right-right">
+							<div>三日<span class="glyphicon glyphicon-chevron-down"></span></div>
+							<!-- <select name="" id="">
+									<option value=""></option>
+								</select> -->
+						</div>
+					</div>
+				</div>
+				<div class="fanju-bottom">
+					<div class="fanju-bottom-left">
+							<div class="fanju-bottom-left-box">
+									<img src="./images/momxt.webp" alt="">
+									<div>
+										魔偶马戏团<span>第27话</span>
+									</div>
+								</div>
+								<div class="fanju-bottom-left-box">
+									<img src="./images/momxt.webp" alt="">
+									<div>
+										魔偶马戏团<span>第27话</span>
+									</div>
+								</div>
+								<div class="fanju-bottom-left-box">
+									<img src="./images/momxt.webp" alt="">
+									<div>
+										魔偶马戏团<span>第27话</span>
+									</div>
+								</div>
+								<div class="fanju-bottom-left-box">
+									<img src="./images/momxt.webp" alt="">
+									<div>
+										魔偶马戏团<span>第27话</span>
+									</div>
+								</div>
+								<div class="fanju-bottom-left-box">
+									<img src="./images/momxt.webp" alt="">
+									<div>
+										魔偶马戏团<span>第27话</span>
+									</div>
+								</div>
+								<div class="fanju-bottom-left-box">
+									<img src="./images/momxt.webp" alt="">
+									<div>
+										魔偶马戏团<span>第27话</span>
+									</div>
+								</div>
+								<div class="fanju-bottom-left-box">
+									<img src="./images/momxt.webp" alt="">
+									<div>
+										魔偶马戏团<span>第27话</span>
+									</div>
+								</div>
+								<div class="fanju-bottom-left-box">
+									<img src="./images/momxt.webp" alt="">
+									<div>
+										魔偶马戏团<span>第27话</span>
+									</div>
+								</div>
+								<div class="fanju-bottom-left-box">
+									<img src="./images/momxt.webp" alt="">
+									<div>
+										魔偶马戏团<span>第27话</span>
+									</div>
+								</div>
+								<div class="fanju-bottom-left-box">
+									<img src="./images/momxt.webp" alt="">
+									<div>
+										魔偶马戏团<span>第27话</span>
+									</div>
+								</div>
+								<div class="fanju-bottom-left-box">
+									<img src="./images/momxt.webp" alt="">
+									<div>
+										魔偶马戏团<span>第27话</span>
+									</div>
+								</div>
+								<div class="fanju-bottom-left-box">
+									<img src="./images/momxt.webp" alt="">
+									<div>
+										魔偶马戏团<span>第27话</span>
+									</div>
+								</div>
+								<div class="fanju-bottom-left-box">
+									<img src="./images/momxt.webp" alt="">
+									<div>
+										魔偶马戏团<span>第27话</span>
+									</div>
+								</div>
+								<div class="fanju-bottom-left-box">
+									<img src="./images/momxt.webp" alt="">
+									<div>
+										魔偶马戏团<span>第27话</span>
+									</div>
+								</div>
+								<div class="fanju-bottom-left-box">
+									<img src="./images/momxt.webp" alt="">
+									<div>
+										魔偶马戏团<span>第27话</span>
+									</div>
+								</div>
+					</div>
+					<div class="fanju-body-right">
+						<!-- 一部番剧 -->
+						<div class="fanju-body-right-quanbu">
+							<!-- 排名 -->
+							<div class="fanju-body-right-quanbu-paiming">1</div>
+							<div class="guochuang-body-right-quanbu-jianjie">
+								<!-- 标题 -->
+								少年行&nbsp;&nbsp;<span>综合评分：70.7万</span>
+							</div>
+						</div>
+						<!-- 一部番剧 -->
+						<div class="fanju-body-right-quanbu">
+							<!-- 排名 -->
+							<div class="fanju-body-right-quanbu-paiming">1</div>
+							<div class="guochuang-body-right-quanbu-jianjie">
+								<!-- 标题 -->
+								少年行&nbsp;&nbsp;<span>综合评分：70.7万</span>
+							</div>
+						</div>
+						<!-- 一部番剧 -->
+						<div class="fanju-body-right-quanbu">
+							<!-- 排名 -->
+							<div class="fanju-body-right-quanbu-paiming">1</div>
+							<div class="guochuang-body-right-quanbu-jianjie">
+								<!-- 标题 -->
+								少年行&nbsp;&nbsp;<span>综合评分：70.7万</span>
+							</div>
+						</div>
+						<!-- 一部番剧 -->
+						<div class="fanju-body-right-quanbu">
+							<!-- 排名 -->
+							<div class="fanju-body-right-quanbu-paiming">1</div>
+							<div class="guochuang-body-right-quanbu-jianjie">
+								<!-- 标题 -->
+								少年行&nbsp;&nbsp;<span>综合评分：70.7万</span>
+							</div>
+						</div>
+						<!-- 一部番剧 -->
+						<div class="fanju-body-right-quanbu">
+							<!-- 排名 -->
+							<div class="fanju-body-right-quanbu-paiming">1</div>
+							<div class="guochuang-body-right-quanbu-jianjie">
+								<!-- 标题 -->
+								少年行&nbsp;&nbsp;<span>综合评分：70.7万</span>
+							</div>
+						</div>
+
+
+						<!-- 查看更多 -->
+						<div class="fanju-body-right-quanbu-gengduo">
+							查看更多<span class="glyphicon glyphicon-chevron-right"></span>
+						</div>
+						<div class="guochuang-bottom-right">
+							<img src="./images/generalize-right.jpg" alt="" srcset="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 国创E -->
+
+		<!-- 国产原创相关S -->
+		<div class="guochuang_xg">
+			<div class="donghua">
+				<!-- 标题 -->
+				<div class="donghua-top">
+					<!-- 标题-左 -->
+					<div class="donghua-top-left">
+						<div class="donghua-top-left-title">
+							<span id="yuanchuang-top-left-title">国产原创相关</span>
+							<span>有新动态</span>
+							<span>最新投稿</span>
+						</div>
+						<div class="donghua-title-left-gengduo">
+							更多<span class="glyphicon glyphicon-chevron-right"></span>
+						</div>
+					</div>
+					<!-- 标题-右 -->
+					<div class="donghua-top-right">
+						<!-- 排行 -->
+						<div class="donghua-top-right-left">
+							<div>排行</div>
+							<span>全部</span>
+							<span>原创</span>
+						</div>
+						<!-- 三日 -->
+						<div class="donghua-top-right-right">
+							<div>三日<span class="glyphicon glyphicon-chevron-down"></span></div>
+							<!-- <select name="" id="">
+								<option value=""></option>
+							</select> -->
+						</div>
+					</div>
+				</div>
+				<!-- 主体 -->
+				<div class="donghua-body">
+					<!-- 主体-左 -->
+					<div class="donghua-body-left">
+						<!-- 一个视频盒子 -->
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【PR】Premiere Pro CC 2019全套入门教程/p>
+								<!-- 播放量和评论量 -->
+								<div class="donghua-body-box-text">
+									<span class="glyphicon glyphicon-hd-video">11.3万</span>
+									<span class="glyphicon glyphicon-modal-window">1258</span>
+								</div>
+						</div>
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【PR】Premiere Pro CC 2019全套入门教程</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【PR】Premiere Pro CC 2019全套入门教程</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【PR】Premiere Pro CC 2019全套入门教程</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【PR】Premiere Pro CC 2019全套入门教程</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【PR】Premiere Pro CC 2019全套入门教程</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【PR】Premiere Pro CC 2019全套入门教程</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【PR】Premiere Pro CC 2019全套入门教程</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+					</div>
+					<!-- 主体-右 -->
+					<div class="donghua-body-right">
+						<!-- 一部动漫 -->
+						<div class="donghua-body-right-quanbu">
+							<!-- 排名 -->
+							<div class="donghua-body-right-quanbu-paiming">1</div>
+							<!-- 图片 -->
+							<img src="./images/touxiang.jpg" alt="">
+							<!-- 简介 -->
+							<div class="donghua-body-right-quanbu-jianjie">
+								<!-- 标题 -->
+								<span class="donghua-body-right-quanbu-jianjie-title">
+									《博人传2 火影忍者新时代》十尾恶化与九尾背水一战 十尾分裂者巢穴
+								</span>
+								<!-- 综合评分 -->
+								<span class="donghua-body-right-quanbu-jianjie-pingfen">
+									综合评分：70.7万
+								</span>
+							</div>
+						</div>
+						<!-- 一部动漫 -->
+						<div class="donghua-body-right-quanbu">
+							<!-- 排名 -->
+							<div class="donghua-body-right-quanbu-paiming">1</div>
+							<!-- 图片 -->
+							<!-- <img src="./images/touxiang.jpg" alt=""> -->
+							<!-- 简介 -->
+							<div class="donghua-body-right-quanbu-jianjie">
+								<!-- 标题 -->
+								<span class="donghua-body-right-quanbu-jianjie-title">
+									《博人传2 火影忍者新时代》十尾恶化与九尾背水一战 十尾分裂者巢穴
+								</span>
+								<!-- 综合评分 -->
+								<!-- <span class="donghua-body-right-quanbu-jianjie-pingfen">
+									综合评分：70.7万
+								</span> -->
+							</div>
+						</div>
+						<!-- 一部动漫 -->
+						<div class="donghua-body-right-quanbu">
+							<!-- 排名 -->
+							<div class="donghua-body-right-quanbu-paiming">1</div>
+							<!-- 图片 -->
+							<!-- <img src="./images/touxiang.jpg" alt=""> -->
+							<!-- 简介 -->
+							<div class="donghua-body-right-quanbu-jianjie">
+								<!-- 标题 -->
+								<span class="donghua-body-right-quanbu-jianjie-title">
+									《博人传2 火影忍者新时代》十尾恶化与九尾背水一战 十尾分裂者巢穴
+								</span>
+								<!-- 综合评分 -->
+								<!-- <span class="donghua-body-right-quanbu-jianjie-pingfen">
+									综合评分：70.7万
+								</span> -->
+							</div>
+						</div>
+						<!-- 一部动漫 -->
+						<div class="donghua-body-right-quanbu">
+							<!-- 排名 -->
+							<div class="donghua-body-right-quanbu-paiming">1</div>
+							<!-- 图片 -->
+							<!-- <img src="./images/touxiang.jpg" alt=""> -->
+							<!-- 简介 -->
+							<div class="donghua-body-right-quanbu-jianjie">
+								<!-- 标题 -->
+								<span class="donghua-body-right-quanbu-jianjie-title">
+									《博人传2 火影忍者新时代》十尾恶化与九尾背水一战 十尾分裂者巢穴
+								</span>
+								<!-- 综合评分 -->
+								<!-- <span class="donghua-body-right-quanbu-jianjie-pingfen">
+									综合评分：70.7万
+								</span> -->
+							</div>
+						</div>
+						<!-- 一部动漫 -->
+						<div class="donghua-body-right-quanbu">
+							<!-- 排名 -->
+							<div class="donghua-body-right-quanbu-paiming">1</div>
+							<!-- 图片 -->
+							<!-- <img src="./images/touxiang.jpg" alt=""> -->
+							<!-- 简介 -->
+							<div class="donghua-body-right-quanbu-jianjie">
+								<!-- 标题 -->
+								<span class="donghua-body-right-quanbu-jianjie-title">
+									《博人传2 火影忍者新时代》十尾恶化与九尾背水一战 十尾分裂者巢穴
+								</span>
+								<!-- 综合评分 -->
+								<!-- <span class="donghua-body-right-quanbu-jianjie-pingfen">
+										综合评分：70.7万
+									</span> -->
+							</div>
+						</div>
+						<!-- 查看更多 -->
+						<div class="donghua-body-right-quanbu-gengduo">
+							查看更多<span class="glyphicon glyphicon-chevron-right"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 国产原创相关E -->
+
+		<!-- 音乐S -->
+		<div class="yingyue lt">
+			<div class="donghua">
+				<!-- 标题 -->
+				<div class="donghua-top">
+					<!-- 标题-左 -->
+					<div class="donghua-top-left">
+						<div class="donghua-top-left-title">
+							<img src="./images/logo.png" alt="">
+							<span class="donghua-top-left-title">音乐</span>
+							<span>有新动态</span>
+							<span>最新投稿</span>
+						</div>
+						<div class="donghua-title-left-gengduo">
+							更多<span class="glyphicon glyphicon-chevron-right"></span>
+						</div>
+					</div>
+					<!-- 标题-右 -->
+					<div class="donghua-top-right">
+						<!-- 排行 -->
+						<div class="donghua-top-right-left">
+							<div>排行</div>
+							<span>全部</span>
+							<span>原创</span>
+						</div>
+						<!-- 三日 -->
+						<div class="donghua-top-right-right">
+							<div>三日<span class="glyphicon glyphicon-chevron-down"></span></div>
+							<!-- <select name="" id="">
+								<option value=""></option>
+							</select> -->
+						</div>
+					</div>
+				</div>
+				<!-- 主体 -->
+				<div class="donghua-body">
+					<!-- 主体-左 -->
+					<div class="donghua-body-left">
+						<!-- 一个视频盒子 -->
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【PR】Premiere Pro CC 2019全套入门教程</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【PR】Premiere Pro CC 2019全套入门教程</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【PR】Premiere Pro CC 2019全套入门教程</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【PR】Premiere Pro CC 2019全套入门教程</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【PR】Premiere Pro CC 2019全套入门教程</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【PR】Premiere Pro CC 2019全套入门教程</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【PR】Premiere Pro CC 2019全套入门教程</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【PR】Premiere Pro CC 2019全套入门教程</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+					</div>
+					<!-- 主体-右 -->
+					<div class="donghua-body-right">
+						<!-- 一部动漫 -->
+						<div class="donghua-body-right-quanbu">
+							<!-- 排名 -->
+							<div class="donghua-body-right-quanbu-paiming">1</div>
+							<!-- 图片 -->
+							<img src="./images/touxiang.jpg" alt="">
+							<!-- 简介 -->
+							<div class="donghua-body-right-quanbu-jianjie">
+								<!-- 标题 -->
+								<span class="donghua-body-right-quanbu-jianjie-title">
+									《博人传2 火影忍者新时代》十尾恶化与九尾背水一战 十尾分裂者巢穴
+								</span>
+								<!-- 综合评分 -->
+								<span class="donghua-body-right-quanbu-jianjie-pingfen">
+									综合评分：70.7万
+								</span>
+							</div>
+						</div>
+						<!-- 一部动漫 -->
+						<div class="donghua-body-right-quanbu">
+							<!-- 排名 -->
+							<div class="donghua-body-right-quanbu-paiming">1</div>
+							<!-- 图片 -->
+							<!-- <img src="./images/touxiang.jpg" alt=""> -->
+							<!-- 简介 -->
+							<div class="donghua-body-right-quanbu-jianjie">
+								<!-- 标题 -->
+								<span class="donghua-body-right-quanbu-jianjie-title">
+									《博人传2 火影忍者新时代》十尾恶化与九尾背水一战 十尾分裂者巢穴
+								</span>
+								<!-- 综合评分 -->
+								<!-- <span class="donghua-body-right-quanbu-jianjie-pingfen">
+									综合评分：70.7万
+								</span> -->
+							</div>
+						</div>
+						<!-- 一部动漫 -->
+						<div class="donghua-body-right-quanbu">
+							<!-- 排名 -->
+							<div class="donghua-body-right-quanbu-paiming">1</div>
+							<!-- 图片 -->
+							<!-- <img src="./images/touxiang.jpg" alt=""> -->
+							<!-- 简介 -->
+							<div class="donghua-body-right-quanbu-jianjie">
+								<!-- 标题 -->
+								<span class="donghua-body-right-quanbu-jianjie-title">
+									《博人传2 火影忍者新时代》十尾恶化与九尾背水一战 十尾分裂者巢穴
+								</span>
+								<!-- 综合评分 -->
+								<!-- <span class="donghua-body-right-quanbu-jianjie-pingfen">
+									综合评分：70.7万
+								</span> -->
+							</div>
+						</div>
+						<!-- 一部动漫 -->
+						<div class="donghua-body-right-quanbu">
+							<!-- 排名 -->
+							<div class="donghua-body-right-quanbu-paiming">1</div>
+							<!-- 图片 -->
+							<!-- <img src="./images/touxiang.jpg" alt=""> -->
+							<!-- 简介 -->
+							<div class="donghua-body-right-quanbu-jianjie">
+								<!-- 标题 -->
+								<span class="donghua-body-right-quanbu-jianjie-title">
+									《博人传2 火影忍者新时代》十尾恶化与九尾背水一战 十尾分裂者巢穴
+								</span>
+								<!-- 综合评分 -->
+								<!-- <span class="donghua-body-right-quanbu-jianjie-pingfen">
+									综合评分：70.7万
+								</span> -->
+							</div>
+						</div>
+						<!-- 一部动漫 -->
+						<div class="donghua-body-right-quanbu">
+							<!-- 排名 -->
+							<div class="donghua-body-right-quanbu-paiming">1</div>
+							<!-- 图片 -->
+							<!-- <img src="./images/touxiang.jpg" alt=""> -->
+							<!-- 简介 -->
+							<div class="donghua-body-right-quanbu-jianjie">
+								<!-- 标题 -->
+								<span class="donghua-body-right-quanbu-jianjie-title">
+									《博人传2 火影忍者新时代》十尾恶化与九尾背水一战 十尾分裂者巢穴
+								</span>
+								<!-- 综合评分 -->
+								<!-- <span class="donghua-body-right-quanbu-jianjie-pingfen">
+										综合评分：70.7万
+									</span> -->
+							</div>
+						</div>
+						<!-- 查看更多 -->
+						<div class="donghua-body-right-quanbu-gengduo">
+							查看更多<span class="glyphicon glyphicon-chevron-right"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 音乐E -->
+
+		<!-- 舞蹈S -->
+		<div class="wudao lt">
+			<div class="donghua">
+				<!-- 标题 -->
+				<div class="donghua-top">
+					<!-- 标题-左 -->
+					<div class="donghua-top-left">
+						<div class="donghua-top-left-title">
+							<img src="./images/logo.png" alt="">
+							<span class="donghua-top-left-title">舞蹈</span>
+							<span>有新动态</span>
+							<span>最新投稿</span>
+						</div>
+						<div class="donghua-title-left-gengduo">
+							更多<span class="glyphicon glyphicon-chevron-right"></span>
+						</div>
+					</div>
+					<!-- 标题-右 -->
+					<div class="donghua-top-right">
+						<!-- 排行 -->
+						<div class="donghua-top-right-left">
+							<div>排行</div>
+							<span>全部</span>
+							<span>原创</span>
+						</div>
+						<!-- 三日 -->
+						<div class="donghua-top-right-right">
+							<div>三日<span class="glyphicon glyphicon-chevron-down"></span></div>
+							<!-- <select name="" id="">
+								<option value=""></option>
+							</select> -->
+						</div>
+					</div>
+				</div>
+				<!-- 主体 -->
+				<div class="donghua-body">
+					<!-- 主体-左 -->
+					<div class="donghua-body-left">
+						<!-- 一个视频盒子 -->
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【PR】Premiere Pro CC 2019全套入门教程</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【PR】Premiere Pro CC 2019全套入门教程</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【PR】Premiere Pro CC 2019全套入门教程</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【PR】Premiere Pro CC 2019全套入门教程</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【PR】Premiere Pro CC 2019全套入门教程</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【PR】Premiere Pro CC 2019全套入门教程</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【PR】Premiere Pro CC 2019全套入门教程</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【PR】Premiere Pro CC 2019全套入门教程</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+					</div>
+					<!-- 主体-右 -->
+					<div class="donghua-body-right">
+						<!-- 一部动漫 -->
+						<div class="donghua-body-right-quanbu">
+							<!-- 排名 -->
+							<div class="donghua-body-right-quanbu-paiming">1</div>
+							<!-- 图片 -->
+							<img src="./images/touxiang.jpg" alt="">
+							<!-- 简介 -->
+							<div class="donghua-body-right-quanbu-jianjie">
+								<!-- 标题 -->
+								<span class="donghua-body-right-quanbu-jianjie-title">
+									《博人传2 火影忍者新时代》十尾恶化与九尾背水一战 十尾分裂者巢穴
+								</span>
+								<!-- 综合评分 -->
+								<span class="donghua-body-right-quanbu-jianjie-pingfen">
+									综合评分：70.7万
+								</span>
+							</div>
+						</div>
+						<!-- 一部动漫 -->
+						<div class="donghua-body-right-quanbu">
+							<!-- 排名 -->
+							<div class="donghua-body-right-quanbu-paiming">1</div>
+							<!-- 图片 -->
+							<!-- <img src="./images/touxiang.jpg" alt=""> -->
+							<!-- 简介 -->
+							<div class="donghua-body-right-quanbu-jianjie">
+								<!-- 标题 -->
+								<span class="donghua-body-right-quanbu-jianjie-title">
+									《博人传2 火影忍者新时代》十尾恶化与九尾背水一战 十尾分裂者巢穴
+								</span>
+								<!-- 综合评分 -->
+								<!-- <span class="donghua-body-right-quanbu-jianjie-pingfen">
+									综合评分：70.7万
+								</span> -->
+							</div>
+						</div>
+						<!-- 一部动漫 -->
+						<div class="donghua-body-right-quanbu">
+							<!-- 排名 -->
+							<div class="donghua-body-right-quanbu-paiming">1</div>
+							<!-- 图片 -->
+							<!-- <img src="./images/touxiang.jpg" alt=""> -->
+							<!-- 简介 -->
+							<div class="donghua-body-right-quanbu-jianjie">
+								<!-- 标题 -->
+								<span class="donghua-body-right-quanbu-jianjie-title">
+									《博人传2 火影忍者新时代》十尾恶化与九尾背水一战 十尾分裂者巢穴
+								</span>
+								<!-- 综合评分 -->
+								<!-- <span class="donghua-body-right-quanbu-jianjie-pingfen">
+									综合评分：70.7万
+								</span> -->
+							</div>
+						</div>
+						<!-- 一部动漫 -->
+						<div class="donghua-body-right-quanbu">
+							<!-- 排名 -->
+							<div class="donghua-body-right-quanbu-paiming">1</div>
+							<!-- 图片 -->
+							<!-- <img src="./images/touxiang.jpg" alt=""> -->
+							<!-- 简介 -->
+							<div class="donghua-body-right-quanbu-jianjie">
+								<!-- 标题 -->
+								<span class="donghua-body-right-quanbu-jianjie-title">
+									《博人传2 火影忍者新时代》十尾恶化与九尾背水一战 十尾分裂者巢穴
+								</span>
+								<!-- 综合评分 -->
+								<!-- <span class="donghua-body-right-quanbu-jianjie-pingfen">
+									综合评分：70.7万
+								</span> -->
+							</div>
+						</div>
+						<!-- 一部动漫 -->
+						<div class="donghua-body-right-quanbu">
+							<!-- 排名 -->
+							<div class="donghua-body-right-quanbu-paiming">1</div>
+							<!-- 图片 -->
+							<!-- <img src="./images/touxiang.jpg" alt=""> -->
+							<!-- 简介 -->
+							<div class="donghua-body-right-quanbu-jianjie">
+								<!-- 标题 -->
+								<span class="donghua-body-right-quanbu-jianjie-title">
+									《博人传2 火影忍者新时代》十尾恶化与九尾背水一战 十尾分裂者巢穴
+								</span>
+								<!-- 综合评分 -->
+								<!-- <span class="donghua-body-right-quanbu-jianjie-pingfen">
+										综合评分：70.7万
+									</span> -->
+							</div>
+						</div>
+						<!-- 查看更多 -->
+						<div class="donghua-body-right-quanbu-gengduo">
+							查看更多<span class="glyphicon glyphicon-chevron-right"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 舞蹈E -->
+
+		<!-- 游戏S -->
+		<div class="youxi lt">
+			<div class="donghua">
+				<!-- 标题 -->
+				<div class="donghua-top">
+					<!-- 标题-左 -->
+					<div class="donghua-top-left">
+						<div class="donghua-top-left-title">
+							<img src="./images/logo.png" alt="">
+							<span class="donghua-top-left-title">游戏</span>
+							<span>有新动态</span>
+							<span>最新投稿</span>
+						</div>
+						<div class="donghua-title-left-gengduo">
+							更多<span class="glyphicon glyphicon-chevron-right"></span>
+						</div>
+					</div>
+					<!-- 标题-右 -->
+					<div class="donghua-top-right">
+						<!-- 排行 -->
+						<div class="donghua-top-right-left">
+							<div>排行</div>
+							<span>全部</span>
+							<span>原创</span>
+						</div>
+						<!-- 三日 -->
+						<div class="donghua-top-right-right">
+							<div>三日<span class="glyphicon glyphicon-chevron-down"></span></div>
+							<!-- <select name="" id="">
+								<option value=""></option>
+							</select> -->
+						</div>
+					</div>
+				</div>
+				<!-- 主体 -->
+				<div class="donghua-body">
+					<!-- 主体-左 -->
+					<div class="donghua-body-left">
+						<!-- 一个视频盒子 -->
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【PR】Premiere Pro CC 2019全套入门教程</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【PR】Premiere Pro CC 2019全套入门教程</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【PR】Premiere Pro CC 2019全套入门教程</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【PR】Premiere Pro CC 2019全套入门教程</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【PR】Premiere Pro CC 2019全套入门教程</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【PR】Premiere Pro CC 2019全套入门教程</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【PR】Premiere Pro CC 2019全套入门教程</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【PR】Premiere Pro CC 2019全套入门教程</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+					</div>
+					<!-- 主体-右 -->
+					<div class="donghua-body-right">
+						<!-- 一部动漫 -->
+						<div class="donghua-body-right-quanbu">
+							<!-- 排名 -->
+							<div class="donghua-body-right-quanbu-paiming">1</div>
+							<!-- 图片 -->
+							<img src="./images/touxiang.jpg" alt="">
+							<!-- 简介 -->
+							<div class="donghua-body-right-quanbu-jianjie">
+								<!-- 标题 -->
+								<span class="donghua-body-right-quanbu-jianjie-title">
+									《博人传2 火影忍者新时代》十尾恶化与九尾背水一战 十尾分裂者巢穴
+								</span>
+								<!-- 综合评分 -->
+								<span class="donghua-body-right-quanbu-jianjie-pingfen">
+									综合评分：70.7万
+								</span>
+							</div>
+						</div>
+						<!-- 一部动漫 -->
+						<div class="donghua-body-right-quanbu">
+							<!-- 排名 -->
+							<div class="donghua-body-right-quanbu-paiming">1</div>
+							<!-- 图片 -->
+							<!-- <img src="./images/touxiang.jpg" alt=""> -->
+							<!-- 简介 -->
+							<div class="donghua-body-right-quanbu-jianjie">
+								<!-- 标题 -->
+								<span class="donghua-body-right-quanbu-jianjie-title">
+									《博人传2 火影忍者新时代》十尾恶化与九尾背水一战 十尾分裂者巢穴
+								</span>
+								<!-- 综合评分 -->
+								<!-- <span class="donghua-body-right-quanbu-jianjie-pingfen">
+									综合评分：70.7万
+								</span> -->
+							</div>
+						</div>
+						<!-- 一部动漫 -->
+						<div class="donghua-body-right-quanbu">
+							<!-- 排名 -->
+							<div class="donghua-body-right-quanbu-paiming">1</div>
+							<!-- 图片 -->
+							<!-- <img src="./images/touxiang.jpg" alt=""> -->
+							<!-- 简介 -->
+							<div class="donghua-body-right-quanbu-jianjie">
+								<!-- 标题 -->
+								<span class="donghua-body-right-quanbu-jianjie-title">
+									《博人传2 火影忍者新时代》十尾恶化与九尾背水一战 十尾分裂者巢穴
+								</span>
+								<!-- 综合评分 -->
+								<!-- <span class="donghua-body-right-quanbu-jianjie-pingfen">
+									综合评分：70.7万
+								</span> -->
+							</div>
+						</div>
+						<!-- 一部动漫 -->
+						<div class="donghua-body-right-quanbu">
+							<!-- 排名 -->
+							<div class="donghua-body-right-quanbu-paiming">1</div>
+							<!-- 图片 -->
+							<!-- <img src="./images/touxiang.jpg" alt=""> -->
+							<!-- 简介 -->
+							<div class="donghua-body-right-quanbu-jianjie">
+								<!-- 标题 -->
+								<span class="donghua-body-right-quanbu-jianjie-title">
+									《博人传2 火影忍者新时代》十尾恶化与九尾背水一战 十尾分裂者巢穴
+								</span>
+								<!-- 综合评分 -->
+								<!-- <span class="donghua-body-right-quanbu-jianjie-pingfen">
+									综合评分：70.7万
+								</span> -->
+							</div>
+						</div>
+						<!-- 一部动漫 -->
+						<div class="donghua-body-right-quanbu">
+							<!-- 排名 -->
+							<div class="donghua-body-right-quanbu-paiming">1</div>
+							<!-- 图片 -->
+							<!-- <img src="./images/touxiang.jpg" alt=""> -->
+							<!-- 简介 -->
+							<div class="donghua-body-right-quanbu-jianjie">
+								<!-- 标题 -->
+								<span class="donghua-body-right-quanbu-jianjie-title">
+									《博人传2 火影忍者新时代》十尾恶化与九尾背水一战 十尾分裂者巢穴
+								</span>
+								<!-- 综合评分 -->
+								<!-- <span class="donghua-body-right-quanbu-jianjie-pingfen">
+										综合评分：70.7万
+									</span> -->
+							</div>
+						</div>
+						<!-- 查看更多 -->
+						<div class="donghua-body-right-quanbu-gengduo">
+							查看更多<span class="glyphicon glyphicon-chevron-right"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 游戏E -->
+
+		<!-- 科技S -->
+		<div class="keji lt">
+			<div class="donghua">
+				<!-- 标题 -->
+				<div class="donghua-top">
+					<!-- 标题-左 -->
+					<div class="donghua-top-left">
+						<div class="donghua-top-left-title">
+							<img src="./images/logo.png" alt="">
+							<span class="donghua-top-left-title">科技</span>
+							<span>有新动态</span>
+							<span>最新投稿</span>
+						</div>
+						<div class="donghua-title-left-gengduo">
+							更多<span class="glyphicon glyphicon-chevron-right"></span>
+						</div>
+					</div>
+					<!-- 标题-右 -->
+					<div class="donghua-top-right">
+						<!-- 排行 -->
+						<div class="donghua-top-right-left">
+							<div>排行</div>
+							<span>全部</span>
+							<span>原创</span>
+						</div>
+						<!-- 三日 -->
+						<div class="donghua-top-right-right">
+							<div>三日<span class="glyphicon glyphicon-chevron-down"></span></div>
+							<!-- <select name="" id="">
+								<option value=""></option>
+							</select> -->
+						</div>
+					</div>
+				</div>
+				<!-- 主体 -->
+				<div class="donghua-body">
+					<!-- 主体-左 -->
+					<div class="donghua-body-left">
+						<!-- 一个视频盒子 -->
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【PR】Premiere Pro CC 2019全套入门教程</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【PR】Premiere Pro CC 2019全套入门教程</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【PR】Premiere Pro CC 2019全套入门教程</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【PR】Premiere Pro CC 2019全套入门教程</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【PR】Premiere Pro CC 2019全套入门教程</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【PR】Premiere Pro CC 2019全套入门教程</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【PR】Premiere Pro CC 2019全套入门教程</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【PR】Premiere Pro CC 2019全套入门教程</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+					</div>
+					<!-- 主体-右 -->
+					<div class="donghua-body-right">
+						<!-- 一部动漫 -->
+						<div class="donghua-body-right-quanbu">
+							<!-- 排名 -->
+							<div class="donghua-body-right-quanbu-paiming">1</div>
+							<!-- 图片 -->
+							<img src="./images/touxiang.jpg" alt="">
+							<!-- 简介 -->
+							<div class="donghua-body-right-quanbu-jianjie">
+								<!-- 标题 -->
+								<span class="donghua-body-right-quanbu-jianjie-title">
+									《博人传2 火影忍者新时代》十尾恶化与九尾背水一战 十尾分裂者巢穴
+								</span>
+								<!-- 综合评分 -->
+								<span class="donghua-body-right-quanbu-jianjie-pingfen">
+									综合评分：70.7万
+								</span>
+							</div>
+						</div>
+						<!-- 一部动漫 -->
+						<div class="donghua-body-right-quanbu">
+							<!-- 排名 -->
+							<div class="donghua-body-right-quanbu-paiming">1</div>
+							<!-- 图片 -->
+							<!-- <img src="./images/touxiang.jpg" alt=""> -->
+							<!-- 简介 -->
+							<div class="donghua-body-right-quanbu-jianjie">
+								<!-- 标题 -->
+								<span class="donghua-body-right-quanbu-jianjie-title">
+									《博人传2 火影忍者新时代》十尾恶化与九尾背水一战 十尾分裂者巢穴
+								</span>
+								<!-- 综合评分 -->
+								<!-- <span class="donghua-body-right-quanbu-jianjie-pingfen">
+									综合评分：70.7万
+								</span> -->
+							</div>
+						</div>
+						<!-- 一部动漫 -->
+						<div class="donghua-body-right-quanbu">
+							<!-- 排名 -->
+							<div class="donghua-body-right-quanbu-paiming">1</div>
+							<!-- 图片 -->
+							<!-- <img src="./images/touxiang.jpg" alt=""> -->
+							<!-- 简介 -->
+							<div class="donghua-body-right-quanbu-jianjie">
+								<!-- 标题 -->
+								<span class="donghua-body-right-quanbu-jianjie-title">
+									《博人传2 火影忍者新时代》十尾恶化与九尾背水一战 十尾分裂者巢穴
+								</span>
+								<!-- 综合评分 -->
+								<!-- <span class="donghua-body-right-quanbu-jianjie-pingfen">
+									综合评分：70.7万
+								</span> -->
+							</div>
+						</div>
+						<!-- 一部动漫 -->
+						<div class="donghua-body-right-quanbu">
+							<!-- 排名 -->
+							<div class="donghua-body-right-quanbu-paiming">1</div>
+							<!-- 图片 -->
+							<!-- <img src="./images/touxiang.jpg" alt=""> -->
+							<!-- 简介 -->
+							<div class="donghua-body-right-quanbu-jianjie">
+								<!-- 标题 -->
+								<span class="donghua-body-right-quanbu-jianjie-title">
+									《博人传2 火影忍者新时代》十尾恶化与九尾背水一战 十尾分裂者巢穴
+								</span>
+								<!-- 综合评分 -->
+								<!-- <span class="donghua-body-right-quanbu-jianjie-pingfen">
+									综合评分：70.7万
+								</span> -->
+							</div>
+						</div>
+						<!-- 一部动漫 -->
+						<div class="donghua-body-right-quanbu">
+							<!-- 排名 -->
+							<div class="donghua-body-right-quanbu-paiming">1</div>
+							<!-- 图片 -->
+							<!-- <img src="./images/touxiang.jpg" alt=""> -->
+							<!-- 简介 -->
+							<div class="donghua-body-right-quanbu-jianjie">
+								<!-- 标题 -->
+								<span class="donghua-body-right-quanbu-jianjie-title">
+									《博人传2 火影忍者新时代》十尾恶化与九尾背水一战 十尾分裂者巢穴
+								</span>
+								<!-- 综合评分 -->
+								<!-- <span class="donghua-body-right-quanbu-jianjie-pingfen">
+										综合评分：70.7万
+									</span> -->
+							</div>
+						</div>
+						<!-- 查看更多 -->
+						<div class="donghua-body-right-quanbu-gengduo">
+							查看更多<span class="glyphicon glyphicon-chevron-right"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 科技E -->
+
+		<!-- 数码S -->
+		<div class="shuma lt">
+			<div class="donghua">
+				<!-- 标题 -->
+				<div class="donghua-top">
+					<!-- 标题-左 -->
+					<div class="donghua-top-left">
+						<div class="donghua-top-left-title">
+							<img src="./images/logo.png" alt="">
+							<span class="donghua-top-left-title">数码</span>
+							<span>有新动态</span>
+							<span>最新投稿</span>
+						</div>
+						<div class="donghua-title-left-gengduo">
+							更多<span class="glyphicon glyphicon-chevron-right"></span>
+						</div>
+					</div>
+					<!-- 标题-右 -->
+					<div class="donghua-top-right">
+						<!-- 排行 -->
+						<div class="donghua-top-right-left">
+							<div>排行</div>
+							<span>全部</span>
+							<span>原创</span>
+						</div>
+						<!-- 三日 -->
+						<div class="donghua-top-right-right">
+							<div>三日<span class="glyphicon glyphicon-chevron-down"></span></div>
+							<!-- <select name="" id="">
+								<option value=""></option>
+							</select> -->
+						</div>
+					</div>
+				</div>
+				<!-- 主体 -->
+				<div class="donghua-body">
+					<!-- 主体-左 -->
+					<div class="donghua-body-left">
+						<!-- 一个视频盒子 -->
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【PR】Premiere Pro CC 2019全套入门教程</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【PR】Premiere Pro CC 2019全套入门教程</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【PR】Premiere Pro CC 2019全套入门教程</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【PR】Premiere Pro CC 2019全套入门教程</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【PR】Premiere Pro CC 2019全套入门教程</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【PR】Premiere Pro CC 2019全套入门教程</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【PR】Premiere Pro CC 2019全套入门教程</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【PR】Premiere Pro CC 2019全套入门教程</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+					</div>
+					<!-- 主体-右 -->
+					<div class="donghua-body-right">
+						<!-- 一部动漫 -->
+						<div class="donghua-body-right-quanbu">
+							<!-- 排名 -->
+							<div class="donghua-body-right-quanbu-paiming">1</div>
+							<!-- 图片 -->
+							<img src="./images/touxiang.jpg" alt="">
+							<!-- 简介 -->
+							<div class="donghua-body-right-quanbu-jianjie">
+								<!-- 标题 -->
+								<span class="donghua-body-right-quanbu-jianjie-title">
+									《博人传2 火影忍者新时代》十尾恶化与九尾背水一战 十尾分裂者巢穴
+								</span>
+								<!-- 综合评分 -->
+								<span class="donghua-body-right-quanbu-jianjie-pingfen">
+									综合评分：70.7万
+								</span>
+							</div>
+						</div>
+						<!-- 一部动漫 -->
+						<div class="donghua-body-right-quanbu">
+							<!-- 排名 -->
+							<div class="donghua-body-right-quanbu-paiming">1</div>
+							<!-- 图片 -->
+							<!-- <img src="./images/touxiang.jpg" alt=""> -->
+							<!-- 简介 -->
+							<div class="donghua-body-right-quanbu-jianjie">
+								<!-- 标题 -->
+								<span class="donghua-body-right-quanbu-jianjie-title">
+									《博人传2 火影忍者新时代》十尾恶化与九尾背水一战 十尾分裂者巢穴
+								</span>
+								<!-- 综合评分 -->
+								<!-- <span class="donghua-body-right-quanbu-jianjie-pingfen">
+									综合评分：70.7万
+								</span> -->
+							</div>
+						</div>
+						<!-- 一部动漫 -->
+						<div class="donghua-body-right-quanbu">
+							<!-- 排名 -->
+							<div class="donghua-body-right-quanbu-paiming">1</div>
+							<!-- 图片 -->
+							<!-- <img src="./images/touxiang.jpg" alt=""> -->
+							<!-- 简介 -->
+							<div class="donghua-body-right-quanbu-jianjie">
+								<!-- 标题 -->
+								<span class="donghua-body-right-quanbu-jianjie-title">
+									《博人传2 火影忍者新时代》十尾恶化与九尾背水一战 十尾分裂者巢穴
+								</span>
+								<!-- 综合评分 -->
+								<!-- <span class="donghua-body-right-quanbu-jianjie-pingfen">
+									综合评分：70.7万
+								</span> -->
+							</div>
+						</div>
+						<!-- 一部动漫 -->
+						<div class="donghua-body-right-quanbu">
+							<!-- 排名 -->
+							<div class="donghua-body-right-quanbu-paiming">1</div>
+							<!-- 图片 -->
+							<!-- <img src="./images/touxiang.jpg" alt=""> -->
+							<!-- 简介 -->
+							<div class="donghua-body-right-quanbu-jianjie">
+								<!-- 标题 -->
+								<span class="donghua-body-right-quanbu-jianjie-title">
+									《博人传2 火影忍者新时代》十尾恶化与九尾背水一战 十尾分裂者巢穴
+								</span>
+								<!-- 综合评分 -->
+								<!-- <span class="donghua-body-right-quanbu-jianjie-pingfen">
+									综合评分：70.7万
+								</span> -->
+							</div>
+						</div>
+						<!-- 一部动漫 -->
+						<div class="donghua-body-right-quanbu">
+							<!-- 排名 -->
+							<div class="donghua-body-right-quanbu-paiming">1</div>
+							<!-- 图片 -->
+							<!-- <img src="./images/touxiang.jpg" alt=""> -->
+							<!-- 简介 -->
+							<div class="donghua-body-right-quanbu-jianjie">
+								<!-- 标题 -->
+								<span class="donghua-body-right-quanbu-jianjie-title">
+									《博人传2 火影忍者新时代》十尾恶化与九尾背水一战 十尾分裂者巢穴
+								</span>
+								<!-- 综合评分 -->
+								<!-- <span class="donghua-body-right-quanbu-jianjie-pingfen">
+										综合评分：70.7万
+									</span> -->
+							</div>
+						</div>
+						<!-- 查看更多 -->
+						<div class="donghua-body-right-quanbu-gengduo">
+							查看更多<span class="glyphicon glyphicon-chevron-right"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 数码E -->
+
+		<!-- 生活S -->
+		<div class="shenghuo lt">
+			<div class="donghua">
+				<!-- 标题 -->
+				<div class="donghua-top">
+					<!-- 标题-左 -->
+					<div class="donghua-top-left">
+						<div class="donghua-top-left-title">
+							<img src="./images/logo.png" alt="">
+							<span class="donghua-top-left-title">生活</span>
+							<span>有新动态</span>
+							<span>最新投稿</span>
+						</div>
+						<div class="donghua-title-left-gengduo">
+							更多<span class="glyphicon glyphicon-chevron-right"></span>
+						</div>
+					</div>
+					<!-- 标题-右 -->
+					<div class="donghua-top-right">
+						<!-- 排行 -->
+						<div class="donghua-top-right-left">
+							<div>排行</div>
+							<span>全部</span>
+							<span>原创</span>
+						</div>
+						<!-- 三日 -->
+						<div class="donghua-top-right-right">
+							<div>三日<span class="glyphicon glyphicon-chevron-down"></span></div>
+							<!-- <select name="" id="">
+								<option value=""></option>
+							</select> -->
+						</div>
+					</div>
+				</div>
+				<!-- 主体 -->
+				<div class="donghua-body">
+					<!-- 主体-左 -->
+					<div class="donghua-body-left">
+						<!-- 一个视频盒子 -->
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【PR】Premiere Pro CC 2019全套入门教程</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【PR】Premiere Pro CC 2019全套入门教程</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【PR】Premiere Pro CC 2019全套入门教程</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【PR】Premiere Pro CC 2019全套入门教程</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【PR】Premiere Pro CC 2019全套入门教程</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【PR】Premiere Pro CC 2019全套入门教程</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【PR】Premiere Pro CC 2019全套入门教程</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【PR】Premiere Pro CC 2019全套入门教程</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+					</div>
+					<!-- 主体-右 -->
+					<div class="donghua-body-right">
+						<!-- 一部动漫 -->
+						<div class="donghua-body-right-quanbu">
+							<!-- 排名 -->
+							<div class="donghua-body-right-quanbu-paiming">1</div>
+							<!-- 图片 -->
+							<img src="./images/touxiang.jpg" alt="">
+							<!-- 简介 -->
+							<div class="donghua-body-right-quanbu-jianjie">
+								<!-- 标题 -->
+								<span class="donghua-body-right-quanbu-jianjie-title">
+									《博人传2 火影忍者新时代》十尾恶化与九尾背水一战 十尾分裂者巢穴
+								</span>
+								<!-- 综合评分 -->
+								<span class="donghua-body-right-quanbu-jianjie-pingfen">
+									综合评分：70.7万
+								</span>
+							</div>
+						</div>
+						<!-- 一部动漫 -->
+						<div class="donghua-body-right-quanbu">
+							<!-- 排名 -->
+							<div class="donghua-body-right-quanbu-paiming">1</div>
+							<!-- 图片 -->
+							<!-- <img src="./images/touxiang.jpg" alt=""> -->
+							<!-- 简介 -->
+							<div class="donghua-body-right-quanbu-jianjie">
+								<!-- 标题 -->
+								<span class="donghua-body-right-quanbu-jianjie-title">
+									《博人传2 火影忍者新时代》十尾恶化与九尾背水一战 十尾分裂者巢穴
+								</span>
+								<!-- 综合评分 -->
+								<!-- <span class="donghua-body-right-quanbu-jianjie-pingfen">
+									综合评分：70.7万
+								</span> -->
+							</div>
+						</div>
+						<!-- 一部动漫 -->
+						<div class="donghua-body-right-quanbu">
+							<!-- 排名 -->
+							<div class="donghua-body-right-quanbu-paiming">1</div>
+							<!-- 图片 -->
+							<!-- <img src="./images/touxiang.jpg" alt=""> -->
+							<!-- 简介 -->
+							<div class="donghua-body-right-quanbu-jianjie">
+								<!-- 标题 -->
+								<span class="donghua-body-right-quanbu-jianjie-title">
+									《博人传2 火影忍者新时代》十尾恶化与九尾背水一战 十尾分裂者巢穴
+								</span>
+								<!-- 综合评分 -->
+								<!-- <span class="donghua-body-right-quanbu-jianjie-pingfen">
+									综合评分：70.7万
+								</span> -->
+							</div>
+						</div>
+						<!-- 一部动漫 -->
+						<div class="donghua-body-right-quanbu">
+							<!-- 排名 -->
+							<div class="donghua-body-right-quanbu-paiming">1</div>
+							<!-- 图片 -->
+							<!-- <img src="./images/touxiang.jpg" alt=""> -->
+							<!-- 简介 -->
+							<div class="donghua-body-right-quanbu-jianjie">
+								<!-- 标题 -->
+								<span class="donghua-body-right-quanbu-jianjie-title">
+									《博人传2 火影忍者新时代》十尾恶化与九尾背水一战 十尾分裂者巢穴
+								</span>
+								<!-- 综合评分 -->
+								<!-- <span class="donghua-body-right-quanbu-jianjie-pingfen">
+									综合评分：70.7万
+								</span> -->
+							</div>
+						</div>
+						<!-- 一部动漫 -->
+						<div class="donghua-body-right-quanbu">
+							<!-- 排名 -->
+							<div class="donghua-body-right-quanbu-paiming">1</div>
+							<!-- 图片 -->
+							<!-- <img src="./images/touxiang.jpg" alt=""> -->
+							<!-- 简介 -->
+							<div class="donghua-body-right-quanbu-jianjie">
+								<!-- 标题 -->
+								<span class="donghua-body-right-quanbu-jianjie-title">
+									《博人传2 火影忍者新时代》十尾恶化与九尾背水一战 十尾分裂者巢穴
+								</span>
+								<!-- 综合评分 -->
+								<!-- <span class="donghua-body-right-quanbu-jianjie-pingfen">
+										综合评分：70.7万
+									</span> -->
+							</div>
+						</div>
+						<!-- 查看更多 -->
+						<div class="donghua-body-right-quanbu-gengduo">
+							查看更多<span class="glyphicon glyphicon-chevron-right"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 生活E -->
+
+		<!-- 鬼畜S -->
+		<div class="guichu lt">
+			<div class="donghua">
+				<!-- 标题 -->
+				<div class="donghua-top">
+					<!-- 标题-左 -->
+					<div class="donghua-top-left">
+						<div class="donghua-top-left-title">
+							<img src="./images/logo.png" alt="">
+							<span class="donghua-top-left-title">鬼畜</span>
+							<span>有新动态</span>
+							<span>最新投稿</span>
+						</div>
+						<div class="donghua-title-left-gengduo">
+							更多<span class="glyphicon glyphicon-chevron-right"></span>
+						</div>
+					</div>
+					<!-- 标题-右 -->
+					<div class="donghua-top-right">
+						<!-- 排行 -->
+						<div class="donghua-top-right-left">
+							<div>排行</div>
+							<span>全部</span>
+							<span>原创</span>
+						</div>
+						<!-- 三日 -->
+						<div class="donghua-top-right-right">
+							<div>三日<span class="glyphicon glyphicon-chevron-down"></span></div>
+							<!-- <select name="" id="">
+								<option value=""></option>
+							</select> -->
+						</div>
+					</div>
+				</div>
+				<!-- 主体 -->
+				<div class="donghua-body">
+					<!-- 主体-左 -->
+					<div class="donghua-body-left">
+						<!-- 一个视频盒子 -->
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【PR】Premiere Pro CC 2019全套入门教程</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【PR】Premiere Pro CC 2019全套入门教程</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【PR】Premiere Pro CC 2019全套入门教程</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【PR】Premiere Pro CC 2019全套入门教程</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【PR】Premiere Pro CC 2019全套入门教程</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【PR】Premiere Pro CC 2019全套入门教程</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【PR】Premiere Pro CC 2019全套入门教程</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【PR】Premiere Pro CC 2019全套入门教程</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+					</div>
+					<!-- 主体-右 -->
+					<div class="donghua-body-right">
+						<!-- 一部动漫 -->
+						<div class="donghua-body-right-quanbu">
+							<!-- 排名 -->
+							<div class="donghua-body-right-quanbu-paiming">1</div>
+							<!-- 图片 -->
+							<img src="./images/touxiang.jpg" alt="">
+							<!-- 简介 -->
+							<div class="donghua-body-right-quanbu-jianjie">
+								<!-- 标题 -->
+								<span class="donghua-body-right-quanbu-jianjie-title">
+									《博人传2 火影忍者新时代》十尾恶化与九尾背水一战 十尾分裂者巢穴
+								</span>
+								<!-- 综合评分 -->
+								<span class="donghua-body-right-quanbu-jianjie-pingfen">
+									综合评分：70.7万
+								</span>
+							</div>
+						</div>
+						<!-- 一部动漫 -->
+						<div class="donghua-body-right-quanbu">
+							<!-- 排名 -->
+							<div class="donghua-body-right-quanbu-paiming">1</div>
+							<!-- 图片 -->
+							<!-- <img src="./images/touxiang.jpg" alt=""> -->
+							<!-- 简介 -->
+							<div class="donghua-body-right-quanbu-jianjie">
+								<!-- 标题 -->
+								<span class="donghua-body-right-quanbu-jianjie-title">
+									《博人传2 火影忍者新时代》十尾恶化与九尾背水一战 十尾分裂者巢穴
+								</span>
+								<!-- 综合评分 -->
+								<!-- <span class="donghua-body-right-quanbu-jianjie-pingfen">
+									综合评分：70.7万
+								</span> -->
+							</div>
+						</div>
+						<!-- 一部动漫 -->
+						<div class="donghua-body-right-quanbu">
+							<!-- 排名 -->
+							<div class="donghua-body-right-quanbu-paiming">1</div>
+							<!-- 图片 -->
+							<!-- <img src="./images/touxiang.jpg" alt=""> -->
+							<!-- 简介 -->
+							<div class="donghua-body-right-quanbu-jianjie">
+								<!-- 标题 -->
+								<span class="donghua-body-right-quanbu-jianjie-title">
+									《博人传2 火影忍者新时代》十尾恶化与九尾背水一战 十尾分裂者巢穴
+								</span>
+								<!-- 综合评分 -->
+								<!-- <span class="donghua-body-right-quanbu-jianjie-pingfen">
+									综合评分：70.7万
+								</span> -->
+							</div>
+						</div>
+						<!-- 一部动漫 -->
+						<div class="donghua-body-right-quanbu">
+							<!-- 排名 -->
+							<div class="donghua-body-right-quanbu-paiming">1</div>
+							<!-- 图片 -->
+							<!-- <img src="./images/touxiang.jpg" alt=""> -->
+							<!-- 简介 -->
+							<div class="donghua-body-right-quanbu-jianjie">
+								<!-- 标题 -->
+								<span class="donghua-body-right-quanbu-jianjie-title">
+									《博人传2 火影忍者新时代》十尾恶化与九尾背水一战 十尾分裂者巢穴
+								</span>
+								<!-- 综合评分 -->
+								<!-- <span class="donghua-body-right-quanbu-jianjie-pingfen">
+									综合评分：70.7万
+								</span> -->
+							</div>
+						</div>
+						<!-- 一部动漫 -->
+						<div class="donghua-body-right-quanbu">
+							<!-- 排名 -->
+							<div class="donghua-body-right-quanbu-paiming">1</div>
+							<!-- 图片 -->
+							<!-- <img src="./images/touxiang.jpg" alt=""> -->
+							<!-- 简介 -->
+							<div class="donghua-body-right-quanbu-jianjie">
+								<!-- 标题 -->
+								<span class="donghua-body-right-quanbu-jianjie-title">
+									《博人传2 火影忍者新时代》十尾恶化与九尾背水一战 十尾分裂者巢穴
+								</span>
+								<!-- 综合评分 -->
+								<!-- <span class="donghua-body-right-quanbu-jianjie-pingfen">
+										综合评分：70.7万
+									</span> -->
+							</div>
+						</div>
+						<!-- 查看更多 -->
+						<div class="donghua-body-right-quanbu-gengduo">
+							查看更多<span class="glyphicon glyphicon-chevron-right"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 鬼畜E -->
+
+		<!-- 时尚S -->
+		<div class="shishang lt">
+			<div class="donghua">
+				<!-- 标题 -->
+				<div class="donghua-top">
+					<!-- 标题-左 -->
+					<div class="donghua-top-left">
+						<div class="donghua-top-left-title">
+							<img src="./images/logo.png" alt="">
+							<span class="donghua-top-left-title">时尚</span>
+							<span>有新动态</span>
+							<span>最新投稿</span>
+						</div>
+						<div class="donghua-title-left-gengduo">
+							更多<span class="glyphicon glyphicon-chevron-right"></span>
+						</div>
+					</div>
+					<!-- 标题-右 -->
+					<div class="donghua-top-right">
+						<!-- 排行 -->
+						<div class="donghua-top-right-left">
+							<div>排行</div>
+							<span>全部</span>
+							<span>原创</span>
+						</div>
+						<!-- 三日 -->
+						<div class="donghua-top-right-right">
+							<div>三日<span class="glyphicon glyphicon-chevron-down"></span></div>
+							<!-- <select name="" id="">
+								<option value=""></option>
+							</select> -->
+						</div>
+					</div>
+				</div>
+				<!-- 主体 -->
+				<div class="donghua-body">
+					<!-- 主体-左 -->
+					<div class="donghua-body-left">
+						<!-- 一个视频盒子 -->
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【PR】Premiere Pro CC 2019全套入门教程</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【PR】Premiere Pro CC 2019全套入门教程</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【PR】Premiere Pro CC 2019全套入门教程</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【PR】Premiere Pro CC 2019全套入门教程</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【PR】Premiere Pro CC 2019全套入门教程</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【PR】Premiere Pro CC 2019全套入门教程</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【PR】Premiere Pro CC 2019全套入门教程</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【PR】Premiere Pro CC 2019全套入门教程</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+					</div>
+					<!-- 主体-右 -->
+					<div class="donghua-body-right">
+						<!-- 一部动漫 -->
+						<div class="donghua-body-right-quanbu">
+							<!-- 排名 -->
+							<div class="donghua-body-right-quanbu-paiming">1</div>
+							<!-- 图片 -->
+							<img src="./images/touxiang.jpg" alt="">
+							<!-- 简介 -->
+							<div class="donghua-body-right-quanbu-jianjie">
+								<!-- 标题 -->
+								<span class="donghua-body-right-quanbu-jianjie-title">
+									《博人传2 火影忍者新时代》十尾恶化与九尾背水一战 十尾分裂者巢穴
+								</span>
+								<!-- 综合评分 -->
+								<span class="donghua-body-right-quanbu-jianjie-pingfen">
+									综合评分：70.7万
+								</span>
+							</div>
+						</div>
+						<!-- 一部动漫 -->
+						<div class="donghua-body-right-quanbu">
+							<!-- 排名 -->
+							<div class="donghua-body-right-quanbu-paiming">1</div>
+							<!-- 图片 -->
+							<!-- <img src="./images/touxiang.jpg" alt=""> -->
+							<!-- 简介 -->
+							<div class="donghua-body-right-quanbu-jianjie">
+								<!-- 标题 -->
+								<span class="donghua-body-right-quanbu-jianjie-title">
+									《博人传2 火影忍者新时代》十尾恶化与九尾背水一战 十尾分裂者巢穴
+								</span>
+								<!-- 综合评分 -->
+								<!-- <span class="donghua-body-right-quanbu-jianjie-pingfen">
+									综合评分：70.7万
+								</span> -->
+							</div>
+						</div>
+						<!-- 一部动漫 -->
+						<div class="donghua-body-right-quanbu">
+							<!-- 排名 -->
+							<div class="donghua-body-right-quanbu-paiming">1</div>
+							<!-- 图片 -->
+							<!-- <img src="./images/touxiang.jpg" alt=""> -->
+							<!-- 简介 -->
+							<div class="donghua-body-right-quanbu-jianjie">
+								<!-- 标题 -->
+								<span class="donghua-body-right-quanbu-jianjie-title">
+									《博人传2 火影忍者新时代》十尾恶化与九尾背水一战 十尾分裂者巢穴
+								</span>
+								<!-- 综合评分 -->
+								<!-- <span class="donghua-body-right-quanbu-jianjie-pingfen">
+									综合评分：70.7万
+								</span> -->
+							</div>
+						</div>
+						<!-- 一部动漫 -->
+						<div class="donghua-body-right-quanbu">
+							<!-- 排名 -->
+							<div class="donghua-body-right-quanbu-paiming">1</div>
+							<!-- 图片 -->
+							<!-- <img src="./images/touxiang.jpg" alt=""> -->
+							<!-- 简介 -->
+							<div class="donghua-body-right-quanbu-jianjie">
+								<!-- 标题 -->
+								<span class="donghua-body-right-quanbu-jianjie-title">
+									《博人传2 火影忍者新时代》十尾恶化与九尾背水一战 十尾分裂者巢穴
+								</span>
+								<!-- 综合评分 -->
+								<!-- <span class="donghua-body-right-quanbu-jianjie-pingfen">
+									综合评分：70.7万
+								</span> -->
+							</div>
+						</div>
+						<!-- 一部动漫 -->
+						<div class="donghua-body-right-quanbu">
+							<!-- 排名 -->
+							<div class="donghua-body-right-quanbu-paiming">1</div>
+							<!-- 图片 -->
+							<!-- <img src="./images/touxiang.jpg" alt=""> -->
+							<!-- 简介 -->
+							<div class="donghua-body-right-quanbu-jianjie">
+								<!-- 标题 -->
+								<span class="donghua-body-right-quanbu-jianjie-title">
+									《博人传2 火影忍者新时代》十尾恶化与九尾背水一战 十尾分裂者巢穴
+								</span>
+								<!-- 综合评分 -->
+								<!-- <span class="donghua-body-right-quanbu-jianjie-pingfen">
+										综合评分：70.7万
+									</span> -->
+							</div>
+						</div>
+						<!-- 查看更多 -->
+						<div class="donghua-body-right-quanbu-gengduo">
+							查看更多<span class="glyphicon glyphicon-chevron-right"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 时尚E -->
+
+		<!-- 广告S -->
+		<div class="guanggao lt">
+			<div class="donghua">
+				<!-- 标题 -->
+				<div class="donghua-top">
+					<!-- 标题-左 -->
+					<div class="donghua-top-left">
+						<div class="donghua-top-left-title">
+							<img src="./images/logo.png" alt="">
+							<span class="donghua-top-left-title">广告</span>
+							<span>有新动态</span>
+							<span>最新投稿</span>
+						</div>
+						<div class="donghua-title-left-gengduo">
+							更多<span class="glyphicon glyphicon-chevron-right"></span>
+						</div>
+					</div>
+					<!-- 标题-右 -->
+					<div class="donghua-top-right">
+						<!-- 排行 -->
+						<div class="donghua-top-right-left">
+							<div>排行</div>
+							<span>全部</span>
+							<span>原创</span>
+						</div>
+						<!-- 三日 -->
+						<div class="donghua-top-right-right">
+							<div>三日<span class="glyphicon glyphicon-chevron-down"></span></div>
+							<!-- <select name="" id="">
+							<option value=""></option>
+						</select> -->
+						</div>
+					</div>
+				</div>
+				<!-- 主体 -->
+				<div class="donghua-body">
+					<!-- 主体-左 -->
+					<div class="donghua-body-left">
+						<!-- 一个视频盒子 -->
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【PR】Premiere Pro CC 2019全套入门教程</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【PR】Premiere Pro CC 2019全套入门教程</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【PR】Premiere Pro CC 2019全套入门教程</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【PR】Premiere Pro CC 2019全套入门教程</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【PR】Premiere Pro CC 2019全套入门教程</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【PR】Premiere Pro CC 2019全套入门教程</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【PR】Premiere Pro CC 2019全套入门教程</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【PR】Premiere Pro CC 2019全套入门教程</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+					</div>
+					<!-- 主体-右 -->
+					<div class="donghua-body-right">
+						<!-- 一部动漫 -->
+						<div class="donghua-body-right-quanbu">
+							<!-- 排名 -->
+							<div class="donghua-body-right-quanbu-paiming">1</div>
+							<!-- 图片 -->
+							<img src="./images/touxiang.jpg" alt="">
+							<!-- 简介 -->
+							<div class="donghua-body-right-quanbu-jianjie">
+								<!-- 标题 -->
+								<span class="donghua-body-right-quanbu-jianjie-title">
+									《博人传2 火影忍者新时代》十尾恶化与九尾背水一战 十尾分裂者巢穴
+								</span>
+								<!-- 综合评分 -->
+								<span class="donghua-body-right-quanbu-jianjie-pingfen">
+									综合评分：70.7万
+								</span>
+							</div>
+						</div>
+						<!-- 一部动漫 -->
+						<div class="donghua-body-right-quanbu">
+							<!-- 排名 -->
+							<div class="donghua-body-right-quanbu-paiming">1</div>
+							<!-- 图片 -->
+							<!-- <img src="./images/touxiang.jpg" alt=""> -->
+							<!-- 简介 -->
+							<div class="donghua-body-right-quanbu-jianjie">
+								<!-- 标题 -->
+								<span class="donghua-body-right-quanbu-jianjie-title">
+									《博人传2 火影忍者新时代》十尾恶化与九尾背水一战 十尾分裂者巢穴
+								</span>
+								<!-- 综合评分 -->
+								<!-- <span class="donghua-body-right-quanbu-jianjie-pingfen">
+								综合评分：70.7万
+							</span> -->
+							</div>
+						</div>
+						<!-- 一部动漫 -->
+						<div class="donghua-body-right-quanbu">
+							<!-- 排名 -->
+							<div class="donghua-body-right-quanbu-paiming">1</div>
+							<!-- 图片 -->
+							<!-- <img src="./images/touxiang.jpg" alt=""> -->
+							<!-- 简介 -->
+							<div class="donghua-body-right-quanbu-jianjie">
+								<!-- 标题 -->
+								<span class="donghua-body-right-quanbu-jianjie-title">
+									《博人传2 火影忍者新时代》十尾恶化与九尾背水一战 十尾分裂者巢穴
+								</span>
+								<!-- 综合评分 -->
+								<!-- <span class="donghua-body-right-quanbu-jianjie-pingfen">
+								综合评分：70.7万
+							</span> -->
+							</div>
+						</div>
+						<!-- 一部动漫 -->
+						<div class="donghua-body-right-quanbu">
+							<!-- 排名 -->
+							<div class="donghua-body-right-quanbu-paiming">1</div>
+							<!-- 图片 -->
+							<!-- <img src="./images/touxiang.jpg" alt=""> -->
+							<!-- 简介 -->
+							<div class="donghua-body-right-quanbu-jianjie">
+								<!-- 标题 -->
+								<span class="donghua-body-right-quanbu-jianjie-title">
+									《博人传2 火影忍者新时代》十尾恶化与九尾背水一战 十尾分裂者巢穴
+								</span>
+								<!-- 综合评分 -->
+								<!-- <span class="donghua-body-right-quanbu-jianjie-pingfen">
+								综合评分：70.7万
+							</span> -->
+							</div>
+						</div>
+						<!-- 一部动漫 -->
+						<div class="donghua-body-right-quanbu">
+							<!-- 排名 -->
+							<div class="donghua-body-right-quanbu-paiming">1</div>
+							<!-- 图片 -->
+							<!-- <img src="./images/touxiang.jpg" alt=""> -->
+							<!-- 简介 -->
+							<div class="donghua-body-right-quanbu-jianjie">
+								<!-- 标题 -->
+								<span class="donghua-body-right-quanbu-jianjie-title">
+									《博人传2 火影忍者新时代》十尾恶化与九尾背水一战 十尾分裂者巢穴
+								</span>
+								<!-- 综合评分 -->
+								<!-- <span class="donghua-body-right-quanbu-jianjie-pingfen">
+									综合评分：70.7万
+								</span> -->
+							</div>
+						</div>
+						<!-- 查看更多 -->
+						<div class="donghua-body-right-quanbu-gengduo">
+							查看更多<span class="glyphicon glyphicon-chevron-right"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 广告E -->
+
+		<!-- 娱乐S -->
+		<div class="yule lt">
+			<div class="donghua">
+				<!-- 标题 -->
+				<div class="donghua-top">
+					<!-- 标题-左 -->
+					<div class="donghua-top-left">
+						<div class="donghua-top-left-title">
+							<img src="./images/logo.png" alt="">
+							<span class="donghua-top-left-title">娱乐</span>
+							<span>有新动态</span>
+							<span>最新投稿</span>
+						</div>
+						<div class="donghua-title-left-gengduo">
+							更多<span class="glyphicon glyphicon-chevron-right"></span>
+						</div>
+					</div>
+					<!-- 标题-右 -->
+					<div class="donghua-top-right">
+						<!-- 排行 -->
+						<div class="donghua-top-right-left">
+							<div>排行</div>
+							<span>全部</span>
+							<span>原创</span>
+						</div>
+						<!-- 三日 -->
+						<div class="donghua-top-right-right">
+							<div>三日<span class="glyphicon glyphicon-chevron-down"></span></div>
+							<!-- <select name="" id="">
+								<option value=""></option>
+							</select> -->
+						</div>
+					</div>
+				</div>
+				<!-- 主体 -->
+				<div class="donghua-body">
+					<!-- 主体-左 -->
+					<div class="donghua-body-left">
+						<!-- 一个视频盒子 -->
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【PR】Premiere Pro CC 2019全套入门教程</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【PR】Premiere Pro CC 2019全套入门教程</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【PR】Premiere Pro CC 2019全套入门教程</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【PR】Premiere Pro CC 2019全套入门教程</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【PR】Premiere Pro CC 2019全套入门教程</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【PR】Premiere Pro CC 2019全套入门教程</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【PR】Premiere Pro CC 2019全套入门教程</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【PR】Premiere Pro CC 2019全套入门教程</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+					</div>
+					<!-- 主体-右 -->
+					<div class="donghua-body-right">
+						<!-- 一部动漫 -->
+						<div class="donghua-body-right-quanbu">
+							<!-- 排名 -->
+							<div class="donghua-body-right-quanbu-paiming">1</div>
+							<!-- 图片 -->
+							<img src="./images/touxiang.jpg" alt="">
+							<!-- 简介 -->
+							<div class="donghua-body-right-quanbu-jianjie">
+								<!-- 标题 -->
+								<span class="donghua-body-right-quanbu-jianjie-title">
+									《博人传2 火影忍者新时代》十尾恶化与九尾背水一战 十尾分裂者巢穴
+								</span>
+								<!-- 综合评分 -->
+								<span class="donghua-body-right-quanbu-jianjie-pingfen">
+									综合评分：70.7万
+								</span>
+							</div>
+						</div>
+						<!-- 一部动漫 -->
+						<div class="donghua-body-right-quanbu">
+							<!-- 排名 -->
+							<div class="donghua-body-right-quanbu-paiming">1</div>
+							<!-- 图片 -->
+							<!-- <img src="./images/touxiang.jpg" alt=""> -->
+							<!-- 简介 -->
+							<div class="donghua-body-right-quanbu-jianjie">
+								<!-- 标题 -->
+								<span class="donghua-body-right-quanbu-jianjie-title">
+									《博人传2 火影忍者新时代》十尾恶化与九尾背水一战 十尾分裂者巢穴
+								</span>
+								<!-- 综合评分 -->
+								<!-- <span class="donghua-body-right-quanbu-jianjie-pingfen">
+									综合评分：70.7万
+								</span> -->
+							</div>
+						</div>
+						<!-- 一部动漫 -->
+						<div class="donghua-body-right-quanbu">
+							<!-- 排名 -->
+							<div class="donghua-body-right-quanbu-paiming">1</div>
+							<!-- 图片 -->
+							<!-- <img src="./images/touxiang.jpg" alt=""> -->
+							<!-- 简介 -->
+							<div class="donghua-body-right-quanbu-jianjie">
+								<!-- 标题 -->
+								<span class="donghua-body-right-quanbu-jianjie-title">
+									《博人传2 火影忍者新时代》十尾恶化与九尾背水一战 十尾分裂者巢穴
+								</span>
+								<!-- 综合评分 -->
+								<!-- <span class="donghua-body-right-quanbu-jianjie-pingfen">
+									综合评分：70.7万
+								</span> -->
+							</div>
+						</div>
+						<!-- 一部动漫 -->
+						<div class="donghua-body-right-quanbu">
+							<!-- 排名 -->
+							<div class="donghua-body-right-quanbu-paiming">1</div>
+							<!-- 图片 -->
+							<!-- <img src="./images/touxiang.jpg" alt=""> -->
+							<!-- 简介 -->
+							<div class="donghua-body-right-quanbu-jianjie">
+								<!-- 标题 -->
+								<span class="donghua-body-right-quanbu-jianjie-title">
+									《博人传2 火影忍者新时代》十尾恶化与九尾背水一战 十尾分裂者巢穴
+								</span>
+								<!-- 综合评分 -->
+								<!-- <span class="donghua-body-right-quanbu-jianjie-pingfen">
+									综合评分：70.7万
+								</span> -->
+							</div>
+						</div>
+						<!-- 一部动漫 -->
+						<div class="donghua-body-right-quanbu">
+							<!-- 排名 -->
+							<div class="donghua-body-right-quanbu-paiming">1</div>
+							<!-- 图片 -->
+							<!-- <img src="./images/touxiang.jpg" alt=""> -->
+							<!-- 简介 -->
+							<div class="donghua-body-right-quanbu-jianjie">
+								<!-- 标题 -->
+								<span class="donghua-body-right-quanbu-jianjie-title">
+									《博人传2 火影忍者新时代》十尾恶化与九尾背水一战 十尾分裂者巢穴
+								</span>
+								<!-- 综合评分 -->
+								<!-- <span class="donghua-body-right-quanbu-jianjie-pingfen">
+										综合评分：70.7万
+									</span> -->
+							</div>
+						</div>
+						<!-- 查看更多 -->
+						<div class="donghua-body-right-quanbu-gengduo">
+							查看更多<span class="glyphicon glyphicon-chevron-right"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 娱乐E -->
+
+		<!-- 电影S -->
+
+		<!-- ************************ 第四天 ************************************* -->
+
+		<!-- 专栏S -->
+
+		<!-- 专栏E -->
+
+		<!-- 电影S -->
+		<div class="dianying lt">
+			<div class="donghua">
+				<!-- 标题 -->
+				<div class="donghua-top">
+					<!-- 标题-左 -->
+					<div class="donghua-top-left">
+						<div class="donghua-top-left-title">
+							<img src="./images/logo.png" alt="">
+							<span class="donghua-top-left-title">电影</span>
+							<span>有新动态</span>
+							<span>最新投稿</span>
+						</div>
+						<div class="donghua-title-left-gengduo">
+							更多<span class="glyphicon glyphicon-chevron-right"></span>
+						</div>
+					</div>
+					<!-- 标题-右 -->
+					<div class="donghua-top-right">
+						<!-- 排行 -->
+						<div class="donghua-top-right-left">
+							<div>排行</div>
+							<span>全部</span>
+							<span>原创</span>
+						</div>
+						<!-- 三日 -->
+						<div class="donghua-top-right-right">
+							<div>三日<span class="glyphicon glyphicon-chevron-down"></span></div>
+							<!-- <select name="" id="">
+							<option value=""></option>
+						</select> -->
+						</div>
+					</div>
+				</div>
+				<!-- 主体 -->
+				<div class="donghua-body">
+					<!-- 主体-左 -->
+					<div class="donghua-body-left">
+						<!-- 一个视频盒子 -->
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【PR】Premiere Pro CC 2019全套入门教程</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【PR】Premiere Pro CC 2019全套入门教程</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【PR】Premiere Pro CC 2019全套入门教程</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【PR】Premiere Pro CC 2019全套入门教程</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【PR】Premiere Pro CC 2019全套入门教程</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【PR】Premiere Pro CC 2019全套入门教程</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【PR】Premiere Pro CC 2019全套入门教程</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【PR】Premiere Pro CC 2019全套入门教程</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+					</div>
+					<!-- 主体-右 -->
+					<div class="donghua-body-right">
+						<!-- 一部动漫 -->
+						<div class="donghua-body-right-quanbu">
+							<!-- 排名 -->
+							<div class="donghua-body-right-quanbu-paiming">1</div>
+							<!-- 图片 -->
+							<img src="./images/touxiang.jpg" alt="">
+							<!-- 简介 -->
+							<div class="donghua-body-right-quanbu-jianjie">
+								<!-- 标题 -->
+								<span class="donghua-body-right-quanbu-jianjie-title">
+									《博人传2 火影忍者新时代》十尾恶化与九尾背水一战 十尾分裂者巢穴
+								</span>
+								<!-- 综合评分 -->
+								<span class="donghua-body-right-quanbu-jianjie-pingfen">
+									综合评分：70.7万
+								</span>
+							</div>
+						</div>
+						<!-- 一部动漫 -->
+						<div class="donghua-body-right-quanbu">
+							<!-- 排名 -->
+							<div class="donghua-body-right-quanbu-paiming">1</div>
+							<!-- 图片 -->
+							<!-- <img src="./images/touxiang.jpg" alt=""> -->
+							<!-- 简介 -->
+							<div class="donghua-body-right-quanbu-jianjie">
+								<!-- 标题 -->
+								<span class="donghua-body-right-quanbu-jianjie-title">
+									《博人传2 火影忍者新时代》十尾恶化与九尾背水一战 十尾分裂者巢穴
+								</span>
+								<!-- 综合评分 -->
+								<!-- <span class="donghua-body-right-quanbu-jianjie-pingfen">
+								综合评分：70.7万
+							</span> -->
+							</div>
+						</div>
+						<!-- 一部动漫 -->
+						<div class="donghua-body-right-quanbu">
+							<!-- 排名 -->
+							<div class="donghua-body-right-quanbu-paiming">1</div>
+							<!-- 图片 -->
+							<!-- <img src="./images/touxiang.jpg" alt=""> -->
+							<!-- 简介 -->
+							<div class="donghua-body-right-quanbu-jianjie">
+								<!-- 标题 -->
+								<span class="donghua-body-right-quanbu-jianjie-title">
+									《博人传2 火影忍者新时代》十尾恶化与九尾背水一战 十尾分裂者巢穴
+								</span>
+								<!-- 综合评分 -->
+								<!-- <span class="donghua-body-right-quanbu-jianjie-pingfen">
+								综合评分：70.7万
+							</span> -->
+							</div>
+						</div>
+						<!-- 一部动漫 -->
+						<div class="donghua-body-right-quanbu">
+							<!-- 排名 -->
+							<div class="donghua-body-right-quanbu-paiming">1</div>
+							<!-- 图片 -->
+							<!-- <img src="./images/touxiang.jpg" alt=""> -->
+							<!-- 简介 -->
+							<div class="donghua-body-right-quanbu-jianjie">
+								<!-- 标题 -->
+								<span class="donghua-body-right-quanbu-jianjie-title">
+									《博人传2 火影忍者新时代》十尾恶化与九尾背水一战 十尾分裂者巢穴
+								</span>
+								<!-- 综合评分 -->
+								<!-- <span class="donghua-body-right-quanbu-jianjie-pingfen">
+								综合评分：70.7万
+							</span> -->
+							</div>
+						</div>
+						<!-- 一部动漫 -->
+						<div class="donghua-body-right-quanbu">
+							<!-- 排名 -->
+							<div class="donghua-body-right-quanbu-paiming">1</div>
+							<!-- 图片 -->
+							<!-- <img src="./images/touxiang.jpg" alt=""> -->
+							<!-- 简介 -->
+							<div class="donghua-body-right-quanbu-jianjie">
+								<!-- 标题 -->
+								<span class="donghua-body-right-quanbu-jianjie-title">
+									《博人传2 火影忍者新时代》十尾恶化与九尾背水一战 十尾分裂者巢穴
+								</span>
+								<!-- 综合评分 -->
+								<!-- <span class="donghua-body-right-quanbu-jianjie-pingfen">
+									综合评分：70.7万
+								</span> -->
+							</div>
+						</div>
+						<!-- 查看更多 -->
+						<div class="donghua-body-right-quanbu-gengduo">
+							查看更多<span class="glyphicon glyphicon-chevron-right"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 电影E -->
+
+		<!-- 电视剧S -->
+		<div class="dianshiju lt">
+			<div class="donghua">
+				<!-- 标题 -->
+				<div class="donghua-top">
+					<!-- 标题-左 -->
+					<div class="donghua-top-left">
+						<div class="donghua-top-left-title">
+							<img src="./images/logo.png" alt="">
+							<span class="donghua-top-left-title">电视剧</span>
+							<span>有新动态</span>
+							<span>最新投稿</span>
+						</div>
+						<div class="donghua-title-left-gengduo">
+							更多<span class="glyphicon glyphicon-chevron-right"></span>
+						</div>
+					</div>
+					<!-- 标题-右 -->
+					<div class="donghua-top-right">
+						<!-- 排行 -->
+						<div class="donghua-top-right-left">
+							<div>排行</div>
+							<span>全部</span>
+							<span>原创</span>
+						</div>
+						<!-- 三日 -->
+						<div class="donghua-top-right-right">
+							<div>三日<span class="glyphicon glyphicon-chevron-down"></span></div>
+							<!-- <select name="" id="">
+							<option value=""></option>
+						</select> -->
+						</div>
+					</div>
+				</div>
+				<!-- 主体 -->
+				<div class="donghua-body">
+					<!-- 主体-左 -->
+					<div class="donghua-body-left">
+						<!-- 一个视频盒子 -->
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【PR】Premiere Pro CC 2019全套入门教程</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【PR】Premiere Pro CC 2019全套入门教程</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【PR】Premiere Pro CC 2019全套入门教程</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【PR】Premiere Pro CC 2019全套入门教程</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【PR】Premiere Pro CC 2019全套入门教程</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【PR】Premiere Pro CC 2019全套入门教程</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【PR】Premiere Pro CC 2019全套入门教程</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【PR】Premiere Pro CC 2019全套入门教程</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+					</div>
+					<!-- 主体-右 -->
+					<div class="donghua-body-right">
+						<!-- 一部动漫 -->
+						<div class="donghua-body-right-quanbu">
+							<!-- 排名 -->
+							<div class="donghua-body-right-quanbu-paiming">1</div>
+							<!-- 图片 -->
+							<img src="./images/touxiang.jpg" alt="">
+							<!-- 简介 -->
+							<div class="donghua-body-right-quanbu-jianjie">
+								<!-- 标题 -->
+								<span class="donghua-body-right-quanbu-jianjie-title">
+									《博人传2 火影忍者新时代》十尾恶化与九尾背水一战 十尾分裂者巢穴
+								</span>
+								<!-- 综合评分 -->
+								<span class="donghua-body-right-quanbu-jianjie-pingfen">
+									综合评分：70.7万
+								</span>
+							</div>
+						</div>
+						<!-- 一部动漫 -->
+						<div class="donghua-body-right-quanbu">
+							<!-- 排名 -->
+							<div class="donghua-body-right-quanbu-paiming">1</div>
+							<!-- 图片 -->
+							<!-- <img src="./images/touxiang.jpg" alt=""> -->
+							<!-- 简介 -->
+							<div class="donghua-body-right-quanbu-jianjie">
+								<!-- 标题 -->
+								<span class="donghua-body-right-quanbu-jianjie-title">
+									《博人传2 火影忍者新时代》十尾恶化与九尾背水一战 十尾分裂者巢穴
+								</span>
+								<!-- 综合评分 -->
+								<!-- <span class="donghua-body-right-quanbu-jianjie-pingfen">
+								综合评分：70.7万
+							</span> -->
+							</div>
+						</div>
+						<!-- 一部动漫 -->
+						<div class="donghua-body-right-quanbu">
+							<!-- 排名 -->
+							<div class="donghua-body-right-quanbu-paiming">1</div>
+							<!-- 图片 -->
+							<!-- <img src="./images/touxiang.jpg" alt=""> -->
+							<!-- 简介 -->
+							<div class="donghua-body-right-quanbu-jianjie">
+								<!-- 标题 -->
+								<span class="donghua-body-right-quanbu-jianjie-title">
+									《博人传2 火影忍者新时代》十尾恶化与九尾背水一战 十尾分裂者巢穴
+								</span>
+								<!-- 综合评分 -->
+								<!-- <span class="donghua-body-right-quanbu-jianjie-pingfen">
+								综合评分：70.7万
+							</span> -->
+							</div>
+						</div>
+						<!-- 一部动漫 -->
+						<div class="donghua-body-right-quanbu">
+							<!-- 排名 -->
+							<div class="donghua-body-right-quanbu-paiming">1</div>
+							<!-- 图片 -->
+							<!-- <img src="./images/touxiang.jpg" alt=""> -->
+							<!-- 简介 -->
+							<div class="donghua-body-right-quanbu-jianjie">
+								<!-- 标题 -->
+								<span class="donghua-body-right-quanbu-jianjie-title">
+									《博人传2 火影忍者新时代》十尾恶化与九尾背水一战 十尾分裂者巢穴
+								</span>
+								<!-- 综合评分 -->
+								<!-- <span class="donghua-body-right-quanbu-jianjie-pingfen">
+								综合评分：70.7万
+							</span> -->
+							</div>
+						</div>
+						<!-- 一部动漫 -->
+						<div class="donghua-body-right-quanbu">
+							<!-- 排名 -->
+							<div class="donghua-body-right-quanbu-paiming">1</div>
+							<!-- 图片 -->
+							<!-- <img src="./images/touxiang.jpg" alt=""> -->
+							<!-- 简介 -->
+							<div class="donghua-body-right-quanbu-jianjie">
+								<!-- 标题 -->
+								<span class="donghua-body-right-quanbu-jianjie-title">
+									《博人传2 火影忍者新时代》十尾恶化与九尾背水一战 十尾分裂者巢穴
+								</span>
+								<!-- 综合评分 -->
+								<!-- <span class="donghua-body-right-quanbu-jianjie-pingfen">
+									综合评分：70.7万
+								</span> -->
+							</div>
+						</div>
+						<!-- 查看更多 -->
+						<div class="donghua-body-right-quanbu-gengduo">
+							查看更多<span class="glyphicon glyphicon-chevron-right"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 电视剧E -->
+
+		<!-- 影视S -->
+		<div class="yingshi lt">
+			<div class="donghua">
+				<!-- 标题 -->
+				<div class="donghua-top">
+					<!-- 标题-左 -->
+					<div class="donghua-top-left">
+						<div class="donghua-top-left-title">
+							<img src="./images/logo.png" alt="">
+							<span class="donghua-top-left-title">影视</span>
+							<span>有新动态</span>
+							<span>最新投稿</span>
+						</div>
+						<div class="donghua-title-left-gengduo">
+							更多<span class="glyphicon glyphicon-chevron-right"></span>
+						</div>
+					</div>
+					<!-- 标题-右 -->
+					<div class="donghua-top-right">
+						<!-- 排行 -->
+						<div class="donghua-top-right-left">
+							<div>排行</div>
+							<span>全部</span>
+							<span>原创</span>
+						</div>
+						<!-- 三日 -->
+						<div class="donghua-top-right-right">
+							<div>三日<span class="glyphicon glyphicon-chevron-down"></span></div>
+							<!-- <select name="" id="">
+							<option value=""></option>
+						</select> -->
+						</div>
+					</div>
+				</div>
+				<!-- 主体 -->
+				<div class="donghua-body">
+					<!-- 主体-左 -->
+					<div class="donghua-body-left">
+						<!-- 一个视频盒子 -->
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【PR】Premiere Pro CC 2019全套入门教程</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【PR】Premiere Pro CC 2019全套入门教程</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【PR】Premiere Pro CC 2019全套入门教程</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【PR】Premiere Pro CC 2019全套入门教程</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【PR】Premiere Pro CC 2019全套入门教程</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【PR】Premiere Pro CC 2019全套入门教程</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【PR】Premiere Pro CC 2019全套入门教程</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【PR】Premiere Pro CC 2019全套入门教程</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+					</div>
+					<!-- 主体-右 -->
+					<div class="donghua-body-right">
+						<!-- 一部动漫 -->
+						<div class="donghua-body-right-quanbu">
+							<!-- 排名 -->
+							<div class="donghua-body-right-quanbu-paiming">1</div>
+							<!-- 图片 -->
+							<img src="./images/touxiang.jpg" alt="">
+							<!-- 简介 -->
+							<div class="donghua-body-right-quanbu-jianjie">
+								<!-- 标题 -->
+								<span class="donghua-body-right-quanbu-jianjie-title">
+									《博人传2 火影忍者新时代》十尾恶化与九尾背水一战 十尾分裂者巢穴
+								</span>
+								<!-- 综合评分 -->
+								<span class="donghua-body-right-quanbu-jianjie-pingfen">
+									综合评分：70.7万
+								</span>
+							</div>
+						</div>
+						<!-- 一部动漫 -->
+						<div class="donghua-body-right-quanbu">
+							<!-- 排名 -->
+							<div class="donghua-body-right-quanbu-paiming">1</div>
+							<!-- 图片 -->
+							<!-- <img src="./images/touxiang.jpg" alt=""> -->
+							<!-- 简介 -->
+							<div class="donghua-body-right-quanbu-jianjie">
+								<!-- 标题 -->
+								<span class="donghua-body-right-quanbu-jianjie-title">
+									《博人传2 火影忍者新时代》十尾恶化与九尾背水一战 十尾分裂者巢穴
+								</span>
+								<!-- 综合评分 -->
+								<!-- <span class="donghua-body-right-quanbu-jianjie-pingfen">
+								综合评分：70.7万
+							</span> -->
+							</div>
+						</div>
+						<!-- 一部动漫 -->
+						<div class="donghua-body-right-quanbu">
+							<!-- 排名 -->
+							<div class="donghua-body-right-quanbu-paiming">1</div>
+							<!-- 图片 -->
+							<!-- <img src="./images/touxiang.jpg" alt=""> -->
+							<!-- 简介 -->
+							<div class="donghua-body-right-quanbu-jianjie">
+								<!-- 标题 -->
+								<span class="donghua-body-right-quanbu-jianjie-title">
+									《博人传2 火影忍者新时代》十尾恶化与九尾背水一战 十尾分裂者巢穴
+								</span>
+								<!-- 综合评分 -->
+								<!-- <span class="donghua-body-right-quanbu-jianjie-pingfen">
+								综合评分：70.7万
+							</span> -->
+							</div>
+						</div>
+						<!-- 一部动漫 -->
+						<div class="donghua-body-right-quanbu">
+							<!-- 排名 -->
+							<div class="donghua-body-right-quanbu-paiming">1</div>
+							<!-- 图片 -->
+							<!-- <img src="./images/touxiang.jpg" alt=""> -->
+							<!-- 简介 -->
+							<div class="donghua-body-right-quanbu-jianjie">
+								<!-- 标题 -->
+								<span class="donghua-body-right-quanbu-jianjie-title">
+									《博人传2 火影忍者新时代》十尾恶化与九尾背水一战 十尾分裂者巢穴
+								</span>
+								<!-- 综合评分 -->
+								<!-- <span class="donghua-body-right-quanbu-jianjie-pingfen">
+								综合评分：70.7万
+							</span> -->
+							</div>
+						</div>
+						<!-- 一部动漫 -->
+						<div class="donghua-body-right-quanbu">
+							<!-- 排名 -->
+							<div class="donghua-body-right-quanbu-paiming">1</div>
+							<!-- 图片 -->
+							<!-- <img src="./images/touxiang.jpg" alt=""> -->
+							<!-- 简介 -->
+							<div class="donghua-body-right-quanbu-jianjie">
+								<!-- 标题 -->
+								<span class="donghua-body-right-quanbu-jianjie-title">
+									《博人传2 火影忍者新时代》十尾恶化与九尾背水一战 十尾分裂者巢穴
+								</span>
+								<!-- 综合评分 -->
+								<!-- <span class="donghua-body-right-quanbu-jianjie-pingfen">
+									综合评分：70.7万
+								</span> -->
+							</div>
+						</div>
+						<!-- 查看更多 -->
+						<div class="donghua-body-right-quanbu-gengduo">
+							查看更多<span class="glyphicon glyphicon-chevron-right"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 影视E -->
+
+		<!-- 纪录片S -->
+		<div class="jilupian lt">
+			<div class="donghua">
+				<!-- 标题 -->
+				<div class="donghua-top">
+					<!-- 标题-左 -->
+					<div class="donghua-top-left">
+						<div class="donghua-top-left-title">
+							<img src="./images/logo.png" alt="">
+							<span class="donghua-top-left-title">纪录片</span>
+							<span>有新动态</span>
+							<span>最新投稿</span>
+						</div>
+						<div class="donghua-title-left-gengduo">
+							更多<span class="glyphicon glyphicon-chevron-right"></span>
+						</div>
+					</div>
+					<!-- 标题-右 -->
+					<div class="donghua-top-right">
+						<!-- 排行 -->
+						<div class="donghua-top-right-left">
+							<div>排行</div>
+							<span>全部</span>
+							<span>原创</span>
+						</div>
+						<!-- 三日 -->
+						<div class="donghua-top-right-right">
+							<div>三日<span class="glyphicon glyphicon-chevron-down"></span></div>
+							<!-- <select name="" id="">
+							<option value=""></option>
+						</select> -->
+						</div>
+					</div>
+				</div>
+				<!-- 主体 -->
+				<div class="donghua-body">
+					<!-- 主体-左 -->
+					<div class="donghua-body-left">
+						<!-- 一个视频盒子 -->
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【PR】Premiere Pro CC 2019全套入门教程</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【PR】Premiere Pro CC 2019全套入门教程</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【PR】Premiere Pro CC 2019全套入门教程</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【PR】Premiere Pro CC 2019全套入门教程</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【PR】Premiere Pro CC 2019全套入门教程</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【PR】Premiere Pro CC 2019全套入门教程</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【PR】Premiere Pro CC 2019全套入门教程</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+						<div class="donghua-body-box">
+							<img src="./images/nav_right.jpg" alt="" srcset="">
+							<p>【PR】Premiere Pro CC 2019全套入门教程</p>
+							<!-- 播放量和评论量 -->
+							<div class="donghua-body-box-text">
+								<span class="glyphicon glyphicon-hd-video">11.3万</span>
+								<span class="glyphicon glyphicon-modal-window">1258</span>
+							</div>
+						</div>
+					</div>
+					<!-- 主体-右 -->
+					<div class="donghua-body-right">
+						<!-- 一部动漫 -->
+						<div class="donghua-body-right-quanbu">
+							<!-- 排名 -->
+							<div class="donghua-body-right-quanbu-paiming">1</div>
+							<!-- 图片 -->
+							<img src="./images/touxiang.jpg" alt="">
+							<!-- 简介 -->
+							<div class="donghua-body-right-quanbu-jianjie">
+								<!-- 标题 -->
+								<span class="donghua-body-right-quanbu-jianjie-title">
+									《博人传2 火影忍者新时代》十尾恶化与九尾背水一战 十尾分裂者巢穴
+								</span>
+								<!-- 综合评分 -->
+								<span class="donghua-body-right-quanbu-jianjie-pingfen">
+									综合评分：70.7万
+								</span>
+							</div>
+						</div>
+						<!-- 一部动漫 -->
+						<div class="donghua-body-right-quanbu">
+							<!-- 排名 -->
+							<div class="donghua-body-right-quanbu-paiming">1</div>
+							<!-- 图片 -->
+							<!-- <img src="./images/touxiang.jpg" alt=""> -->
+							<!-- 简介 -->
+							<div class="donghua-body-right-quanbu-jianjie">
+								<!-- 标题 -->
+								<span class="donghua-body-right-quanbu-jianjie-title">
+									《博人传2 火影忍者新时代》十尾恶化与九尾背水一战 十尾分裂者巢穴
+								</span>
+								<!-- 综合评分 -->
+								<!-- <span class="donghua-body-right-quanbu-jianjie-pingfen">
+								综合评分：70.7万
+							</span> -->
+							</div>
+						</div>
+						<!-- 一部动漫 -->
+						<div class="donghua-body-right-quanbu">
+							<!-- 排名 -->
+							<div class="donghua-body-right-quanbu-paiming">1</div>
+							<!-- 图片 -->
+							<!-- <img src="./images/touxiang.jpg" alt=""> -->
+							<!-- 简介 -->
+							<div class="donghua-body-right-quanbu-jianjie">
+								<!-- 标题 -->
+								<span class="donghua-body-right-quanbu-jianjie-title">
+									《博人传2 火影忍者新时代》十尾恶化与九尾背水一战 十尾分裂者巢穴
+								</span>
+								<!-- 综合评分 -->
+								<!-- <span class="donghua-body-right-quanbu-jianjie-pingfen">
+								综合评分：70.7万
+							</span> -->
+							</div>
+						</div>
+						<!-- 一部动漫 -->
+						<div class="donghua-body-right-quanbu">
+							<!-- 排名 -->
+							<div class="donghua-body-right-quanbu-paiming">1</div>
+							<!-- 图片 -->
+							<!-- <img src="./images/touxiang.jpg" alt=""> -->
+							<!-- 简介 -->
+							<div class="donghua-body-right-quanbu-jianjie">
+								<!-- 标题 -->
+								<span class="donghua-body-right-quanbu-jianjie-title">
+									《博人传2 火影忍者新时代》十尾恶化与九尾背水一战 十尾分裂者巢穴
+								</span>
+								<!-- 综合评分 -->
+								<!-- <span class="donghua-body-right-quanbu-jianjie-pingfen">
+								综合评分：70.7万
+							</span> -->
+							</div>
+						</div>
+						<!-- 一部动漫 -->
+						<div class="donghua-body-right-quanbu">
+							<!-- 排名 -->
+							<div class="donghua-body-right-quanbu-paiming">1</div>
+							<!-- 图片 -->
+							<!-- <img src="./images/touxiang.jpg" alt=""> -->
+							<!-- 简介 -->
+							<div class="donghua-body-right-quanbu-jianjie">
+								<!-- 标题 -->
+								<span class="donghua-body-right-quanbu-jianjie-title">
+									《博人传2 火影忍者新时代》十尾恶化与九尾背水一战 十尾分裂者巢穴
+								</span>
+								<!-- 综合评分 -->
+								<!-- <span class="donghua-body-right-quanbu-jianjie-pingfen">
+									综合评分：70.7万
+								</span> -->
+							</div>
+						</div>
+						<!-- 查看更多 -->
+						<div class="donghua-body-right-quanbu-gengduo">
+							查看更多<span class="glyphicon glyphicon-chevron-right"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 纪录片E -->
+
+		<!-- 特别推荐S -->
+		<div class="tebietuijian donghua guochuang">
+			<div class="donghua-top">
+				<!-- 标题-左 -->
+				<div class="donghua-top-left">
+					<div class="donghua-top-left-title">
+						<img src="./images/logo.png" alt="">
+						<span class="donghua-top-left-title">特别推荐</span>
+					</div>
+				</div>
+			</div>
+			<div class="tebietuijian-bottom">
+				<div class="tebietuijian-bottom-left">
+					<div class="tebietuijian-bottom-left-box">
+						<img src="./images/nav_right.jpg" />
+						<div class="donghua-bottom-left-box-touxiang">
+							<img src="./images/touxiang.jpg" />
+						</div>
+						<div class="donghua-bottom-left-box-text">
+							<span class="donghua-bottom-left-box-text-name">一块大大饼</span>
+							<span class="donghua-bottom-left-box-text-tuijain">推荐</span>
+							<p>【乐正龙牙/乐正绫/言和原创】一幕风华【V音研】</p>
+						</div>
+					</div>
+					<div class="tebietuijian-bottom-left-box">
+						<img src="./images/nav_right.jpg" />
+						<div class="donghua-bottom-left-box-touxiang">
+							<img src="./images/touxiang.jpg" />
+						</div>
+						<div class="donghua-bottom-left-box-text">
+							<span class="donghua-bottom-left-box-text-name">一块大大饼</span>
+							<span class="donghua-bottom-left-box-text-tuijain">推荐</span>
+							<p>【乐正龙牙/乐正绫/言和原创】一幕风华【V音研】</p>
+						</div>
+					</div>
+					<div class="tebietuijian-bottom-left-box">
+						<img src="./images/nav_right.jpg" />
+						<div class="donghua-bottom-left-box-touxiang">
+							<img src="./images/touxiang.jpg" />
+						</div>
+						<div class="donghua-bottom-left-box-text">
+							<span class="donghua-bottom-left-box-text-name">一块大大饼</span>
+							<span class="donghua-bottom-left-box-text-tuijain">推荐</span>
+							<p>【乐正龙牙/乐正绫/言和原创】一幕风华【V音研】</p>
+						</div>
+					</div>
+					<div class="tebietuijian-bottom-left-box">
+						<img src="./images/nav_right.jpg" />
+						<div class="donghua-bottom-left-box-touxiang">
+							<img src="./images/touxiang.jpg" />
+						</div>
+						<div class="donghua-bottom-left-box-text">
+							<span class="donghua-bottom-left-box-text-name">一块大大饼</span>
+							<span class="donghua-bottom-left-box-text-tuijain">推荐</span>
+							<p>【乐正龙牙/乐正绫/言和原创】一幕风华【V音研】</p>
+						</div>
+					</div>
+				</div>
+				<div class="tebietuijian-body-right">
+					<img src="./images/generalize-right.jpg" alt="">
+				</div>
+			</div>
+		</div>
+		<!-- 特别推荐E -->
+	</div>
+	<!-- 楼梯S -->
+	<ul class="louti">
+		<li>直播</li>
+		<li>动画</li>
+		<li>番剧</li>
+		<li>国创</li>
+		<li>音乐</li>
+		<li>舞蹈</li>
+		<li>游戏</li>
+		<li>科技</li>
+		<li>数码</li>
+		<li>生活</li>
+		<li>鬼畜</li>
+		<li>时尚</li>
+		<li>广告</li>
+		<li>娱乐</li>
+		<li>专栏</li>
+		<li>电影</li>
+		<li>TV剧</li>
+		<li>影视</li>
+		<li>纪录片</li>
+		<li>
+			<span class="glyphicon glyphicon-sort"></span>
+			<span>排序</span>
+		</li>
+	</ul>
+	<!-- 楼梯E -->
+
+	<!-- 向上箭头S -->
+	<div class="xiangshang">
+		<span class="glyphicon glyphicon-menu-up"></span>
+	</div>
+	<!-- 向上箭头E -->
+
+	<!-- 底部S -->
+	<div class="di-bei">
+		<div class="di">
+			<div class="guan">
+				<h5>bilibili</h5>
+				<ul>
+					<li><a href="javascript:">关于我们</a></li>
+					<li><a href="javascript:">友情链接</a></li>
+				</ul>
+				<ul>
+					<li><a href="javascript:">联系我们</a></li>
+					<li><a href="javascript:">bilibili认证</a></li>
+				</ul>
+				<ul>
+					<li><a href="javascript:">加入我们</a></li>
+					<li><a href="javascript:">Investor Relations</a></li>
+				</ul>
+			</div>
+			<div class="men">
+				<h3>传送门</h3>
+				<ul>
+					<li><a href="#">帮助中心</a></li>
+					<li><a href="#">侵权申诉</a></li>
+					<li><a href="#">壁纸站</a></li>
+				</ul>
+				<ul>
+					<li><a href="#">高级弹幕</a></li>
+					<li><a href="#">活动中心</a></li>
+					<li><a href="#">名人堂</a></li>
+				</ul>
+				<ul>
+					<li><a href="#">活动专题页</a></li>
+					<li><a href="#">用户反馈论坛</a></li>
+					<li><a href="#">专车号服务中心</a></li>
+				</ul>
+			</div>
+			<div class="wei-x clearfix">
+				<div class="q1">
+					<div></div>
+					<p>客户端下载</p>
+					<span class="yinChang"><img src="images/zhuye-tw/下载 (2).png"></span>
+				</div>
+				<div class="q2">
+					<div></div>
+					<p>新浪微博</p>
+					<span class="yinChang"><img src="images/zhuye-tw/下载 (3).png"></span>
+
+				</div>
+				<div class="q3">
+					<div></div>
+					<p>官方微信</p>
+					<span class="yinChang"><img src="images/zhuye-tw/wx.ed20cfb.gif"></span>
+				</div>
+			</div>
+			<div class="zui-hou">
+				<div class="di-xz">
+					<img src="images/zhuye-tw/下载.png">
+					<span>
+						<img src="images/zhuye-tw/下载 (4).png">
+					</span>
+					<span>
+						<img src="images/zhuye-tw/下载 (1).png">
+					</span>
+
+
+				</div>
+				<div class="di-xk">
+					<p>广播电视节目制作经营许可证：（沪）字第1248号 | 网络文化经营许可证：沪网文[2016]2296-134号 | 信息网络传播视听节目许可证：0910417 |
+						互联网ICP备案：沪ICP备13002172号-3</p>
+					<p>沪ICP证：沪B2-20100043 | 违法不良信息举报邮箱：help@bilibili.com | 违法不良信息举报电话：4000233233转3 | 营业执照</p>
+					<p class=>
+						<a href="#"><span class="shanghai"></span> 上海互联网举报中心</a>
+						|<a href="#">12318 全国文化市场举报网站</a>
+						|<a href="#"><img src="images/zhuye-tw/beiantubiao.png"> 沪公网安备 31011002002436号</a>
+						|<a href="#">儿童色情信息举报专区</a>
+					</p>
+					<p>网上有害信息举报专区：<span class="hul"></span> 中国互联网违法和不良信息举报中心</p>
+					<p>公司名称：上海宽娱数码科技有限公司 | 公司地址：上海市杨浦区政立路485号 | 电话：021-25099888</p>
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+	<!-- 底部E -->
+	<script src="./dist/js/jquery-1.12.4.js"></script>
+	<script src="./dist/js/template-web.js"></script>
+	<script id="tab1" type="text/html">
+		{{each datas}}
+		<div class="fanju-bottom-left-box">
+			<img src="./images/{{$value.src}}" alt="">
+			<div>
+				{{$value.title}}<span>第{{$value.jisu}}话</span>
+			</div>
+		</div>
+		{{/each}}
+	</script>
+	<script src="./js/lib/dinu.js"></script>
+	<script src="./js/lib/bilibili-header.js"></script>
+	<script src="./js/zhuye/index.js"></script>
+	<script src="./js/zhuye/guichu.js"></script>
+	<script>
+		var mySwiper = new Swiper('.swiper-container', {
+
+			autoplay: 2000,
+
+			loop: true,
+			// 如果需要分页器
+			pagination: '.swiper-pagination',
+
+			// 如果需要前进后退按钮
+			nextButton: '.swiper-button-next',
+			prevButton: '.swiper-button-prev',
+
+			// 如果需要滚动条
+			scrollbar: '.swiper-scrollbar',
+		})
+	</script>
 </body>
+
 </html>
